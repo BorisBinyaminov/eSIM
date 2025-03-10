@@ -1,0 +1,53 @@
+
+//eSIM bot
+Done! Congratulations on your new bot. You will find it at t.me/eSIMUnlimitedbot. 
+You can now add a description, about section and profile picture for your bot, see /help for a list of commands. 
+By the way, when you've finished creating your cool bot, ping our Bot Support if you want a better username for it. 
+Just make sure the bot is fully operational before you do this.
+Use this token to access the HTTP API:
+
+8073824494:AAHQlUVQpvlzBFX_5kfjD02tcdRkjGTGBeI
+8073824494:AAHQlUVQpvlzBFX_5kfjD02tcdRkjGTGBeI
+
+Keep your token secure and store it safely, it can be used by anyone to control your bot.
+For a description of the Bot API, see this page: https://core.telegram.org/bots/api
+
+
+//support bot
+Done! Congratulations on your new bot. You will find it at t.me/esim_unlimited_support_bot. 
+You can now add a description, about section and profile picture for your bot, see /help for a list of commands. 
+By the way, when you've finished creating your cool bot, ping our Bot Support if you want a better username for it. 
+Just make sure the bot is fully operational before you do this.
+
+Use this token to access the HTTP API:
+
+7784825740:AAGPb1Rp0yn3yOZzeVViSy5DblYJsR4Bu2c
+
+Keep your token secure and store it safely, it can be used by anyone to control your bot.
+For a description of the Bot API, see this page: https://core.telegram.org/bots/api
+
+https://telegram.me/esim_unlimited_support_bot?startgroup=1
+
+
+//auth
+Typically, you don’t need to have bot.py directly “pass” the user info to server.py. Instead, both components should share a common data store (or database) for user records. Here’s the general approach:
+
+When a user starts the bot:
+Your bot.py /start handler captures the user’s Telegram information (ID, username, etc.) and stores or updates that record in a central database (or in-memory store, for a simple demo).
+
+When the user authenticates in the mini app:
+The mini app calls your /auth/telegram endpoint (handled by auth.py in server.py) which verifies the auth data. At this point, you can either update the record or simply cross‑reference the stored user info using the Telegram user ID.
+
+By using a shared user store, both the bot and the mini app will have access to the same user data without needing to directly pass information between them. This decouples the two components and makes your system more modular and easier to maintain.
+
+In summary, it's best to store user information in a centralized location accessible by both bot.py and server.py, rather than trying to pass the data directly from one to the other.
+
+The test mode in your auth.py is designed to simulate the Telegram WebApp authentication flow—when the mini app receives initData (which normally comes from Telegram when the user launches the mini app).
+
+In production, the mini app will call the /auth/telegram endpoint with the initData provided by Telegram's WebView, and that endpoint will verify the data (using your BOT_TOKEN) before returning the user information.
+
+Separately, your bot.py /start handler collects basic user data when the user starts the bot, and you would store that in a shared user database. Both flows end up updating the user record (usually keyed by the Telegram user ID), but they’re triggered by different events:
+
+bot.py /start: Captures and stores user info when a user starts the bot.
+/auth/telegram (mini app): Verifies initData provided by Telegram when the mini app is launched.
+Test mode (with the "fakehash" bypass) simply simulates the mini app authentication flow so you can see how the /auth/telegram endpoint processes data. It does not directly simulate the data that bot.py collects. In a full production system, both methods should ideally store/update the same user record in a shared database.
