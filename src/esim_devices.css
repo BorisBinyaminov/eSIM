@@ -1,0 +1,82 @@
+.devices-container {
+    margin: auto;
+    padding: 20px;
+    background: #1b1b1b;
+    border-radius: 10px;
+}
+
+.devices-title {
+    text-align: center;
+    color: #ff8c00;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.brand-section {
+    margin-bottom: 20px;
+}
+
+.brand-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.device-category {
+    background: #222;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.category-button {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    text-align: left;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.category-button:hover {
+    background: #333;
+}
+
+.arrow {
+    align-items: center;
+    background: transparent; /* Fix: No background color */
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size: 20px;
+    height: 40px;
+    justify-content: center;
+    pointer-events: auto;
+    transition: transform 0.3s ease;
+    width: 40px;
+}
+
+.arrow.open {
+    transform: rotate(180deg);
+}
+
+.device-list {
+	list-style: disc; /* Enables bullet points */
+    padding: 10px 20px;
+    background: #292929;
+    border-radius: 5px;
+    text-align: left; /* Ensuring devices align to the left */
+}
+
+.device-item {
+    color: #ddd;
+    padding: 5px 0;
+    text-align: left; /* Ensuring left alignment */
+	margin-left: 20px; /* Ensures dots appear correctly */
+}

@@ -1,0 +1,88 @@
+/* FAQ Container */
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background: linear-gradient(to bottom, #181818, #121212);
+  color: #fff;
+  border-radius: 10px;
+}
+
+/* FAQ Items */
+.faq-item {
+  margin-bottom: 10px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-item.active {
+  border-color: #ff9500;
+}
+
+/* Question Section */
+.faq-question {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 15px;
+  background: #1f1f1f;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid #333;
+}
+
+.faq-question:hover {
+  background: #292929;
+}
+
+/* Number Styling */
+.faq-number {
+  font-weight: bold;
+  color: #ff9500;
+  margin-right: 10px;
+}
+
+/* Toggle Icon */
+.faq-toggle {
+  font-size: 14px;
+  color: #aaa;
+  margin-left: auto; /* Push toggle to the far right */
+}
+
+/* Answer Section */
+.faq-answer {
+  padding: 15px;
+  padding-left: 30px; /* Indentation for answers */
+  font-size: 14px;
+  line-height: 1.6;
+  background: #222;
+  color: #ccc;
+  text-align: left; /* Align answers to the left */
+}
+
+.faq-answer ul {
+  padding-left: 20px;
+}
+
+.faq-answer li {
+  margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-container {
+    padding: 10px;
+  }
+
+  .faq-question {
+    font-size: 14px;
+  }
+
+  .faq-answer {
+    font-size: 12px;
+    padding-left: 20px; /* Adjust indentation for smaller screens */
+  }
+}

@@ -1,0 +1,143 @@
+/* GlobalPackages.css - Aligned with localPackages.css style with orange hover effect */
+
+/* Container for Global eSIM Section */
+.global-esim-container {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #111;
+    color: white;
+}
+
+/* Global Package Buttons Container (aligned with master country list container) */
+.global-package-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Global Package Button (styled like master country button) */
+.global-package-button {
+    width: 140px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #222;
+    border: 2px solid #333;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    overflow: hidden;
+    margin: 8px;
+}
+
+.global-package-button:hover,
+.global-package-button.selected {
+    background-color: #ff7a00;  /* Orange hover effect */
+}
+
+/* Global Package Button Image (matching master flag icon style) */
+.global-package-button img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Global Package Button Text (matching master country name style) */
+.global-package-button span {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+/* Global Packages Table (aligned with master packages table) */
+.global-package-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.global-package-table th,
+.global-package-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #444;
+    text-align: left;
+}
+
+.global-package-table th {
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+    text-align: left;
+}
+
+.global-package-table tr:hover {
+    background-color: #252525;
+}
+
+/* Global Buy Button (aligned with master buy-now button) */
+.global-buy-button {
+    padding: 10px 15px;
+    background-color: #0066ff;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.global-buy-button:hover {
+    background-color: #0052cc;
+}
+
+/* Global Country List styling (if used) */
+.global-country-list {
+    max-height: 200px;
+    overflow-y: auto;
+    text-align: left;
+    padding: 5px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+/* Global Show More Button (if used) */
+.global-show-more {
+    color: #ff9800;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    transition: transform 0.2s;
+    text-align: left;
+}
+
+.global-show-more:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+/* Top-Up Support styling */
+.global-package-table .top-up-support {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.global-package-table .top-up-support.yes {
+    color: #4caf50;
+}
+
+.global-package-table .top-up-support.no {
+    color: #e53935;
+}
