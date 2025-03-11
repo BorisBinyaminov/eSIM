@@ -19,6 +19,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Iceland",
@@ -647,10 +648,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -732,6 +729,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Iceland",
@@ -1360,10 +1358,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -1445,6 +1439,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Iceland",
@@ -2073,10 +2068,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -2158,6 +2149,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Iceland",
@@ -2787,10 +2779,6 @@
                 "locationCode": "FR",
                 "operatorList": [
                     {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
-                    {
                         "operatorName": "SFR",
                         "networkType": "5G"
                     },
@@ -2871,6 +2859,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Argentina",
@@ -3137,6 +3126,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Argentina",
@@ -3403,6 +3393,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Argentina",
@@ -3669,6 +3660,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Argentina",
@@ -3935,6 +3927,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "United States",
@@ -4003,6 +3996,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "United States",
@@ -4071,6 +4065,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "United States",
@@ -4139,6 +4134,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Burkina Faso",
@@ -4537,6 +4533,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Burkina Faso",
@@ -4935,6 +4932,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "TH",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Georgia",
@@ -5144,6 +5142,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Iceland",
@@ -5773,10 +5772,6 @@
                 "locationCode": "FR",
                 "operatorList": [
                     {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
-                    {
                         "operatorName": "SFR",
                         "networkType": "5G"
                     },
@@ -5857,6 +5852,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Bahrain",
@@ -6045,6 +6041,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Bahrain",
@@ -6233,6 +6230,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "China mainland",
@@ -6289,6 +6287,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "China mainland",
@@ -6345,6 +6344,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "China mainland",
@@ -6401,6 +6401,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "China mainland",
@@ -6457,6 +6458,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "China mainland",
@@ -6513,6 +6515,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Vietnam",
@@ -6621,6 +6624,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Vietnam",
@@ -6729,6 +6733,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Vietnam",
@@ -6837,6 +6842,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Vietnam",
@@ -6945,6 +6951,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Vietnam",
@@ -7053,6 +7060,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Australia",
@@ -7320,6 +7328,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Australia",
@@ -7587,6 +7596,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Australia",
@@ -7854,6 +7864,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Australia",
@@ -8121,6 +8132,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Australia",
@@ -8388,6 +8400,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Australia",
@@ -8655,6 +8668,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Australia",
@@ -8922,6 +8936,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Argentina",
@@ -9188,6 +9203,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "United States",
@@ -9256,6 +9272,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Burkina Faso",
@@ -9654,6 +9671,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Iceland",
@@ -10282,10 +10300,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -10367,6 +10381,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Iceland",
@@ -10996,10 +11011,6 @@
                 "locationCode": "FR",
                 "operatorList": [
                     {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
-                    {
                         "operatorName": "SFR",
                         "networkType": "5G"
                     },
@@ -11080,6 +11091,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "United States",
@@ -11148,6 +11160,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "United States",
@@ -11216,6 +11229,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Bahrain",
@@ -11404,6 +11418,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "China mainland",
@@ -11460,6 +11475,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Vietnam",
@@ -11568,6 +11584,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "United States",
@@ -11648,6 +11665,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "United States",
@@ -11716,6 +11734,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "United States",
@@ -11784,6 +11803,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "United States",
@@ -11852,6 +11872,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Thailand",
@@ -11912,6 +11933,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Thailand",
@@ -11972,6 +11994,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Thailand",
@@ -12032,6 +12055,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Thailand",
@@ -12092,6 +12116,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Iceland",
@@ -12624,10 +12649,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -12709,6 +12730,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Iceland",
@@ -13241,10 +13263,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -13326,6 +13344,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Iceland",
@@ -13858,10 +13877,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -13943,6 +13958,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Iceland",
@@ -14475,10 +14491,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -14560,6 +14572,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Iceland",
@@ -15092,10 +15105,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -15177,6 +15186,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Iceland",
@@ -15709,10 +15719,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -15794,6 +15800,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Iceland",
@@ -16326,10 +16333,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -16411,6 +16414,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Iceland",
@@ -16943,10 +16947,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -17028,6 +17028,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Iceland",
@@ -17560,10 +17561,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -17645,6 +17642,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Iceland",
@@ -18177,10 +18175,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -18262,6 +18256,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Iceland",
@@ -18794,10 +18789,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -18879,6 +18870,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Iceland",
@@ -19412,10 +19404,6 @@
                 "locationCode": "FR",
                 "operatorList": [
                     {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
-                    {
                         "operatorName": "SFR",
                         "networkType": "5G"
                     },
@@ -19496,6 +19484,7 @@
         "speed": "3G/4G",
         "ipExport": "HK",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Vietnam",
@@ -19663,6 +19652,7 @@
         "speed": "3G/4G",
         "ipExport": "HK",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Vietnam",
@@ -19830,6 +19820,7 @@
         "speed": "3G/4G",
         "ipExport": "HK",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Vietnam",
@@ -19997,6 +19988,7 @@
         "speed": "3G/4G",
         "ipExport": "HK",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Vietnam",
@@ -20164,6 +20156,7 @@
         "speed": "3G/4G",
         "ipExport": "HK",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "China mainland",
@@ -20220,6 +20213,7 @@
         "speed": "3G/4G",
         "ipExport": "HK",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "China mainland",
@@ -20276,6 +20270,7 @@
         "speed": "3G/4G",
         "ipExport": "HK",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "China mainland",
@@ -20332,6 +20327,7 @@
         "speed": "3G/4G",
         "ipExport": "HK",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "China mainland",
@@ -20388,6 +20384,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Iceland",
@@ -20920,10 +20917,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -21005,6 +20998,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Iceland",
@@ -21538,10 +21532,6 @@
                 "locationCode": "FR",
                 "operatorList": [
                     {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
-                    {
                         "operatorName": "SFR",
                         "networkType": "5G"
                     },
@@ -21622,6 +21612,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "United States",
@@ -21702,6 +21693,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "United States",
@@ -21770,6 +21762,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Uzbekistan",
@@ -21848,6 +21841,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Uzbekistan",
@@ -21926,6 +21920,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Uzbekistan",
@@ -22004,6 +21999,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Uzbekistan",
@@ -22082,6 +22078,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Bahrain",
@@ -22171,6 +22168,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Bahrain",
@@ -22260,6 +22258,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Bahrain",
@@ -22349,6 +22348,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Bahrain",
@@ -22438,6 +22438,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Argentina",
@@ -22740,6 +22741,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Argentina",
@@ -23042,6 +23044,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Argentina",
@@ -23344,6 +23347,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "United States",
@@ -23424,6 +23428,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "United States",
@@ -23504,6 +23509,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "United States",
@@ -23584,6 +23590,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "United States",
@@ -23664,6 +23671,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "United States",
@@ -23744,6 +23752,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "United States",
@@ -23824,6 +23833,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Bahrain",
@@ -23913,6 +23923,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Bahrain",
@@ -24002,6 +24013,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Bahrain",
@@ -24091,6 +24103,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Bahrain",
@@ -24180,6 +24193,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Argentina",
@@ -24482,6 +24496,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Argentina",
@@ -24784,6 +24799,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Argentina",
@@ -25086,6 +25102,7 @@
         "speed": "3G/4G",
         "ipExport": "PL",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Argentina",
@@ -25388,6 +25405,7 @@
         "speed": "3G/4G",
         "ipExport": "HK",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Vietnam",
@@ -25496,6 +25514,7 @@
         "speed": "3G/4G",
         "ipExport": "HK",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Vietnam",
@@ -25604,6 +25623,7 @@
         "speed": "3G/4G",
         "ipExport": "HK",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Vietnam",
@@ -25712,6 +25732,7 @@
         "speed": "3G/4G",
         "ipExport": "HK",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Vietnam",
@@ -25820,6 +25841,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Thailand",
@@ -25880,6 +25902,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Thailand",
@@ -25940,6 +25963,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Thailand",
@@ -26000,6 +26024,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Thailand",
@@ -26060,6 +26085,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Thailand",
@@ -26120,6 +26146,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "South Korea",
@@ -26180,6 +26207,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "South Korea",
@@ -26240,6 +26268,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "South Korea",
@@ -26300,6 +26329,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "South Korea",
@@ -26360,6 +26390,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "South Korea",
@@ -26420,6 +26451,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "South Korea",
@@ -26480,6 +26512,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "South Korea",
@@ -26540,6 +26573,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "South Korea",
@@ -26600,6 +26634,7 @@
         "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "South Korea",

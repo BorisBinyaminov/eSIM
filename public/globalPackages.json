@@ -19,6 +19,7 @@
         "speed": "3G/4G",
         "ipExport": "TH",
         "supportTopUpType": 1,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "Bhutan",
@@ -906,6 +907,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "China mainland",
@@ -1050,7 +1052,7 @@
                     },
                     {
                         "operatorName": "Telkomsel",
-                        "networkType": "5G"
+                        "networkType": "4G"
                     }
                 ]
             },
@@ -1342,10 +1344,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -2703,10 +2701,6 @@
                     {
                         "operatorName": "Banglalink",
                         "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Robi",
-                        "networkType": "3G"
                     }
                 ]
             },
@@ -2945,6 +2939,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "China mainland",
@@ -3089,7 +3084,7 @@
                     },
                     {
                         "operatorName": "Telkomsel",
-                        "networkType": "5G"
+                        "networkType": "4G"
                     }
                 ]
             },
@@ -3381,10 +3376,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -4742,10 +4733,6 @@
                     {
                         "operatorName": "Banglalink",
                         "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Robi",
-                        "networkType": "3G"
                     }
                 ]
             },
@@ -4984,6 +4971,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "China mainland",
@@ -5128,7 +5116,7 @@
                     },
                     {
                         "operatorName": "Telkomsel",
-                        "networkType": "5G"
+                        "networkType": "4G"
                     }
                 ]
             },
@@ -5420,10 +5408,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -6781,10 +6765,6 @@
                     {
                         "operatorName": "Banglalink",
                         "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Robi",
-                        "networkType": "3G"
                     }
                 ]
             },
@@ -7023,6 +7003,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "China mainland",
@@ -7167,7 +7148,7 @@
                     },
                     {
                         "operatorName": "Telkomsel",
-                        "networkType": "5G"
+                        "networkType": "4G"
                     }
                 ]
             },
@@ -7459,10 +7440,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -8820,10 +8797,6 @@
                     {
                         "operatorName": "Banglalink",
                         "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Robi",
-                        "networkType": "3G"
                     }
                 ]
             },
@@ -9062,6 +9035,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "China mainland",
@@ -9206,7 +9180,7 @@
                     },
                     {
                         "operatorName": "Telkomsel",
-                        "networkType": "5G"
+                        "networkType": "4G"
                     }
                 ]
             },
@@ -9498,10 +9472,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -10859,10 +10829,6 @@
                     {
                         "operatorName": "Banglalink",
                         "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Robi",
-                        "networkType": "3G"
                     }
                 ]
             },
@@ -11101,6 +11067,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "China mainland",
@@ -11245,7 +11212,7 @@
                     },
                     {
                         "operatorName": "Telkomsel",
-                        "networkType": "5G"
+                        "networkType": "4G"
                     }
                 ]
             },
@@ -11537,10 +11504,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -12898,10 +12861,6 @@
                     {
                         "operatorName": "Banglalink",
                         "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Robi",
-                        "networkType": "3G"
                     }
                 ]
             },
@@ -13140,6 +13099,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "China mainland",
@@ -13265,7 +13225,7 @@
                     },
                     {
                         "operatorName": "Telkomsel",
-                        "networkType": "5G"
+                        "networkType": "4G"
                     }
                 ]
             },
@@ -13546,10 +13506,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -14983,6 +14939,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "China mainland",
@@ -15108,7 +15065,7 @@
                     },
                     {
                         "operatorName": "Telkomsel",
-                        "networkType": "5G"
+                        "networkType": "4G"
                     }
                 ]
             },
@@ -15389,10 +15346,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -16826,6 +16779,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "China mainland",
@@ -16951,7 +16905,7 @@
                     },
                     {
                         "operatorName": "Telkomsel",
-                        "networkType": "5G"
+                        "networkType": "4G"
                     }
                 ]
             },
@@ -17232,10 +17186,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -18669,6 +18619,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "China mainland",
@@ -18794,7 +18745,7 @@
                     },
                     {
                         "operatorName": "Telkomsel",
-                        "networkType": "5G"
+                        "networkType": "4G"
                     }
                 ]
             },
@@ -19075,10 +19026,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -20512,6 +20459,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "China mainland",
@@ -20637,7 +20585,7 @@
                     },
                     {
                         "operatorName": "Telkomsel",
-                        "networkType": "5G"
+                        "networkType": "4G"
                     }
                 ]
             },
@@ -20918,10 +20866,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -22355,6 +22299,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "China mainland",
@@ -22480,7 +22425,7 @@
                     },
                     {
                         "operatorName": "Telkomsel",
-                        "networkType": "5G"
+                        "networkType": "4G"
                     }
                 ]
             },
@@ -22761,10 +22706,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"
@@ -24198,6 +24139,7 @@
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
+        "fupPolicy": "",
         "locationNetworkList": [
             {
                 "locationName": "China mainland",
@@ -24323,7 +24265,7 @@
                     },
                     {
                         "operatorName": "Telkomsel",
-                        "networkType": "5G"
+                        "networkType": "4G"
                     }
                 ]
             },
@@ -24604,10 +24546,6 @@
                 "locationLogo": "/img/flags/fr.png",
                 "locationCode": "FR",
                 "operatorList": [
-                    {
-                        "operatorName": "Orange",
-                        "networkType": "5G"
-                    },
                     {
                         "operatorName": "SFR",
                         "networkType": "5G"

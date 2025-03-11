@@ -17,7 +17,7 @@ router = APIRouter()
 
 # Load BOT_TOKEN and TEST_MODE flag from .env
 BOT_TOKEN = os.getenv("BOT_TOKEN", "8073824494:AAHQlUVQpvlzBFX_5kfjD02tcdRkjGTGBeI")
-TEST_MODE = os.getenv("TEST_MODE", "false").lower() == "true"
+TEST_MODE = os.getenv("REACT_APP_TEST_MODE", "false").lower() == "true"
 
 if TEST_MODE:
     print("[TEST MODE] Enabled. Test bypass for auth is active.")

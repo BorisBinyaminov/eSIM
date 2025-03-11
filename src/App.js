@@ -11,10 +11,12 @@ import "./localPackages.css";
 import "./regionalPackages.css";
 import "./globalPackages.css";
 import authService from "./auth";  // dedicated FE auth service
+import MyESIMs from "./myEsims";   // component for "My eSIMs" tab
 
 function MiniApp() {
-  const [activePage, setActivePage] = useState("main");
-  const [activeTab, setActiveTab] = useState("buy");
+  // Initialize activePage and activeTab from localStorage or default values.
+  const [activePage, setActivePage] = useState(() => localStorage.getItem("activePage") || "main");
+  const [activeTab, setActiveTab] = useState(() => localStorage.getItem("activeTab") || "buy");
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
   const [helpCenterOpen, setHelpCenterOpen] = useState(false);
@@ -24,6 +26,17 @@ function MiniApp() {
     setHelpCenterOpen((prev) => !prev);
   };
 
+  // Update localStorage when activePage changes
+  useEffect(() => {
+    localStorage.setItem("activePage", activePage);
+  }, [activePage]);
+
+  // Update localStorage when activeTab changes
+  useEffect(() => {
+    localStorage.setItem("activeTab", activeTab);
+  }, [activeTab]);
+
+  // Update isMobile on window resize
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth < 768);
@@ -32,24 +45,24 @@ function MiniApp() {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-// For development testing only: remove or adjust the NODE_ENV check if needed
-	if (!window.Telegram) {
-	  const sampleInitData = "user=%7B%22id%22%3A12345%2C%22username%22%3A%22testuser%22%2C%22photo_url%22%3A%22https%3A%2F%2Fexample.com%2Favatar.jpg%22%7D&hash=fakehash";
-	  window.Telegram = {
-		WebApp: {
-		  initData: sampleInitData,
-		  initDataUnsafe: {
-			id: 12345,
-			username: "testuser",
-			photo_url: "https://example.com/avatar.jpg",
-		  },
-		  close: () => console.log("Simulated close"),
-		},
-	  };
-	  console.log("Fake Telegram.WebApp object injected for testing.");
-	}
+  // For development testing only: inject a fake Telegram object if not present.
+  if (!window.Telegram) {
+    const sampleInitData = "user=%7B%22id%22%3A12345%2C%22username%22%3A%22testuser%22%2C%22photo_url%22%3A%22%2Fimages%2Flogo%2Flogo.png%22%7D&hash=fakehash";
+    window.Telegram = {
+      WebApp: {
+        initData: sampleInitData,
+        initDataUnsafe: {
+          id: 12345,
+          username: "testuser",
+          photo_url: "/images/logo/logo.png",
+        },
+        close: () => console.log("Simulated close"),
+      },
+    };
+    console.log("Fake Telegram.WebApp object injected for testing.");
+  }
 
-  // Debug log to check if Telegram WebApp object is available
+  // Debug: Check if Telegram WebApp object is available
   useEffect(() => {
     if (window.Telegram && window.Telegram.WebApp) {
       console.log("Telegram WebApp object found.");
@@ -98,7 +111,7 @@ function MiniApp() {
     }
   };
 
-  // Logout: call the backend and clear user state
+  // Logout handler: call backend and clear user state
   const handleLogout = () => {
     authService.logoutTelegram().then(() => {
       setUser(null);
@@ -106,6 +119,7 @@ function MiniApp() {
     });
   };
 
+  // Change tab logic: "main" resets, others set activeTab and change activePage to "tabs"
   const handleTabChange = (tab) => {
     if (tab === "main") {
       setActivePage("main");
@@ -121,6 +135,7 @@ function MiniApp() {
     setMenuOpen((prev) => !prev);
   };
 
+  // Close menu if clicked outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (!event.target.closest(".menu-container") && menuOpen) {
@@ -131,6 +146,7 @@ function MiniApp() {
     return () => document.removeEventListener("click", handleClickOutside);
   }, [menuOpen]);
 
+  // Close help dropdown if clicked outside
   useEffect(() => {
     const handleClickOutsideHelp = (event) => {
       if (!event.target.closest(".help-center-container") && helpCenterOpen) {
@@ -142,59 +158,82 @@ function MiniApp() {
   }, [helpCenterOpen]);
 
   const renderHeader = () => (
-  <header className="app-header">
-    <div className="logo">eSIM Unlimited</div>
-    {isMobile ? (
-      <div className="menu-container">
-        <button className="menu-icon" onClick={toggleMenu}>
-          ☰
-        </button>
-        {menuOpen && (
-          <div className="dropdown-menu">
-            {user ? (
-				<div className="user-info">
-				  <img src={user.photo_url} alt="User Avatar" className="user-photo" />
-				  <span className="nav-button">{user.username}</span>
-				  <button className="nav-button" onClick={handleLogout}>Logout</button>
-				</div>
-            ) : (
-              <button className="nav-button" onClick={handleManualLogin}>
-                Login
-              </button>
-            )}
-            <a href="https://t.me/eSIM_Unlimited" target="_blank" rel="noopener noreferrer" className="nav-button">
-              <img src="/images/general/telegram3.png" alt="Telegram" className="icon" /> Community
-            </a>
-            <a href="https://t.me/esim_unlimited_support_bot" target="_blank" rel="noopener noreferrer" className="nav-button">
-              <img src="/images/general/telegram3.png" alt="Telegram" className="icon" /> Support
-            </a>
-          </div>
-        )}
-      </div>
-    ) : (
-      <div className="nav-buttons">
-        {user ? (
-			<div className="user-info">
-			  <img src={user.photo_url} alt="User Avatar" className="user-photo" />
-			  <span className="nav-button">{user.username}</span>
-			  <button className="nav-button" onClick={handleLogout}>Logout</button>
-			</div>
-        ) : (
-          <button className="nav-button" onClick={handleManualLogin}>
-            Login
+    <header className="app-header">
+      <div className="logo">eSIM Unlimited</div>
+      {isMobile ? (
+        <div className="menu-container">
+          <button className="menu-icon" onClick={toggleMenu}>
+            ☰
           </button>
-        )}
-        <a href="https://t.me/eSIM_Unlimited" target="_blank" rel="noopener noreferrer" className="nav-button">
-          <img src="/images/general/telegram3.png" alt="Telegram" className="icon" /> Community
-        </a>
-        <a href="https://t.me/esim_unlimited_support_bot" target="_blank" rel="noopener noreferrer" className="nav-button">
-          <img src="/images/general/telegram3.png" alt="Telegram" className="icon" /> Support
-        </a>
-      </div>
-    )}
-  </header>
-);
-
+          {menuOpen && (
+            <div className="dropdown-menu">
+              {user ? (
+                <div className="user-info">
+                  <img src={user.photo_url} alt="User Avatar" className="user-photo" />
+                  <span className="nav-button">{user.username}</span>
+                  <button className="nav-button" onClick={handleLogout}>
+                    Logout
+                  </button>
+                </div>
+              ) : (
+                <button className="nav-button" onClick={handleManualLogin}>
+                  Login
+                </button>
+              )}
+              <a
+                href="https://t.me/eSIM_Unlimited"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="nav-button"
+              >
+                <img src="/images/general/telegram3.png" alt="Telegram" className="icon" /> Community
+              </a>
+              <a
+                href="https://t.me/esim_unlimited_support_bot"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="nav-button"
+              >
+                <img src="/images/general/telegram3.png" alt="Telegram" className="icon" /> Support
+              </a>
+            </div>
+          )}
+        </div>
+      ) : (
+        <div className="nav-buttons">
+          {user ? (
+            <div className="user-info">
+              <img src={user.photo_url} alt="User Avatar" className="user-photo" />
+              <span className="nav-button">{user.username}</span>
+              <button className="nav-button" onClick={handleLogout}>
+                Logout
+              </button>
+            </div>
+          ) : (
+            <button className="nav-button" onClick={handleManualLogin}>
+              Login
+            </button>
+          )}
+          <a
+            href="https://t.me/eSIM_Unlimited"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-button"
+          >
+            <img src="/images/general/telegram3.png" alt="Telegram" className="icon" /> Community
+          </a>
+          <a
+            href="https://t.me/esim_unlimited_support_bot"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-button"
+          >
+            <img src="/images/general/telegram3.png" alt="Telegram" className="icon" /> Support
+          </a>
+        </div>
+      )}
+    </header>
+  );
 
   const renderTabs = () => (
     <div className="tab-header">
@@ -204,6 +243,9 @@ function MiniApp() {
         </button>
         <button className="tab-button" onClick={() => handleTabChange("buy")}>
           Buy eSIM
+        </button>
+        <button className="tab-button" onClick={() => handleTabChange("myesims")}>
+          My eSIMs
         </button>
         <div className="help-center-container">
           <button className="tab-button help-center-button" onClick={toggleHelpCenter}>
@@ -243,6 +285,7 @@ function MiniApp() {
         <div className="tabs-page">
           <div className="tab-content">
             {activeTab === "buy" && <BuyESIM />}
+            {activeTab === "myesims" && <MyESIMs />}
             {activeTab === "guides" && <Guides />}
             {activeTab === "faq" && <FAQTab />}
             {activeTab === "devices" && <EsimSupportedDevices />}

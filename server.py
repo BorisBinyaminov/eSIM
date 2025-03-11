@@ -128,7 +128,7 @@ def fetch_packages():
     print(f"\n✅ Packages updated at: {last_update_time}", flush=True)
 
 # ✅ Fetch packages immediately on startup
-#fetch_packages()
+fetch_packages()
 
 # ✅ Periodic update of JSON files every 6 hours
 def schedule_package_updates():
@@ -145,9 +145,9 @@ def run_support_bot():
         print(f"❌ Error starting Support Bot: {e}")
         
 # Run the update task in a separate thread
-#threading.Thread(target=schedule_package_updates, daemon=True).start()
-#support_bot_thread = threading.Thread(target=run_support_bot, daemon=True)
-#support_bot_thread.start()
+threading.Thread(target=schedule_package_updates, daemon=True).start()
+support_bot_thread = threading.Thread(target=run_support_bot, daemon=True)
+support_bot_thread.start()
 
 if __name__ == "__main__":
     import uvicorn
