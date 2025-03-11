@@ -11,7 +11,6 @@ import openai
 import os
 import datetime
 import logging
-from telegram import InputMediaPhoto
 
 # Force UTF-8 encoding (Windows Fix)
 sys.stdout.reconfigure(encoding="utf-8")
@@ -125,9 +124,9 @@ async def forward_to_support(update: Update, context: CallbackContext):
     if update.message.photo:
         # Get the highest resolution photo.
         photo = update.message.photo[-1]
-        # Log that an image was sent (include file_id for reference).
+        # Log that an image was sent without using the raw file_id.
         context.chat_data['conversation'].append(
-            f"User ({user.first_name}): [Image sent, file_id: {photo.file_id}]"
+            f"User ({user.first_name}): [Image sent – please check the forwarded image]"
         )
         # Forward the photo to the support group.
         await context.bot.send_photo(
@@ -135,6 +134,24 @@ async def forward_to_support(update: Update, context: CallbackContext):
             photo=photo.file_id,
             caption=f"Image from {user.first_name} (@{user.username})"
         )
+        # Notify the user that the file will be reviewed by an agent.
+        await update.message.reply_text("Your file has been received and will be reviewed by our support team.")
+    
+    if update.message.document:
+        document = update.message.document
+        file_name = document.file_name
+        # Log that a file was sent and include its file name.
+        context.chat_data['conversation'].append(
+            f"User ({user.first_name}): [File sent: {file_name}, file_id: {document.file_id}]"
+        )
+        # Forward the document to the support group.
+        await context.bot.send_document(
+            chat_id=SUPPORT_GROUP_ID,
+            document=document.file_id,
+            caption=f"File from {user.first_name} (@{user.username}): {file_name}"
+        )
+        # Notify the user that the file will be reviewed by an agent.
+        await update.message.reply_text("Your file has been received and will be reviewed by our support team.")
 
     # Use our AI-based escalation intent check (apply on text messages).
     escalation_triggered = await check_escalation_intent(user_message)
@@ -198,8 +215,7 @@ async def forward_reply_to_user(update: Update, context: CallbackContext):
 
 if __name__ == "__main__":
     app = Application.builder().token(BOT_TOKEN).build()
-    app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND & ~filters.REPLY, forward_to_support))
+    app.add_handler(MessageHandler(filters.ALL & ~filters.REPLY, forward_to_support))
     app.add_handler(MessageHandler(filters.REPLY, forward_reply_to_user))
-
     print("🤖 Support Bot is running...")
     app.run_polling()
