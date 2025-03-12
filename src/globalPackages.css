@@ -20,8 +20,8 @@
 
 /* Global Package Button (styled like master country button) */
 .global-package-button {
-    width: 140px;
-    height: 140px;
+    width: 120px;
+    height: 120px;
     display: flex;
     flex-direction: column;
     align-items: center;
