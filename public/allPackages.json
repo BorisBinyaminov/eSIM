@@ -3416,7 +3416,7 @@
         "price": 23000,
         "currencyCode": "USD",
         "volume": 3221225472,
-        "smsStatus": 2,
+        "smsStatus": 1,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 30,
@@ -3427,7 +3427,7 @@
         "favorite": false,
         "retailPrice": 60000,
         "speed": "3G/4G",
-        "ipExport": "HK",
+        "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -3436,6 +3436,18 @@
                 "locationLogo": "/img/flags/gb.png",
                 "locationCode": "GB",
                 "operatorList": [
+                    {
+                        "operatorName": "T-Mobile",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Vodafone",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "O2",
+                        "networkType": "5G"
+                    },
                     {
                         "operatorName": "3",
                         "networkType": "5G"
@@ -4887,7 +4899,7 @@
         "price": 34000,
         "currencyCode": "USD",
         "volume": 5368709120,
-        "smsStatus": 2,
+        "smsStatus": 1,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 30,
@@ -4898,7 +4910,7 @@
         "favorite": false,
         "retailPrice": 88000,
         "speed": "3G/4G",
-        "ipExport": "HK",
+        "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -4907,6 +4919,18 @@
                 "locationLogo": "/img/flags/gb.png",
                 "locationCode": "GB",
                 "operatorList": [
+                    {
+                        "operatorName": "T-Mobile",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Vodafone",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "O2",
+                        "networkType": "5G"
+                    },
                     {
                         "operatorName": "3",
                         "networkType": "5G"
@@ -9364,7 +9388,7 @@
         "price": 9000,
         "currencyCode": "USD",
         "volume": 1073741824,
-        "smsStatus": 2,
+        "smsStatus": 1,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 7,
@@ -9375,7 +9399,7 @@
         "favorite": false,
         "retailPrice": 22000,
         "speed": "3G/4G/5G",
-        "ipExport": "HK",
+        "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -9384,6 +9408,18 @@
                 "locationLogo": "/img/flags/gb.png",
                 "locationCode": "GB",
                 "operatorList": [
+                    {
+                        "operatorName": "T-Mobile",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Vodafone",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "O2",
+                        "networkType": "5G"
+                    },
                     {
                         "operatorName": "3",
                         "networkType": "5G"
@@ -9399,7 +9435,7 @@
         "price": 22000,
         "currencyCode": "USD",
         "volume": 3221225472,
-        "smsStatus": 2,
+        "smsStatus": 1,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 15,
@@ -9410,7 +9446,7 @@
         "favorite": false,
         "retailPrice": 56000,
         "speed": "3G/4G/5G",
-        "ipExport": "HK",
+        "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -9419,6 +9455,18 @@
                 "locationLogo": "/img/flags/gb.png",
                 "locationCode": "GB",
                 "operatorList": [
+                    {
+                        "operatorName": "T-Mobile",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Vodafone",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "O2",
+                        "networkType": "5G"
+                    },
                     {
                         "operatorName": "3",
                         "networkType": "5G"
@@ -9434,7 +9482,7 @@
         "price": 61000,
         "currencyCode": "USD",
         "volume": 10737418240,
-        "smsStatus": 2,
+        "smsStatus": 1,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 30,
@@ -9445,7 +9493,7 @@
         "favorite": false,
         "retailPrice": 152000,
         "speed": "3G/4G/5G",
-        "ipExport": "HK",
+        "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -9454,6 +9502,18 @@
                 "locationLogo": "/img/flags/gb.png",
                 "locationCode": "GB",
                 "operatorList": [
+                    {
+                        "operatorName": "T-Mobile",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Vodafone",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "O2",
+                        "networkType": "5G"
+                    },
                     {
                         "operatorName": "3",
                         "networkType": "5G"
@@ -10703,7 +10763,7 @@
         "price": 7000,
         "currencyCode": "USD",
         "volume": 1073741824,
-        "smsStatus": 0,
+        "smsStatus": 2,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 7,
@@ -10724,7 +10784,7 @@
                 "locationCode": "CN",
                 "operatorList": [
                     {
-                        "operatorName": "China Mobile",
+                        "operatorName": "China Unicom",
                         "networkType": "5G"
                     }
                 ]
@@ -10738,7 +10798,7 @@
         "price": 17000,
         "currencyCode": "USD",
         "volume": 3221225472,
-        "smsStatus": 0,
+        "smsStatus": 2,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 15,
@@ -10759,7 +10819,7 @@
                 "locationCode": "CN",
                 "operatorList": [
                     {
-                        "operatorName": "China Mobile",
+                        "operatorName": "China Unicom",
                         "networkType": "5G"
                     }
                 ]
@@ -10773,7 +10833,7 @@
         "price": 27000,
         "currencyCode": "USD",
         "volume": 5368709120,
-        "smsStatus": 0,
+        "smsStatus": 2,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 30,
@@ -10794,7 +10854,7 @@
                 "locationCode": "CN",
                 "operatorList": [
                     {
-                        "operatorName": "China Mobile",
+                        "operatorName": "China Unicom",
                         "networkType": "5G"
                     }
                 ]
@@ -10808,7 +10868,7 @@
         "price": 47000,
         "currencyCode": "USD",
         "volume": 10737418240,
-        "smsStatus": 0,
+        "smsStatus": 2,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 30,
@@ -10829,7 +10889,7 @@
                 "locationCode": "CN",
                 "operatorList": [
                     {
-                        "operatorName": "China Mobile",
+                        "operatorName": "China Unicom",
                         "networkType": "5G"
                     }
                 ]
@@ -13649,7 +13709,7 @@
         "packageCode": "MB024",
         "slug": "EG_1_7",
         "name": "Egypt 1GB 7Days",
-        "price": 23000,
+        "price": 18000,
         "currencyCode": "USD",
         "volume": 1073741824,
         "smsStatus": 1,
@@ -13661,7 +13721,7 @@
         "description": "Egypt 1GB 7Days",
         "activeType": 2,
         "favorite": false,
-        "retailPrice": 69000,
+        "retailPrice": 54000,
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
@@ -14548,7 +14608,7 @@
         "packageCode": "MB029",
         "slug": "EG_3_15",
         "name": "Egypt 3GB 15Days",
-        "price": 57000,
+        "price": 46000,
         "currencyCode": "USD",
         "volume": 3221225472,
         "smsStatus": 1,
@@ -14560,7 +14620,7 @@
         "description": "Egypt 3GB 15Days",
         "activeType": 2,
         "favorite": false,
-        "retailPrice": 171000,
+        "retailPrice": 138000,
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
@@ -15626,7 +15686,7 @@
         "packageCode": "MB039",
         "slug": "EG_10_30",
         "name": "Egypt 10GB 30Days",
-        "price": 152000,
+        "price": 122000,
         "currencyCode": "USD",
         "volume": 10737418240,
         "smsStatus": 1,
@@ -15638,7 +15698,7 @@
         "description": "Egypt 10GB 30Days",
         "activeType": 2,
         "favorite": false,
-        "retailPrice": 456000,
+        "retailPrice": 366000,
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
@@ -19476,7 +19536,7 @@
         "price": 82000,
         "currencyCode": "USD",
         "volume": 21474836480,
-        "smsStatus": 0,
+        "smsStatus": 2,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 30,
@@ -19497,7 +19557,7 @@
                 "locationCode": "CN",
                 "operatorList": [
                     {
-                        "operatorName": "China Mobile",
+                        "operatorName": "China Unicom",
                         "networkType": "5G"
                     }
                 ]
@@ -21920,7 +21980,7 @@
         "price": 106000,
         "currencyCode": "USD",
         "volume": 21474836480,
-        "smsStatus": 2,
+        "smsStatus": 1,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 30,
@@ -21931,7 +21991,7 @@
         "favorite": false,
         "retailPrice": 258000,
         "speed": "3G/4G",
-        "ipExport": "HK",
+        "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -21940,6 +22000,18 @@
                 "locationLogo": "/img/flags/gb.png",
                 "locationCode": "GB",
                 "operatorList": [
+                    {
+                        "operatorName": "T-Mobile",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Vodafone",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "O2",
+                        "networkType": "5G"
+                    },
                     {
                         "operatorName": "3",
                         "networkType": "5G"
@@ -39000,7 +39072,7 @@
         "price": 280000,
         "currencyCode": "USD",
         "volume": 53687091200,
-        "smsStatus": 2,
+        "smsStatus": 1,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 180,
@@ -39011,7 +39083,7 @@
         "favorite": false,
         "retailPrice": 560000,
         "speed": "3G/4G",
-        "ipExport": "HK",
+        "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -39020,6 +39092,18 @@
                 "locationLogo": "/img/flags/gb.png",
                 "locationCode": "GB",
                 "operatorList": [
+                    {
+                        "operatorName": "T-Mobile",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Vodafone",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "O2",
+                        "networkType": "5G"
+                    },
                     {
                         "operatorName": "3",
                         "networkType": "5G"
@@ -44581,7 +44665,7 @@
         "price": 280000,
         "currencyCode": "USD",
         "volume": 53687091200,
-        "smsStatus": 0,
+        "smsStatus": 2,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 180,
@@ -44602,7 +44686,7 @@
                 "locationCode": "CN",
                 "operatorList": [
                     {
-                        "operatorName": "China Mobile",
+                        "operatorName": "China Unicom",
                         "networkType": "5G"
                     }
                 ]
@@ -48306,7 +48390,7 @@
         "price": 6000,
         "currencyCode": "USD",
         "volume": 524288000,
-        "smsStatus": 2,
+        "smsStatus": 1,
         "dataType": 2,
         "unusedValidTime": 30,
         "duration": 1,
@@ -48317,7 +48401,7 @@
         "favorite": false,
         "retailPrice": 18000,
         "speed": "3G/4G/5G",
-        "ipExport": "HK",
+        "ipExport": "UK/NO",
         "supportTopUpType": 1,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -48326,6 +48410,18 @@
                 "locationLogo": "/img/flags/gb.png",
                 "locationCode": "GB",
                 "operatorList": [
+                    {
+                        "operatorName": "T-Mobile",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Vodafone",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "O2",
+                        "networkType": "5G"
+                    },
                     {
                         "operatorName": "3",
                         "networkType": "5G"
@@ -48341,7 +48437,7 @@
         "price": 8000,
         "currencyCode": "USD",
         "volume": 1073741824,
-        "smsStatus": 2,
+        "smsStatus": 1,
         "dataType": 2,
         "unusedValidTime": 30,
         "duration": 1,
@@ -48352,7 +48448,7 @@
         "favorite": false,
         "retailPrice": 24000,
         "speed": "3G/4G/5G",
-        "ipExport": "HK",
+        "ipExport": "UK/NO",
         "supportTopUpType": 1,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -48361,6 +48457,18 @@
                 "locationLogo": "/img/flags/gb.png",
                 "locationCode": "GB",
                 "operatorList": [
+                    {
+                        "operatorName": "T-Mobile",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Vodafone",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "O2",
+                        "networkType": "5G"
+                    },
                     {
                         "operatorName": "3",
                         "networkType": "5G"
@@ -48376,7 +48484,7 @@
         "price": 15500,
         "currencyCode": "USD",
         "volume": 2147483648,
-        "smsStatus": 2,
+        "smsStatus": 1,
         "dataType": 2,
         "unusedValidTime": 30,
         "duration": 1,
@@ -48387,7 +48495,7 @@
         "favorite": false,
         "retailPrice": 46500,
         "speed": "3G/4G/5G",
-        "ipExport": "HK",
+        "ipExport": "UK/NO",
         "supportTopUpType": 1,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -48396,6 +48504,18 @@
                 "locationLogo": "/img/flags/gb.png",
                 "locationCode": "GB",
                 "operatorList": [
+                    {
+                        "operatorName": "T-Mobile",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Vodafone",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "O2",
+                        "networkType": "5G"
+                    },
                     {
                         "operatorName": "3",
                         "networkType": "5G"
@@ -78421,7 +78541,7 @@
         "packageCode": "PNLOUKFKT",
         "slug": "EG_3_30",
         "name": "Egypt 3GB 30Days",
-        "price": 59000,
+        "price": 47000,
         "currencyCode": "USD",
         "volume": 3221225472,
         "smsStatus": 1,
@@ -78433,7 +78553,7 @@
         "description": "",
         "activeType": 2,
         "favorite": false,
-        "retailPrice": 88500.0,
+        "retailPrice": 59000,
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
@@ -78927,7 +79047,7 @@
         "packageCode": "PZ23T9OT0",
         "slug": "EG_2_Daily",
         "name": "Egypt 2GB/Day",
-        "price": 30000,
+        "price": 28000,
         "currencyCode": "USD",
         "volume": 2147483648,
         "smsStatus": 1,
@@ -78939,7 +79059,7 @@
         "description": "",
         "activeType": 2,
         "favorite": false,
-        "retailPrice": 45000.0,
+        "retailPrice": 42000.0,
         "speed": "3G/4G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
@@ -79141,7 +79261,7 @@
         "packageCode": "PK564ELYK",
         "slug": "EG_1_Daily",
         "name": "Egypt 1GB/Day",
-        "price": 19000,
+        "price": 17000,
         "currencyCode": "USD",
         "volume": 1073741824,
         "smsStatus": 1,
@@ -80688,7 +80808,7 @@
         "packageCode": "P6XTH0M8D",
         "slug": "EG_0.5_Daily",
         "name": "Egypt 500MB/Day",
-        "price": 11000,
+        "price": 10000,
         "currencyCode": "USD",
         "volume": 524288000,
         "smsStatus": 1,
@@ -81855,6 +81975,2194 @@
                         "networkType": "5G"
                     }
                 ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PFRQ8FIBC",
+        "slug": "AL_0.1_7",
+        "name": "Albania 100MB 7Days",
+        "price": 2800,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "AL",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 4200.0,
+        "speed": "3G/4G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Albania",
+                "locationLogo": "/img/flags/al.png",
+                "locationCode": "AL",
+                "operatorList": [
+                    {
+                        "operatorName": "Vodafone",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PHDE7ZP42",
+        "slug": "AR_0.1_7",
+        "name": "Argentina 100MB 7Days",
+        "price": 4600,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "AR",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 6900.0,
+        "speed": "3G/4G/5G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Argentina",
+                "locationLogo": "/img/flags/ar.png",
+                "locationCode": "AR",
+                "operatorList": [
+                    {
+                        "operatorName": "Movistar",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Claro",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P0112XJDY",
+        "slug": "PY_0.1_7",
+        "name": "Paraguay 100MB 7Days",
+        "price": 5300,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "PY",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 7950.0,
+        "speed": "3G/4G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Paraguay",
+                "locationLogo": "/img/flags/py.png",
+                "locationCode": "PY",
+                "operatorList": [
+                    {
+                        "operatorName": "Claro",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Tigo",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PZ5R7GI4K",
+        "slug": "PE_0.1_7",
+        "name": "Peru 100MB 7Days",
+        "price": 6500,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "PE",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 9750.0,
+        "speed": "3G/4G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Peru",
+                "locationLogo": "/img/flags/pe.png",
+                "locationCode": "PE",
+                "operatorList": [
+                    {
+                        "operatorName": "Movistar",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Entel",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PAQGBYCEU",
+        "slug": "GT_0.1_7",
+        "name": "Guatemala 100MB 7Days",
+        "price": 5700,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "GT",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 8550.0,
+        "speed": "3G/4G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Guatemala",
+                "locationLogo": "/img/flags/gt.png",
+                "locationCode": "GT",
+                "operatorList": [
+                    {
+                        "operatorName": "Claro",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "movistar",
+                        "networkType": "3G"
+                    },
+                    {
+                        "operatorName": "Tigo",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PK5O2KUQT",
+        "slug": "PR_0.1_7",
+        "name": "Puerto Rico 100MB 7Days",
+        "price": 3800,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "PR",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 5700.0,
+        "speed": "3G/4G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Puerto Rico",
+                "locationLogo": "/img/flags/pr.png",
+                "locationCode": "PR",
+                "operatorList": [
+                    {
+                        "operatorName": "AT&T",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PIPAFTMRE",
+        "slug": "QA_0.1_7",
+        "name": "Qatar 100MB 7Days",
+        "price": 4500,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "QA",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 6750.0,
+        "speed": "3G/4G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Qatar",
+                "locationLogo": "/img/flags/qa.png",
+                "locationCode": "QA",
+                "operatorList": [
+                    {
+                        "operatorName": "Vodafone",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PBV0LO9CW",
+        "slug": "GB_0.1_7",
+        "name": "United Kingdom 100MB 7Days",
+        "price": 1000,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "GB",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 1500.0,
+        "speed": "3G/4G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "United Kingdom",
+                "locationLogo": "/img/flags/gb.png",
+                "locationCode": "GB",
+                "operatorList": [
+                    {
+                        "operatorName": "T-Mobile",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Vodafone",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "O2",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "3",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PN1JR359K",
+        "slug": "RE_0.1_7",
+        "name": "Reunion 100MB 7Days",
+        "price": 2800,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "RE",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 4200.0,
+        "speed": "3G/4G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Reunion",
+                "locationLogo": "/img/flags/re.png",
+                "locationCode": "RE",
+                "operatorList": [
+                    {
+                        "operatorName": "Orange",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PVP4RSUMR",
+        "slug": "RU_0.1_7",
+        "name": "Russia 100MB 7Days",
+        "price": 4000,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 2,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "RU",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 6000.0,
+        "speed": "3G/4G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Russia",
+                "locationLogo": "/img/flags/ru.png",
+                "locationCode": "RU",
+                "operatorList": [
+                    {
+                        "operatorName": "MTS",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PJVN54W3O",
+        "slug": "DZ_0.1_7",
+        "name": "Algeria 100MB 7Days",
+        "price": 1100,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "DZ",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 1650.0,
+        "speed": "3G/4G",
+        "ipExport": "NL",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Algeria",
+                "locationLogo": "/img/flags/dz.png",
+                "locationCode": "DZ",
+                "operatorList": [
+                    {
+                        "operatorName": "Mobilis",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P8TY7BI5M",
+        "slug": "HK_0.1_7",
+        "name": "Hong Kong (China) 100MB 7Days",
+        "price": 1000,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "HK",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 1500.0,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Hong Kong (China)",
+                "locationLogo": "/img/flags/hk.png",
+                "locationCode": "HK",
+                "operatorList": [
+                    {
+                        "operatorName": "csl",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PBBWJ5ZI6",
+        "slug": "SN_0.1_7",
+        "name": "Senegal 100MB 7Days",
+        "price": 8600,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "SN",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 12900.0,
+        "speed": "3G/4G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Senegal",
+                "locationLogo": "/img/flags/sn.png",
+                "locationCode": "SN",
+                "operatorList": [
+                    {
+                        "operatorName": "Orange",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PHLQ4R8Z8",
+        "slug": "RS_0.1_7",
+        "name": "Serbia 100MB 7Days",
+        "price": 3200,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "RS",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 4800.0,
+        "speed": "3G/4G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Serbia",
+                "locationLogo": "/img/flags/rs.png",
+                "locationCode": "RS",
+                "operatorList": [
+                    {
+                        "operatorName": "VIP",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Telenor",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PS67RZTVO",
+        "slug": "SG_0.1_7",
+        "name": "Singapore 100MB 7Days",
+        "price": 1000,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "SG",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 1500.0,
+        "speed": "3G/4G/5G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Singapore",
+                "locationLogo": "/img/flags/sg.png",
+                "locationCode": "SG",
+                "operatorList": [
+                    {
+                        "operatorName": "Simba",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "StarHub",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P3WDTMWGS",
+        "slug": "HN_0.1_7",
+        "name": "Honduras 100MB 7Days",
+        "price": 5700,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "HN",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 8550.0,
+        "speed": "3G/4G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Honduras",
+                "locationLogo": "/img/flags/hn.png",
+                "locationCode": "HN",
+                "operatorList": [
+                    {
+                        "operatorName": "Tigo",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PWJT28BG0",
+        "slug": "LK_0.1_7",
+        "name": "Sri Lanka 100MB 7Days",
+        "price": 2800,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "LK",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 4200.0,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Sri Lanka",
+                "locationLogo": "/img/flags/lk.png",
+                "locationCode": "LK",
+                "operatorList": [
+                    {
+                        "operatorName": "Mobitel",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PJ91RFXJL",
+        "slug": "ZA_0.1_7",
+        "name": "South Africa 100MB 7Days",
+        "price": 6800,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "ZA",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 10200.0,
+        "speed": "3G/4G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "South Africa",
+                "locationLogo": "/img/flags/za.png",
+                "locationCode": "ZA",
+                "operatorList": [
+                    {
+                        "operatorName": "Vodacom",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PNJCUC29S",
+        "slug": "IN_0.1_7",
+        "name": "India 100MB 7Days",
+        "price": 2800,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "IN",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 4200.0,
+        "speed": "3G/4G/5G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "India",
+                "locationLogo": "/img/flags/in.png",
+                "locationCode": "IN",
+                "operatorList": [
+                    {
+                        "operatorName": "AirTel",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Jio",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PQ2I5PFIT",
+        "slug": "TH_0.1_7",
+        "name": "Thailand 100MB 7Days",
+        "price": 1200,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 2,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "TH",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 1800.0,
+        "speed": "3G/4G/5G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Thailand",
+                "locationLogo": "/img/flags/th.png",
+                "locationCode": "TH",
+                "operatorList": [
+                    {
+                        "operatorName": "AIS",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P1OZP2NM8",
+        "slug": "TW_0.1_7",
+        "name": "Taiwan (China) 100MB 7Days",
+        "price": 1000,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 2,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "TW",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 1500.0,
+        "speed": "3G/4G/5G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Taiwan (China)",
+                "locationLogo": "/img/flags/tw.png",
+                "locationCode": "TW",
+                "operatorList": [
+                    {
+                        "operatorName": "Chunghwa",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P402OGJG8",
+        "slug": "ID_0.1_7",
+        "name": "Indonesia 100MB 7Days",
+        "price": 1300,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "ID",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 1950.0,
+        "speed": "3G/4G/5G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Indonesia",
+                "locationLogo": "/img/flags/id.png",
+                "locationCode": "ID",
+                "operatorList": [
+                    {
+                        "operatorName": "Telkomsel",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Indosat",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P1W5NQVN1",
+        "slug": "TZ_0.1_7",
+        "name": "Tanzania 100MB 7Days",
+        "price": 6800,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "TZ",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 10200.0,
+        "speed": "3G/4G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Tanzania",
+                "locationLogo": "/img/flags/tz.png",
+                "locationCode": "TZ",
+                "operatorList": [
+                    {
+                        "operatorName": "Vodafone",
+                        "networkType": "3G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PF8LJK42E",
+        "slug": "JO_0.1_7",
+        "name": "Jordan 100MB 7Days",
+        "price": 1800,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "JO",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 2700.0,
+        "speed": "3G/4G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Jordan",
+                "locationLogo": "/img/flags/jo.png",
+                "locationCode": "JO",
+                "operatorList": [
+                    {
+                        "operatorName": "Zain",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Umniah",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PMJ2GNEEK",
+        "slug": "TN_0.1_7",
+        "name": "Tunisia 100MB 7Days",
+        "price": 3000,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "TN",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 4500.0,
+        "speed": "3G/4G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Tunisia",
+                "locationLogo": "/img/flags/tn.png",
+                "locationCode": "TN",
+                "operatorList": [
+                    {
+                        "operatorName": "OOREDOO TN",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PHGAWJM6O",
+        "slug": "KZ_0.1_7",
+        "name": "Kazakhstan 100MB 7Days",
+        "price": 1500,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "KZ",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 2250.0,
+        "speed": "3G/4G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Kazakhstan",
+                "locationLogo": "/img/flags/kz.png",
+                "locationCode": "KZ",
+                "operatorList": [
+                    {
+                        "operatorName": "Beeline",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PDPRP70HM",
+        "slug": "UY_0.1_7",
+        "name": "Uruguay 100MB 7Days",
+        "price": 6300,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "UY",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 9450.0,
+        "speed": "3G/4G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Uruguay",
+                "locationLogo": "/img/flags/uy.png",
+                "locationCode": "UY",
+                "operatorList": [
+                    {
+                        "operatorName": "Movistar",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Claro",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PL0M7ICXR",
+        "slug": "TR_0.1_7",
+        "name": "Turkey 100MB 7Days",
+        "price": 1000,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "TR",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 1500.0,
+        "speed": "3G/4G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Turkey",
+                "locationLogo": "/img/flags/tr.png",
+                "locationCode": "TR",
+                "operatorList": [
+                    {
+                        "operatorName": "Avea",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P9A3DBLOA",
+        "slug": "KE_0.1_7",
+        "name": "Kenya 100MB 7Days",
+        "price": 7000,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "KE",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 10500.0,
+        "speed": "3G/4G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Kenya",
+                "locationLogo": "/img/flags/ke.png",
+                "locationCode": "KE",
+                "operatorList": [
+                    {
+                        "operatorName": "Airtel",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P5N4RG08H",
+        "slug": "UZ_0.1_7",
+        "name": "Uzbekistan 100MB 7Days",
+        "price": 1500,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "UZ",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 2250.0,
+        "speed": "3G/4G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Uzbekistan",
+                "locationLogo": "/img/flags/uz.png",
+                "locationCode": "UZ",
+                "operatorList": [
+                    {
+                        "operatorName": "Beeline",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PDM89TRPE",
+        "slug": "KW_0.1_7",
+        "name": "Kuwait 100MB 7Days",
+        "price": 2800,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "KW",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 4200.0,
+        "speed": "3G/4G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Kuwait",
+                "locationLogo": "/img/flags/kw.png",
+                "locationCode": "KW",
+                "operatorList": [
+                    {
+                        "operatorName": "Ooredoo",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PIK0SW14Q",
+        "slug": "VN_0.1_7",
+        "name": "Vietnam 100MB 7Days",
+        "price": 1800,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 2,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "VN",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 2700.0,
+        "speed": "3G/4G/5G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Vietnam",
+                "locationLogo": "/img/flags/vn.png",
+                "locationCode": "VN",
+                "operatorList": [
+                    {
+                        "operatorName": "MobiFone",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Vietnamobile",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PT4RIB8UL",
+        "slug": "MY_0.1_7",
+        "name": "Malaysia 100MB 7Days",
+        "price": 1000,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 2,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "MY",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 1500.0,
+        "speed": "3G/4G/5G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Malaysia",
+                "locationLogo": "/img/flags/my.png",
+                "locationCode": "MY",
+                "operatorList": [
+                    {
+                        "operatorName": "DiGi",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Maxis",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P4PQQ616Q",
+        "slug": "CH_0.1_7",
+        "name": "Switzerland 100MB 7Days",
+        "price": 1000,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "CH",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 1500.0,
+        "speed": "3G/4G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Switzerland",
+                "locationLogo": "/img/flags/ch.png",
+                "locationCode": "CH",
+                "operatorList": [
+                    {
+                        "operatorName": "Sunrise",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Salt",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PNQOJTLBQ",
+        "slug": "MA_0.1_7",
+        "name": "Morocco 100MB 7Days",
+        "price": 1500,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "MA",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 2250.0,
+        "speed": "3G/4G",
+        "ipExport": "BE",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Morocco",
+                "locationLogo": "/img/flags/ma.png",
+                "locationCode": "MA",
+                "operatorList": [
+                    {
+                        "operatorName": "Orange Morocco",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PF4COP483",
+        "slug": "MX_0.1_7",
+        "name": "Mexico 100MB 7Days",
+        "price": 2400,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "MX",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 3600.0,
+        "speed": "3G/4G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Mexico",
+                "locationLogo": "/img/flags/mx.png",
+                "locationCode": "MX",
+                "operatorList": [
+                    {
+                        "operatorName": "Movistar",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Telcel",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PUHSFBY6P",
+        "slug": "NI_0.1_7",
+        "name": "Nicaragua 100MB 7Days",
+        "price": 5700,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "NI",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 8550.0,
+        "speed": "3G/4G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Nicaragua",
+                "locationLogo": "/img/flags/ni.png",
+                "locationCode": "NI",
+                "operatorList": [
+                    {
+                        "operatorName": "movistar",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P8Y35DWA0",
+        "slug": "NE_0.1_7",
+        "name": "Niger 100MB 7Days",
+        "price": 8600,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "NE",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 12900.0,
+        "speed": "3G/4G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Niger",
+                "locationLogo": "/img/flags/ne.png",
+                "locationCode": "NE",
+                "operatorList": [
+                    {
+                        "operatorName": "Airtel",
+                        "networkType": "3G"
+                    },
+                    {
+                        "operatorName": "Orange",
+                        "networkType": "3G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P0Q24KI1C",
+        "slug": "NG_0.1_7",
+        "name": "Nigeria 100MB 7Days",
+        "price": 4700,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "NG",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 7050.0,
+        "speed": "3G/4G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Nigeria",
+                "locationLogo": "/img/flags/ng.png",
+                "locationCode": "NG",
+                "operatorList": [
+                    {
+                        "operatorName": "Airtel",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "MTN",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PLTOJ7B6Z",
+        "slug": "NZ_0.1_7",
+        "name": "New Zealand 100MB 7Days",
+        "price": 1900,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 2,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "NZ",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 2850.0,
+        "speed": "3G/4G/5G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "New Zealand",
+                "locationLogo": "/img/flags/nz.png",
+                "locationCode": "NZ",
+                "operatorList": [
+                    {
+                        "operatorName": "Spark",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P96CDAE48",
+        "slug": "PK_0.1_7",
+        "name": "Pakistan 100MB 7Days",
+        "price": 1900,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "PK",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 2850.0,
+        "speed": "3G/4G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Pakistan",
+                "locationLogo": "/img/flags/pk.png",
+                "locationCode": "PK",
+                "operatorList": [
+                    {
+                        "operatorName": "Jazz",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P76PJ8WFO",
+        "slug": "PA_0.1_7",
+        "name": "Panama 100MB 7Days",
+        "price": 5700,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "PA",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 8550.0,
+        "speed": "3G/4G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Panama",
+                "locationLogo": "/img/flags/pa.png",
+                "locationCode": "PA",
+                "operatorList": [
+                    {
+                        "operatorName": "Digicel",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "movistar",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PZBBJD4HG",
+        "slug": "AM_0.1_7",
+        "name": "Armenia 100MB 7Days",
+        "price": 5600,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "AM",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 8400.0,
+        "speed": "3G/4G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Armenia",
+                "locationLogo": "/img/flags/am.png",
+                "locationCode": "AM",
+                "operatorList": [
+                    {
+                        "operatorName": "MTS",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Ucom",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PGWEQ1CSB",
+        "slug": "AU_0.1_7",
+        "name": "Australia 100MB 7Days",
+        "price": 1100,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 2,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "AU",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 1650.0,
+        "speed": "3G/4G/5G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Australia",
+                "locationLogo": "/img/flags/au.png",
+                "locationCode": "AU",
+                "operatorList": [
+                    {
+                        "operatorName": "Optus",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PLYTQ0XIR",
+        "slug": "AZ_0.1_7",
+        "name": "Azerbaijan 100MB 7Days",
+        "price": 7900,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "AZ",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 11850.0,
+        "speed": "3G/4G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Azerbaijan",
+                "locationLogo": "/img/flags/az.png",
+                "locationCode": "AZ",
+                "operatorList": [
+                    {
+                        "operatorName": "Azercell",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Bakcell",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PWB2NZA39",
+        "slug": "BO_0.1_7",
+        "name": "Bolivia 100MB 7Days",
+        "price": 6300,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "BO",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 9450.0,
+        "speed": "3G/4G/5G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Bolivia",
+                "locationLogo": "/img/flags/bo.png",
+                "locationCode": "BO",
+                "operatorList": [
+                    {
+                        "operatorName": "Tigo",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PTN42GL18",
+        "slug": "BR_0.1_7",
+        "name": "Brazil 100MB 7Days",
+        "price": 2400,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "BR",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 3600.0,
+        "speed": "3G/4G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Brazil",
+                "locationLogo": "/img/flags/br.png",
+                "locationCode": "BR",
+                "operatorList": [
+                    {
+                        "operatorName": "TIM",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Vivo",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Claro",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P04JLSJF8",
+        "slug": "KH_0.1_7",
+        "name": "Cambodia 100MB 7Days",
+        "price": 2600,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "KH",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 3900.0,
+        "speed": "3G/4G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Cambodia",
+                "locationLogo": "/img/flags/kh.png",
+                "locationCode": "KH",
+                "operatorList": [
+                    {
+                        "operatorName": "Latelz",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Smart",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PT73ZDYVK",
+        "slug": "CA_0.1_7",
+        "name": "Canada 100MB 7Days",
+        "price": 2300,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "CA",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 3450.0,
+        "speed": "3G/4G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Canada",
+                "locationLogo": "/img/flags/ca.png",
+                "locationCode": "CA",
+                "operatorList": [
+                    {
+                        "operatorName": "Rogers Wireless",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Videotron",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PMQYGG8GO",
+        "slug": "CL_0.1_7",
+        "name": "Chile 100MB 7Days",
+        "price": 5700,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "CL",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 8550.0,
+        "speed": "3G/4G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Chile",
+                "locationLogo": "/img/flags/cl.png",
+                "locationCode": "CL",
+                "operatorList": [
+                    {
+                        "operatorName": "entel",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "movistar",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PLSSSXN2L",
+        "slug": "CN_0.1_7",
+        "name": "China mainland 100MB 7Days",
+        "price": 1000,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 2,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "CN",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 1500.0,
+        "speed": "3G/4G/5G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "China mainland",
+                "locationLogo": "/img/flags/cn.png",
+                "locationCode": "CN",
+                "operatorList": [
+                    {
+                        "operatorName": "China Unicom",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PXG3YL37H",
+        "slug": "EG_0.1_7",
+        "name": "Egypt 100MB 7Days",
+        "price": 2200,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "EG",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 3300.0,
+        "speed": "3G/4G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Egypt",
+                "locationLogo": "/img/flags/eg.png",
+                "locationCode": "EG",
+                "operatorList": [
+                    {
+                        "operatorName": "Orange",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PPHO2UDYS",
+        "slug": "CO_0.1_7",
+        "name": "Colombia 100MB 7Days",
+        "price": 5600,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "CO",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 8400.0,
+        "speed": "3G/4G",
+        "ipExport": "BE",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Colombia",
+                "locationLogo": "/img/flags/co.png",
+                "locationCode": "CO",
+                "operatorList": [
+                    {
+                        "operatorName": "movistar",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P5LC2VD5D",
+        "slug": "SV_0.1_7",
+        "name": "El Salvador 100MB 7Days",
+        "price": 5700,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "SV",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 8550.0,
+        "speed": "3G/4G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "El Salvador",
+                "locationLogo": "/img/flags/sv.png",
+                "locationCode": "SV",
+                "operatorList": [
+                    {
+                        "operatorName": "Digicel",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Tigo",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "movistar",
+                        "networkType": "3G"
+                    },
+                    {
+                        "operatorName": "Claro",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PFI5O971X",
+        "slug": "AE_0.1_7",
+        "name": "United Arab Emirates 100MB 7Days",
+        "price": 2400,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "AE",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 3600.0,
+        "speed": "3G/4G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "United Arab Emirates",
+                "locationLogo": "/img/flags/ae.png",
+                "locationCode": "AE",
+                "operatorList": [
+                    {
+                        "operatorName": "Etisalat",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P3YTYXBRV",
+        "slug": "US_0.1_7",
+        "name": "United States 100MB 7Days",
+        "price": 1100,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 1,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "US",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 1650.0,
+        "speed": "3G/4G",
+        "ipExport": "UK/NO",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "United States",
+                "locationLogo": "/img/flags/us.png",
+                "locationCode": "US",
+                "operatorList": [
+                    {
+                        "operatorName": "Verizon",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "T-Mobile",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PXB3QI9EJ",
+        "slug": "PH_0.1_7",
+        "name": "Philippines 100MB 7Days",
+        "price": 1900,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 2,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "PH",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 2850.0,
+        "speed": "3G/4G/5G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Philippines",
+                "locationLogo": "/img/flags/ph.png",
+                "locationCode": "PH",
+                "operatorList": [
+                    {
+                        "operatorName": "Globe",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PSW0PJJ42",
+        "slug": "DO_0.1_7",
+        "name": "Dominican Republic 100MB 7Days",
+        "price": 5800,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 2,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "DO",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 8700.0,
+        "speed": "3G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Dominican Republic",
+                "locationLogo": "/img/flags/do.png",
+                "locationCode": "DO",
+                "operatorList": [
+                    {
+                        "operatorName": "Altice",
+                        "networkType": "3G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P6ZMSDS1G",
+        "slug": "JP_0.1_7",
+        "name": "Japan 100MB 7Days",
+        "price": 1000,
+        "currencyCode": "USD",
+        "volume": 104857600,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "JP",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 1500.0,
+        "speed": "3G/4G",
+        "ipExport": "JP",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Japan",
+                "locationLogo": "/img/flags/jp.png",
+                "locationCode": "JP",
+                "operatorList": []
             }
         ]
     }

@@ -167,6 +167,22 @@ function MiniApp() {
           </button>
           {menuOpen && (
             <div className="dropdown-menu">
+              <a
+                href="https://t.me/esim_unlimited_support_bot"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="nav-button"
+              >
+                <img src="/images/general/telegram3.png" alt="Telegram" className="icon" /> Support
+              </a>
+              <a
+                href="https://t.me/eSIM_Unlimited"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="nav-button"
+              >
+                <img src="/images/general/telegram3.png" alt="Telegram" className="icon" /> Community
+              </a>
               {user ? (
                 <div className="user-info">
                   <img src={user.photo_url} alt="User Avatar" className="user-photo" />
@@ -180,27 +196,27 @@ function MiniApp() {
                   Login
                 </button>
               )}
-              <a
-                href="https://t.me/eSIM_Unlimited"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="nav-button"
-              >
-                <img src="/images/general/telegram3.png" alt="Telegram" className="icon" /> Community
-              </a>
-              <a
-                href="https://t.me/esim_unlimited_support_bot"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="nav-button"
-              >
-                <img src="/images/general/telegram3.png" alt="Telegram" className="icon" /> Support
-              </a>
             </div>
           )}
         </div>
       ) : (
         <div className="nav-buttons">
+          <a
+            href="https://t.me/esim_unlimited_support_bot"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-button"
+          >
+            <img src="/images/general/telegram3.png" alt="Telegram" className="icon" /> Support
+          </a>
+          <a
+            href="https://t.me/eSIM_Unlimited"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="nav-button"
+          >
+            <img src="/images/general/telegram3.png" alt="Telegram" className="icon" /> Community
+          </a>
           {user ? (
             <div className="user-info">
               <img src={user.photo_url} alt="User Avatar" className="user-photo" />
@@ -214,22 +230,6 @@ function MiniApp() {
               Login
             </button>
           )}
-          <a
-            href="https://t.me/eSIM_Unlimited"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="nav-button"
-          >
-            <img src="/images/general/telegram3.png" alt="Telegram" className="icon" /> Community
-          </a>
-          <a
-            href="https://t.me/esim_unlimited_support_bot"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="nav-button"
-          >
-            <img src="/images/general/telegram3.png" alt="Telegram" className="icon" /> Support
-          </a>
         </div>
       )}
     </header>
@@ -263,24 +263,159 @@ function MiniApp() {
     </div>
   );
 
+  // Interactive Setup Guide Component defined directly here
+  const InteractiveSetupGuide = ({ onCTAClick }) => {
+    const [currentStep, setCurrentStep] = useState(0);
+    const steps = [
+      {
+        number: 1,
+        title: "Choose eSIM Data Plan",
+        description:
+          "Pick an eSIM data plan that suits your needs. Stay connected with the entire world, anytime, anywhere.",
+      },
+      {
+        number: 2,
+        title: "Easy Installation of eSIM",
+        description:
+          "Follow our simple step-by-step guide and scan the QR code for digital activation.",
+      },
+      {
+        number: 3,
+        title: "Done! You Are Online",
+        description:
+          "Enjoy fast and reliable internet, calls, and text messages with your newly installed eSIM.",
+      },
+    ];
+
+    const handleNext = () => {
+      if (currentStep < steps.length - 1) {
+        setCurrentStep(currentStep + 1);
+      }
+    };
+
+    const handlePrev = () => {
+      if (currentStep > 0) {
+        setCurrentStep(currentStep - 1);
+      }
+    };
+
+    return (
+      <div className="setup-guide-section">
+        <h2 className="section-headline">eSIM Setup Guide</h2>
+        <p className="subtitle">Take these 3 easy steps to get eSIM on your phone!</p>
+        {/* Progress Indicator */}
+        <div className="progress-indicator">
+          {steps.map((step, index) => (
+            <div
+              key={index}
+              className={`progress-step ${index === currentStep ? "active" : ""}`}
+            >
+              {step.number}
+            </div>
+          ))}
+        </div>
+        {/* Step Content */}
+        <div className="step-content">
+        <div className="step-item">
+          <h3>{steps[currentStep].title}</h3>
+          <p>{steps[currentStep].description}</p>
+        </div>
+      </div>
+        {/* Navigation Buttons */}
+        <div className="step-navigation">
+          {currentStep > 0 && (
+            <button onClick={handlePrev} className="nav-button">
+              Previous
+            </button>
+          )}
+          {currentStep < steps.length - 1 ? (
+            <button onClick={handleNext} className="nav-button">
+              Next
+            </button>
+          ) : (
+            <button onClick={onCTAClick} className="cta-button secondary-cta">
+              Get Mobile Data
+            </button>
+          )}
+        </div>
+      </div>
+    );
+  };
+
+  const renderMainPage = () => {
+    return (
+      <div className="main-page">
+        {/* 1) Existing Headline, Subtext, and Primary CTA */}
+        <header className="main-header">
+          <h1 className="title">Stay Connected Anywhere with eSIM Unlimited</h1>
+          <p className="subtitle">
+            High-speed internet in 150+ countries. No roaming fees, no hidden charges, and no physical SIM required.
+          </p>
+        </header>
+        <div className="cta-section">
+          {/* Primary CTA Button */}
+          <button onClick={() => handleTabChange("buy")} className="cta-button primary-cta">
+            Buy eSIM
+          </button>
+        </div>
+  
+        {/* 2) Our Advantages Section */}
+      <div className="our-advantages-section">
+        <h2 className="section-headline">Our Advanced Features</h2>
+        <div className="advantages-grid">
+          <div className="advantage-item">
+            <img src="/images/advantages/transfer.svg" alt="Two-way" className="advantage-icon" />
+            <h3>Two-way Calls and Messages</h3>
+            <p>Send or receive messages and Calls on any device, anytime, anywhere.</p>
+          </div>
+          <div className="advantage-item">
+            <img src="/images/advantages/wallet.svg" alt="Payment" className="advantage-icon" />
+            <h3>Convenient Payment Options</h3>
+            <p>Securely complete transactions with our advanced payment system, supporting both credit cards and cryptocurrency.</p>
+          </div>
+          <div className="advantage-item">
+            <img src="/images/advantages/support.svg" alt="Support" className="advantage-icon" />
+            <h3>24/7 Customer Support</h3>
+            <p>Have any questions? Contact us at the click of a button, and we will address them promptly.</p>
+          </div>
+          <div className="advantage-item">
+            <img src="/images/advantages/glasses.svg" alt="Transparent" className="advantage-icon" />
+            <h3>Transparent Conditions</h3>
+            <p>No hidden fees, no roaming fees—just transparent conditions.</p>
+          </div>
+          <div className="advantage-item">
+            <img src="/images/advantages/device.svg" alt="Transparent" className="advantage-icon" />
+            <h3>Transparent Conditions</h3>
+            <p>With intuitive design and comprehensive multilingual support, you're one tap away from convenience.</p>
+          </div>
+          <div className="advantage-item">
+            <img src="/images/advantages/device-vibro.svg" alt="Transparent" className="advantage-icon" />
+            <h3>Transparent Conditions</h3>
+            <p>Get your eSIM up and running in no time! Simply find your ideal plan from the diverse selection, and activate!</p>
+          </div>
+        </div>
+        <div className="advantages-cta">
+        <button 
+            className="cta-button secondary-cta"
+            onClick={() => handleTabChange("buy")}
+          >
+            Try Now
+          </button>
+        </div>
+      </div>
+
+        {/* 3) Setup Guide Section using the Interactive Component */}
+        <InteractiveSetupGuide onCTAClick={() => handleTabChange("buy")} />
+      </div>
+    );
+  };
+  
   const renderContent = () => (
     <div className="mini-app-container">
       {renderHeader()}
       {renderTabs()}
       {activePage === "main" ? (
-        <div className="main-page">
-          <header className="main-header">
-            <h1 className="title">eSIM Unlimited</h1>
-            <p className="subtitle">
-              Stay connected in 150 countries with affordable eSIM packages
-            </p>
-          </header>
-          <div className="cta-section">
-            <button onClick={() => handleTabChange("buy")} className="cta-button">
-              Get eSIM
-            </button>
-          </div>
-        </div>
+        renderMainPage()
       ) : (
         <div className="tabs-page">
           <div className="tab-content">
@@ -294,7 +429,7 @@ function MiniApp() {
       )}
     </div>
   );
-
+  
   return renderContent();
 }
 
