@@ -272,24 +272,28 @@ function MiniApp() {
         title: "Choose eSIM Data Plan",
         description:
           "Pick an eSIM data plan that suits your needs. Stay connected with the entire world, anytime, anywhere.",
+        icon: "/images/setup_guide/1.png"  
       },
       {
         number: 2,
         title: "Easy Installation of eSIM",
         description:
           "Follow our simple step-by-step guide and scan the QR code for digital installation.",
+        icon: "/images/setup_guide/2.png"  
       },
       {
         number: 3,
         title: "Easy Activation of eSIM",
         description:
           "Follow our simple step-by-step guide for digital activation.",
+        icon: "/images/setup_guide/3.png"
       },
       {
         number: 4,
         title: "Done! You Are Online",
         description:
           "Enjoy fast and reliable internet, calls, and text messages with your newly activated eSIM.",
+        icon: "/images/setup_guide/4.png"
       },
     ];
 
@@ -322,11 +326,19 @@ function MiniApp() {
         </div>
         {/* Step Content */}
         <div className="step-content">
-        <div className="step-item">
-          <h3>{steps[currentStep].title}</h3>
-          <p>{steps[currentStep].description}</p>
+          <div className="step-item">
+            <div className="step-title-container">
+              {/* The icon next to the title */}
+              <img
+                src={steps[currentStep].icon}
+                alt={steps[currentStep].title}
+                className="step-icon"
+              />
+              <h3>{steps[currentStep].title}</h3>
+            </div>
+            <p>{steps[currentStep].description}</p>
+          </div>
         </div>
-      </div>
         {/* Navigation Buttons */}
         <div className="step-navigation">
           {currentStep > 0 && (
@@ -372,7 +384,7 @@ function MiniApp() {
           <div className="advantage-item">
             <img src="/images/advantages/transfer.svg" alt="Two-way" className="advantage-icon" />
             <h3>Two-way Calls and Messages</h3>
-            <p>Send or receive messages and Calls on any device, anytime, anywhere.</p>
+            <p>Stay connected: make calls and send messages on any device, anytime, anywhere.</p>
           </div>
           <div className="advantage-item">
             <img src="/images/advantages/wallet.svg" alt="Payment" className="advantage-icon" />
@@ -382,22 +394,22 @@ function MiniApp() {
           <div className="advantage-item">
             <img src="/images/advantages/support.svg" alt="Support" className="advantage-icon" />
             <h3>24/7 Customer Support</h3>
-            <p>Have any questions? Contact us at the click of a button, and we will address them promptly.</p>
+            <p>If you have any queries, simply contact us and we'll get back to you right away.</p>
           </div>
           <div className="advantage-item">
             <img src="/images/advantages/glasses.svg" alt="Transparent" className="advantage-icon" />
             <h3>Transparent Conditions</h3>
-            <p>No hidden fees, no roaming fees—just transparent conditions.</p>
+            <p>No extra charges, no roaming costs—only clear, straightforward pricing.</p>
           </div>
           <div className="advantage-item">
             <img src="/images/advantages/device.svg" alt="Transparent" className="advantage-icon" />
             <h3>User-friendly Interface</h3>
-            <p>With intuitive design and comprehensive multilingual support, you're one tap away from convenience.</p>
+            <p>Thanks to our user-friendly design and extensive multilingual support, convenience is just one tap away.</p>
           </div>
           <div className="advantage-item">
             <img src="/images/advantages/device-vibro.svg" alt="Transparent" className="advantage-icon" />
-            <h3>Swift and Smooth Setup</h3>
-            <p>Get your eSIM up and running in no time! Simply find your ideal plan from the diverse selection, and activate!</p>
+            <h3>Quick and Seamless Setup</h3>
+            <p>Set up your eSIM in no time—just choose your perfect plan from our diverse selection and activate it right away</p>
           </div>
         </div>
         <div className="advantages-cta">

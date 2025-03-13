@@ -526,3 +526,20 @@
   color: #E9E9EA;
   font-size: 18px;
 }
+
+/* Container that holds the icon and title side by side */
+.step-title-container {
+  display: flex;
+  align-items: center;  /* vertically center them */
+  justify-content: center; /* center horizontally if desired */
+  gap: 10px; /* space between icon and title */
+  margin-bottom: 10px;
+}
+
+/* The icon itself */
+.step-icon {
+  width: 32px;   /* Adjust size as needed */
+  height: 32px;
+  /* Optional: filter or styling if you need it to match your theme */
+  filter: invert(100%);
+}
