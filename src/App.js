@@ -277,13 +277,19 @@ function MiniApp() {
         number: 2,
         title: "Easy Installation of eSIM",
         description:
-          "Follow our simple step-by-step guide and scan the QR code for digital activation.",
+          "Follow our simple step-by-step guide and scan the QR code for digital installation.",
       },
       {
         number: 3,
+        title: "Easy Activation of eSIM",
+        description:
+          "Follow our simple step-by-step guide for digital activation.",
+      },
+      {
+        number: 4,
         title: "Done! You Are Online",
         description:
-          "Enjoy fast and reliable internet, calls, and text messages with your newly installed eSIM.",
+          "Enjoy fast and reliable internet, calls, and text messages with your newly activated eSIM.",
       },
     ];
 
@@ -385,12 +391,12 @@ function MiniApp() {
           </div>
           <div className="advantage-item">
             <img src="/images/advantages/device.svg" alt="Transparent" className="advantage-icon" />
-            <h3>Transparent Conditions</h3>
+            <h3>User-friendly Interface</h3>
             <p>With intuitive design and comprehensive multilingual support, you're one tap away from convenience.</p>
           </div>
           <div className="advantage-item">
             <img src="/images/advantages/device-vibro.svg" alt="Transparent" className="advantage-icon" />
-            <h3>Transparent Conditions</h3>
+            <h3>Swift and Smooth Setup</h3>
             <p>Get your eSIM up and running in no time! Simply find your ideal plan from the diverse selection, and activate!</p>
           </div>
         </div>

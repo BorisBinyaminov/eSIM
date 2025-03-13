@@ -5,7 +5,7 @@ const FAQ = () => {
 
 const faqs = [
     {
-      question: "How can I use the eSIM service?",
+      question: "Which devices and software versions support eSIM?",
       answer: `
         - **iOS:** You must have iOS 12.1 or later and an unlocked iPhone. iPhones older than XR or XS support eSIM. 
           (Note: If you purchased your phone under a contract, check with your carrier to unlock eSIM compatibility.)
@@ -18,32 +18,27 @@ const faqs = [
         - Use eSIM for data while keeping your primary SIM for voice and SMS.`,
     },
     {
-      question: "How to set up eSIM for iOS?",
+      question: "How to set up eSIM for iOS/Android?",
       answer: `
         - Purchase an eSIM data plan on our website.
         - Receive the eSIM QR code by email.
-        - Set up eSIM:
-          1. Go to [Settings] > [Cellular or Mobile Data] > [Add Cellular Plan].
-          2. Scan the QR code provided by email.
-          3. Follow additional instructions to label the plan and set it for cellular data only.`,
-    },
-    {
-      question: "How to set up eSIM for Android?",
-      answer: `
-        - Purchase an eSIM data plan on our website.
-        - Receive the eSIM QR code by email.
-        - Set up eSIM:
-          1. Go to [Settings] > [Network & Internet] > [Mobile Network].
-          2. Tap "Download a SIM instead?" and follow the prompts.
-          3. Scan the QR code and complete the setup.`,
+        - Follow instructions in our Help Center->Guides`,
     },
     {
       question: "How fast is the network speed?",
-      answer: "4G/LTE service is available in most countries.",
+      answer: "4G/LTE service is available in most countries, in some countries 5G is also available.",
     },
     {
       question: "Are voice calls and SMS included?",
       answer: "Only data service is available.",
+    },
+    {
+      question: "Can I use more than one eSIM provider when traveling abroad?",
+      answer: "Yes, iPhones can store 10 eSIMs, and Androids can store 5-7 eSIMs. Only one eSIM can be active at a time. Label eSIMs to avoid confusion.",
+    },
+    {
+      question: "How to use hotspots with eSIM?",
+      answer: "On iOS, APNs are preconfigured except for Japan (set APN to be “vmobile.jp”). For Android issues, contact customer service for support.",
     },
     {
       question: "How to use dual SIM on iPhone and set up eSIM?",
@@ -52,7 +47,7 @@ const faqs = [
     },
     {
       question: "Should I switch on Data Roaming when using eSIM?",
-      answer: `Yes. Ensure that "Data Roaming" is turned on during use.`,
+      answer: `Yes. Ensure that "Data Roaming" is turned ON during use.`,
     },
     {
       question: "How to remove the eSIM data plan after use?",
@@ -60,19 +55,43 @@ const faqs = [
     },
     {
       question: "How do I get my eSIM after payment?",
-      answer: `You will receive an email with your QR code. Check your spam folder if it doesn’t arrive within a minute.`,
+      answer: `You will receive an email with your QR code. Check your spam folder if it doesn't arrive within a minute.`,
     },
     {
       question: "How is the validity period of the plan calculated?",
       answer: `Validity starts from your eSIM's first connection, as described in the package information.`,
     },
     {
+      question: "When does the billing period or validity start?",
+      answer: `Data plans will only begin counting usage once customers make their first connection to the local network.`,
+    },
+    {
       question: "How to check the balance of remaining data?",
-      answer: `Check [Settings - Cellular] on your phone to monitor data usage.`,
+      answer: `Check "My eSIMs" tab in our mini app or telegram bot.`,
+    },
+    {
+      question: "How to Top Up a data plan?",
+      answer: `Top Up is available in My eSIMs tab.`,
+    },
+    {
+      question: "How do I refund an unused order?",
+      answer: `in My eSIMs tab, You can use the Cancel feature to refund an unused (not installed) eSIM order.`,
+    },
+    {
+      question: "What does each eSIM status mean?",
+      answer: `Here are the eSIM status and their definitions:
+        - Provisioning - Newly purchased eSIM being created by the server.
+        - New - Newly created eSIM, ready for installation.
+        - Onboard - Newly installed eSIM, waiting for first use, no data use.
+        - In Use - Installed eSIM serving data from a data plan.
+        - Depleted - Installed eSIM having consumed available data.
+        - Canceled - Newly purchased eSIM, refunded and returned to inventory.
+        - Deleted - eSIM uninstalled from user device or eSIM, revoked or eSIM Invalid.
+        - Suspended - Installed eSIM currently disabled.`,
     },
     {
       question: "Can I use one eSIM for two devices?",
-      answer: `No, an eSIM can only be used on one device at a time. If you want to use eSIM services on another device, you will need to transfer the eSIM, which can be done up to three times.`,
+      answer: `No, an eSIM can only be used on one device at a time. If you want to use eSIM services on another device, you will need to transfer the eSIM.`,
     },
     {
       question: "If I lost my eSIM QR code, what can I do?",
@@ -84,19 +103,25 @@ const faqs = [
     },
     {
       question: "What devices are supported?",
-      answer: "eSIM is compatible with a wide range of devices that support eSIM technology. For a detailed list of supported devices, please visit our Book Page for the information on compatibility.",
+      answer: "eSIM is compatible with a wide range of devices that support eSIM technology. For a detailed list of supported devices, please visit our Help Center->Supported Devices.",
     },
     {
       question: "Can I reuse an eSIM?",
-      answer: "Yes, you can reuse your eSIM by transferring it to another device. However, please note that each eSIM can only be transferred a maximum of three times.",
+      answer: "Your eSIM won't be available to transfer if you have already activated. You could still enjoy eSIM if you haven't activated it before changing the device.",
     },
     {
       question: "How do I transfer an eSIM to another device?",
-      answer: `You can transfer your eSIM to another device up to three times.
+      answer: `You can transfer your not activated eSIM to another device.
 	To transfer:
 		- Remove the eSIM from the current device (uninstall or delete from settings).
 		- Use the same QR code or activation method on the new device.
 		- Follow the on-screen instructions to complete the setup on the new device.`,
+    },
+    {
+      question: "What if I erased my eSIM plan by accident?",
+      answer: `DO NOT delete your eSIM when you haven't used up your data.
+      - Try to reinstall from the original QR code.
+      - If you accidentally delete your eSIM after your activation, you may have to purchase a new eSIM.`,
     },
 ];
 
