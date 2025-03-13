@@ -365,7 +365,9 @@ function MiniApp() {
       <div className="main-page">
         {/* 1) Existing Headline, Subtext, and Primary CTA */}
         <header className="main-header">
-          <h1 className="title">Stay Connected Anywhere with eSIM Unlimited</h1>
+        <h1 className="title">
+          Stay Connected Anywhere with <span className="highlight">eSIM Unlimited</span>
+        </h1>
           <p className="subtitle">
             High-speed internet in 150+ countries. No roaming fees, no hidden charges, and no physical SIM required.
           </p>

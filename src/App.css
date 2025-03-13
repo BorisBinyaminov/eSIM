@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #ffffff0d;
+  background:transparent;
   padding: 15px;
   color: white !important;
   font-size: 18px;
@@ -12,7 +12,7 @@
 .logo {
   font-weight: bold;
   font-size: 22px;
-  color: #ff7a00;
+  color: #F4A261;
 }
 
 .nav-buttons {
@@ -134,6 +134,12 @@
 .main-header {
   text-align: center;
   margin-bottom: 20px; 
+}
+
+.highlight {
+  color: #ff7a00;   /* Or another color of your choice */
+  font-size: 56px;  /* Increase size as desired */
+  font-weight: bold;
 }
 
 .title {
@@ -266,7 +272,7 @@
 .user-info {
   display: flex;
   align-items: center;
-  gap: 10px; /* Space between avatar, username, and logout */
+  gap: 0px; /* Space between avatar, username, and logout */
 }
 
 /* Style the user's avatar */
@@ -490,7 +496,7 @@
 
 .nav-button {
   background: transparent;
-  border: 2px solid #F4A261;
+  border: transparent;
   color: #F4A261;
   padding: 10px 20px;
   cursor: pointer;
