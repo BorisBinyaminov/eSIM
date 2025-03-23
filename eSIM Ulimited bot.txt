@@ -51,3 +51,10 @@ Separately, your bot.py /start handler collects basic user data when the user st
 bot.py /start: Captures and stores user info when a user starts the bot.
 /auth/telegram (mini app): Verifies initData provided by Telegram when the mini app is launched.
 Test mode (with the "fakehash" bypass) simply simulates the mini app authentication flow so you can see how the /auth/telegram endpoint processes data. It does not directly simulate the data that bot.py collects. In a full production system, both methods should ideally store/update the same user record in a shared database.
+
+
+
+
+По стеку React js, next js для фронтенда
+
+Node js nest js для бэка

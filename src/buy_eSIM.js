@@ -27,24 +27,19 @@ const BuyESIM = () => {
         "Global 20GB": 20,
     };
     
-    // Mapping of region names to icon paths and filtering logic
     const regionIcons = useMemo(() => ({
-        "Europe (40+ areas)": ["/images/regions/europe.png", (pkg) => pkg.name.includes("Europe") && pkg.location.split(",").length > 40],
-        "Europe (30+ areas)": ["/images/regions/europe.png", (pkg) => pkg.name.includes("Europe") && pkg.location.split(",").length > 30 && pkg.location.split(",").length <= 40],
-        "South America (15+ areas)": ["/images/regions/south_america.png", (pkg) => pkg.name.includes("South America")],
-        "North America (3 areas)": ["/images/regions/north_america.png", (pkg) => pkg.name.includes("North America")],
-        "Africa (25+ areas)": ["/images/regions/africa.png", (pkg) => pkg.name.includes("Africa")],
-        "Asia-Pacific (30+ areas)": ["/images/regions/asia.png", (pkg) => pkg.name.includes("Asia-Pacific")],
-        "Asia (7 areas)": ["/images/regions/asia.png", (pkg) => pkg.name.includes("Asia (7 areas)")],
-        "Asia (12 areas)": ["/images/regions/asia.png", (pkg) => pkg.name.includes("Asia (12 areas)")],
-        "Asia (20 areas)": ["/images/regions/asia.png", (pkg) => pkg.name.includes("Asia-20")],
-        "Central Asia (5 areas)": ["/images/regions/asia.png", (pkg) => pkg.name.includes("Central Asia")],
-        "Middle East (10+ areas)": ["/images/regions/middle_east.png", (pkg) => pkg.name.includes("Middle East")],
-        "Singapore & Malaysia & Thailand (3 areas)": ["/images/regions/asia.png", (pkg) => pkg.name.includes("Singapore & Malaysia & Thailand")],
-        "Gulf Region (6 areas)": ["/images/regions/middle_east.png", (pkg) => pkg.name.includes("Gulf Region")],
-        "Caribbean (20+ areas)": ["/images/regions/north_america.png", (pkg) => pkg.name.includes("Caribbean (20+ areas)")],
-        "China & Japan & South Korea (3 areas)": ["/images/regions/asia.png", (pkg) => pkg.name.includes("China mainland & Japan & South Korea")],
-        "China & Hong Kong & Macao (3 areas)": ["/images/regions/asia.png", (pkg) => pkg.name.includes("China (mainland HK Macao)")]
+        "Europe": ["/images/regions/europe.png", (pkg) => pkg.name.includes("Europe")],
+        "South America": ["/images/regions/south_america.png", (pkg) => pkg.name.includes("South America")],
+        "North America": ["/images/regions/north_america.png", (pkg) => pkg.name.includes("North America")],
+        "Africa": ["/images/regions/africa.png", (pkg) => pkg.name.includes("Africa")],
+        "Asia": ["/images/regions/asia.png", (pkg) => {
+            return pkg.name.includes("Asia") || 
+                   pkg.name.includes("Central Asia") || 
+                   pkg.name.includes("Singapore") || 
+                   pkg.name.includes("Gulf") || 
+                   pkg.name.includes("China");
+        }],
+        "Caribbean": ["/images/regions/north_america.png", (pkg) => pkg.name.includes("Caribbean")]
     }), []);
 
     const formatVolume = (volume) => {
@@ -283,7 +278,9 @@ const BuyESIM = () => {
                                         <th>Data Volume</th>
                                         <th>Duration</th>
                                         <th>Price</th>
+                                        <th>Name</th>
                                         <th>Top-Up Support</th>
+                                        <th>Coverage</th>
                                         <th>Locations</th>
                                         <th>Action</th>
                                     </tr>
@@ -291,12 +288,15 @@ const BuyESIM = () => {
                                 <tbody>
                                     {filteredRegionPackages.map((pkg, index) => {
                                         const locationNames = pkg.location.split(",").map(code => countries.find(c => c.code === code)?.name || code);
+                                        const countryCodes = pkg.location.split(",");
                                         return (
                                             <tr key={index}>
                                                 <td>{formatVolume(pkg.volume)}</td>
                                                 <td>{pkg.duration} {pkg.duration === 1 ? "day" : "days"}</td>
                                                 <td>${(pkg.retailPrice / 10000).toFixed(2)}</td>
+                                                <td>{pkg.name}</td> 
                                                 <td>{pkg.supportTopUpType === 2 ? "Yes" : "No"}</td>
+                                                <td>{countryCodes.length} countries</td>
                                                 <td>{locationNames.join(", ")}</td>
                                                 <td><button className="buy-button">Buy Now</button></td>
                                             </tr>

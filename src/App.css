@@ -137,9 +137,11 @@
 }
 
 .highlight {
-  color: #ff7a00;   /* Or another color of your choice */
-  font-size: 56px;  /* Increase size as desired */
+  display: block;         /* Makes "eSIM Unlimited" appear on a new line */
+  color: #ff7a00;         /* Change to your desired color */
+  font-size: 56px;        /* Adjust size as needed */
   font-weight: bold;
+  text-align: center;     /* Centers the text if needed */
 }
 
 .title {
@@ -494,7 +496,7 @@
   gap: 20px;
 }
 
-.nav-button {
+.next-nav-button {
   background: transparent;
   border: transparent;
   color: #F4A261;
@@ -504,7 +506,7 @@
   transition: background 0.3s, color 0.3s;
 }
 
-.nav-button:hover {
+.nav-button:hover .next-nav-button:hover {
   background: #F4A261;
   color: #1C1C1E;
 }

@@ -23,7 +23,7 @@ USER_SESSIONS = {}
 
 def main_menu_keyboard():
     keyboard = [
-        [InlineKeyboardButton("📄 Open Mini App", web_app=WebAppInfo(url="https://619d-77-91-70-239.ngrok-free.app"))],
+        [InlineKeyboardButton("📄 Open Mini App", web_app=WebAppInfo(url="https://a5ec-77-91-70-239.ngrok-free.app"))],
         [InlineKeyboardButton("📄 Buy eSIM", callback_data="buy_esim")],
         [InlineKeyboardButton("🔑 My eSIMs", callback_data="my_esims")],
         [InlineKeyboardButton("💬 Support", url="https://t.me/esim_unlimited_support_bot"),
@@ -79,7 +79,7 @@ async def start(update: Update, context: CallbackContext) -> None:
     last_mode = USER_SESSIONS.get(user_id, "regular")
     if last_mode == "mini_app":
         await update.message.reply_text("🖥️ Opening Mini App...", reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("Open Mini App", web_app=WebAppInfo(url="https://619d-77-91-70-239.ngrok-free.app"))]
+            [InlineKeyboardButton("Open Mini App", web_app=WebAppInfo(url="https://a5ec-77-91-70-239.ngrok-free.app"))]
         ]))
     else:
         await update.message.reply_text("Welcome! Choose an option:", reply_markup=main_menu_keyboard())
