@@ -347,7 +347,7 @@ function MiniApp() {
             </button>
           )}
           {currentStep < steps.length - 1 ? (
-            <button onClick={handleNext} className="nav-button">
+            <button onClick={handleNext} className="next-nav-button">
               Next
             </button>
           ) : (

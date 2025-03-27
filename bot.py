@@ -2,9 +2,9 @@
 import sys
 import logging
 import asyncio
+import os
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, WebAppInfo, BotCommand, ReplyKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, CallbackContext, MessageHandler, filters
-import os
 from dotenv import load_dotenv
 
 load_dotenv()  # Загрузит переменные из .env
@@ -91,31 +91,6 @@ async def start(update: Update, context: CallbackContext) -> None:
     else:
         await update.message.reply_text("Welcome! Choose an option:", reply_markup=main_menu_keyboard())
 
-async def button_handler(update: Update, context: CallbackContext) -> None:
-    query = update.callback_query
-    await query.answer()
-    data = query.data
-    user_id = query.message.chat_id
-    if data == "buy_esim":
-        await query.message.reply_text("📄 Choose your eSIM plan:", reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("Local", callback_data="buy_local"), InlineKeyboardButton("Regional", callback_data="buy_regional")],
-            [InlineKeyboardButton("Global", callback_data="buy_global")]
-        ]))
-    elif data == "my_esims":
-        await query.message.reply_text("🔑 Listing your eSIMs...")
-    elif data == "guides":
-        await query.message.reply_text("📌 Opening Guides in Mini App...", reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("Open Guides", web_app=WebAppInfo(url="https://your-mini-app-url.com/guides"))]
-        ]))
-    elif data == "faq":
-        await query.message.reply_text("❓ Opening FAQ in Mini App...", reply_markup=InlineKeyboardMarkup([
-            [InlineKeyboardButton("Open FAQ", web_app=WebAppInfo(url="https://your-mini-app-url.com/faq"))]
-        ]))
-    elif data == "promo":
-        await query.message.reply_text("🎁 Enter your promo code using /promocode [code]")
-    elif data == "referral":
-        await query.message.reply_text("🔗 Invite friends and earn rewards!")
-
 # ================================
 # Основной блок и запуск бота
 # ================================
@@ -126,5 +101,4 @@ if __name__ == "__main__":
     application = Application.builder().token(TELEGRAM_TOKEN).build()
     application.add_handler(CommandHandler("start", start))
     application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
-    application.add_handler(CallbackQueryHandler(button_handler))
     application.run_polling()
