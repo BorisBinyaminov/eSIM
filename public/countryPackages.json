@@ -388,7 +388,7 @@
         "price": 38000,
         "currencyCode": "USD",
         "volume": 3221225472,
-        "smsStatus": 1,
+        "smsStatus": 0,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 30,
@@ -399,7 +399,7 @@
         "favorite": false,
         "retailPrice": 76000,
         "speed": "3G/4G",
-        "ipExport": "UK/NO",
+        "ipExport": "IL",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -409,7 +409,11 @@
                 "locationCode": "IL",
                 "operatorList": [
                     {
-                        "operatorName": "Partner",
+                        "operatorName": "Cellcom",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Pelephone",
                         "networkType": "5G"
                     },
                     {
@@ -417,7 +421,7 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Pelephone",
+                        "operatorName": "Partner",
                         "networkType": "5G"
                     }
                 ]
@@ -6769,7 +6773,7 @@
         "price": 15000,
         "currencyCode": "USD",
         "volume": 1073741824,
-        "smsStatus": 1,
+        "smsStatus": 0,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 7,
@@ -6780,7 +6784,7 @@
         "favorite": false,
         "retailPrice": 30000,
         "speed": "3G/4G/5G",
-        "ipExport": "UK/NO",
+        "ipExport": "IL",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -6790,7 +6794,11 @@
                 "locationCode": "IL",
                 "operatorList": [
                     {
-                        "operatorName": "Partner",
+                        "operatorName": "Cellcom",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Pelephone",
                         "networkType": "5G"
                     },
                     {
@@ -6798,7 +6806,7 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Pelephone",
+                        "operatorName": "Partner",
                         "networkType": "5G"
                     }
                 ]
@@ -6812,7 +6820,7 @@
         "price": 37000,
         "currencyCode": "USD",
         "volume": 3221225472,
-        "smsStatus": 1,
+        "smsStatus": 0,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 15,
@@ -6823,7 +6831,7 @@
         "favorite": false,
         "retailPrice": 74000,
         "speed": "3G/4G/5G",
-        "ipExport": "UK/NO",
+        "ipExport": "IL",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -6833,7 +6841,11 @@
                 "locationCode": "IL",
                 "operatorList": [
                     {
-                        "operatorName": "Partner",
+                        "operatorName": "Cellcom",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Pelephone",
                         "networkType": "5G"
                     },
                     {
@@ -6841,7 +6853,7 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Pelephone",
+                        "operatorName": "Partner",
                         "networkType": "5G"
                     }
                 ]
@@ -6855,7 +6867,7 @@
         "price": 57000,
         "currencyCode": "USD",
         "volume": 5368709120,
-        "smsStatus": 1,
+        "smsStatus": 0,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 30,
@@ -6866,7 +6878,7 @@
         "favorite": false,
         "retailPrice": 114000,
         "speed": "3G/4G/5G",
-        "ipExport": "UK/NO",
+        "ipExport": "IL",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -6876,7 +6888,11 @@
                 "locationCode": "IL",
                 "operatorList": [
                     {
-                        "operatorName": "Partner",
+                        "operatorName": "Cellcom",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Pelephone",
                         "networkType": "5G"
                     },
                     {
@@ -6884,7 +6900,7 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Pelephone",
+                        "operatorName": "Partner",
                         "networkType": "5G"
                     }
                 ]
@@ -6898,7 +6914,7 @@
         "price": 99000,
         "currencyCode": "USD",
         "volume": 10737418240,
-        "smsStatus": 1,
+        "smsStatus": 0,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 30,
@@ -6909,7 +6925,7 @@
         "favorite": false,
         "retailPrice": 198000,
         "speed": "3G/4G/5G",
-        "ipExport": "UK/NO",
+        "ipExport": "IL",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -6919,7 +6935,11 @@
                 "locationCode": "IL",
                 "operatorList": [
                     {
-                        "operatorName": "Partner",
+                        "operatorName": "Cellcom",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Pelephone",
                         "networkType": "5G"
                     },
                     {
@@ -6927,7 +6947,7 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Pelephone",
+                        "operatorName": "Partner",
                         "networkType": "5G"
                     }
                 ]
@@ -12665,7 +12685,7 @@
         "favorite": false,
         "retailPrice": 108000,
         "speed": "3G/4G",
-        "ipExport": "HK",
+        "ipExport": "NL",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -14136,7 +14156,7 @@
         "favorite": false,
         "retailPrice": 408000,
         "speed": "3G/4G",
-        "ipExport": "HK",
+        "ipExport": "NL",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -14315,7 +14335,7 @@
         "favorite": false,
         "retailPrice": 690000,
         "speed": "3G/4G",
-        "ipExport": "HK",
+        "ipExport": "NL",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -18340,7 +18360,7 @@
         "price": 168000,
         "currencyCode": "USD",
         "volume": 21474836480,
-        "smsStatus": 1,
+        "smsStatus": 0,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 30,
@@ -18351,7 +18371,7 @@
         "favorite": false,
         "retailPrice": 336000,
         "speed": "3G/4G/5G",
-        "ipExport": "UK/NO",
+        "ipExport": "IL",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -18361,7 +18381,11 @@
                 "locationCode": "IL",
                 "operatorList": [
                     {
-                        "operatorName": "Partner",
+                        "operatorName": "Cellcom",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Pelephone",
                         "networkType": "5G"
                     },
                     {
@@ -18369,7 +18393,7 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Pelephone",
+                        "operatorName": "Partner",
                         "networkType": "5G"
                     }
                 ]
@@ -21680,7 +21704,7 @@
         "price": 370000,
         "currencyCode": "USD",
         "volume": 53687091200,
-        "smsStatus": 1,
+        "smsStatus": 0,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 180,
@@ -21691,7 +21715,7 @@
         "favorite": false,
         "retailPrice": 740000,
         "speed": "3G/4G/5G",
-        "ipExport": "UK/NO",
+        "ipExport": "IL",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -21701,7 +21725,11 @@
                 "locationCode": "IL",
                 "operatorList": [
                     {
-                        "operatorName": "Partner",
+                        "operatorName": "Cellcom",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Pelephone",
                         "networkType": "5G"
                     },
                     {
@@ -21709,7 +21737,7 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Pelephone",
+                        "operatorName": "Partner",
                         "networkType": "5G"
                     }
                 ]
@@ -24072,7 +24100,7 @@
         "favorite": false,
         "retailPrice": 273000,
         "speed": "3G/4G",
-        "ipExport": "HK",
+        "ipExport": "NL",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -25246,7 +25274,7 @@
         "price": 18500,
         "currencyCode": "USD",
         "volume": 524288000,
-        "smsStatus": 1,
+        "smsStatus": 0,
         "dataType": 2,
         "unusedValidTime": 30,
         "duration": 1,
@@ -25257,7 +25285,7 @@
         "favorite": false,
         "retailPrice": 37000,
         "speed": "3G/4G",
-        "ipExport": "UK/NO",
+        "ipExport": "IL",
         "supportTopUpType": 1,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -25267,7 +25295,11 @@
                 "locationCode": "IL",
                 "operatorList": [
                     {
-                        "operatorName": "Partner",
+                        "operatorName": "Cellcom",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Pelephone",
                         "networkType": "5G"
                     },
                     {
@@ -25275,7 +25307,7 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Pelephone",
+                        "operatorName": "Partner",
                         "networkType": "5G"
                     }
                 ]
@@ -25289,7 +25321,7 @@
         "price": 29000,
         "currencyCode": "USD",
         "volume": 1073741824,
-        "smsStatus": 1,
+        "smsStatus": 0,
         "dataType": 2,
         "unusedValidTime": 30,
         "duration": 1,
@@ -25300,7 +25332,7 @@
         "favorite": false,
         "retailPrice": 58000,
         "speed": "3G/4G",
-        "ipExport": "UK/NO",
+        "ipExport": "IL",
         "supportTopUpType": 1,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -25310,7 +25342,11 @@
                 "locationCode": "IL",
                 "operatorList": [
                     {
-                        "operatorName": "Partner",
+                        "operatorName": "Cellcom",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Pelephone",
                         "networkType": "5G"
                     },
                     {
@@ -25318,7 +25354,7 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Pelephone",
+                        "operatorName": "Partner",
                         "networkType": "5G"
                     }
                 ]
@@ -25332,7 +25368,7 @@
         "price": 54000,
         "currencyCode": "USD",
         "volume": 2147483648,
-        "smsStatus": 1,
+        "smsStatus": 0,
         "dataType": 2,
         "unusedValidTime": 30,
         "duration": 1,
@@ -25343,7 +25379,7 @@
         "favorite": false,
         "retailPrice": 108000,
         "speed": "3G/4G",
-        "ipExport": "UK/NO",
+        "ipExport": "IL",
         "supportTopUpType": 1,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -25353,7 +25389,11 @@
                 "locationCode": "IL",
                 "operatorList": [
                     {
-                        "operatorName": "Partner",
+                        "operatorName": "Cellcom",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Pelephone",
                         "networkType": "5G"
                     },
                     {
@@ -25361,7 +25401,7 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Pelephone",
+                        "operatorName": "Partner",
                         "networkType": "5G"
                     }
                 ]
@@ -25375,7 +25415,7 @@
         "price": 80000,
         "currencyCode": "USD",
         "volume": 3221225472,
-        "smsStatus": 1,
+        "smsStatus": 0,
         "dataType": 2,
         "unusedValidTime": 30,
         "duration": 1,
@@ -25386,7 +25426,7 @@
         "favorite": false,
         "retailPrice": 160000,
         "speed": "3G/4G",
-        "ipExport": "UK/NO",
+        "ipExport": "IL",
         "supportTopUpType": 1,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -25396,7 +25436,11 @@
                 "locationCode": "IL",
                 "operatorList": [
                     {
-                        "operatorName": "Partner",
+                        "operatorName": "Cellcom",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Pelephone",
                         "networkType": "5G"
                     },
                     {
@@ -25404,7 +25448,7 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Pelephone",
+                        "operatorName": "Partner",
                         "networkType": "5G"
                     }
                 ]
@@ -30065,7 +30109,7 @@
         "favorite": false,
         "retailPrice": 10200.0,
         "speed": "3G/4G",
-        "ipExport": "HK",
+        "ipExport": "NL",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -33023,6 +33067,1406 @@
                     {
                         "operatorName": "China Mobile",
                         "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PMYUL0A89",
+        "slug": "SG_1_7_nonhkip",
+        "name": "Singapore 1GB 7Days (nonhkip)",
+        "price": 10000,
+        "currencyCode": "USD",
+        "volume": 1073741824,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "SG",
+        "description": "Singapore 1GB 7Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 20000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Singapore",
+                "locationLogo": "/img/flags/sg.png",
+                "locationCode": "SG",
+                "operatorList": [
+                    {
+                        "operatorName": "SingTel",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P8FS5BQQ7",
+        "slug": "SG_3_15_nonhkip",
+        "name": "Singapore 3GB 15Days (nonhkip)",
+        "price": 28000,
+        "currencyCode": "USD",
+        "volume": 3221225472,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 15,
+        "durationUnit": "DAY",
+        "location": "SG",
+        "description": "Singapore 3GB 15Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 56000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Singapore",
+                "locationLogo": "/img/flags/sg.png",
+                "locationCode": "SG",
+                "operatorList": [
+                    {
+                        "operatorName": "SingTel",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P74SEFQ1M",
+        "slug": "SG_5_30_nonhkip",
+        "name": "Singapore 5GB 30Days (nonhkip)",
+        "price": 40000,
+        "currencyCode": "USD",
+        "volume": 5368709120,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 30,
+        "durationUnit": "DAY",
+        "location": "SG",
+        "description": "Singapore 5GB 30Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 80000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Singapore",
+                "locationLogo": "/img/flags/sg.png",
+                "locationCode": "SG",
+                "operatorList": [
+                    {
+                        "operatorName": "SingTel",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PWX40HHM7",
+        "slug": "SG_10_30_nonhkip",
+        "name": "Singapore 10GB 30Days (nonhkip)",
+        "price": 70000,
+        "currencyCode": "USD",
+        "volume": 10737418240,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 30,
+        "durationUnit": "DAY",
+        "location": "SG",
+        "description": "Singapore 10GB 30Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 140000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Singapore",
+                "locationLogo": "/img/flags/sg.png",
+                "locationCode": "SG",
+                "operatorList": [
+                    {
+                        "operatorName": "SingTel",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PN0S4RKN6",
+        "slug": "SG_20_30_nonhkip",
+        "name": "Singapore 20GB 30Days (nonhkip)",
+        "price": 120000,
+        "currencyCode": "USD",
+        "volume": 21474836480,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 30,
+        "durationUnit": "DAY",
+        "location": "SG",
+        "description": "Singapore 20GB 30Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 240000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Singapore",
+                "locationLogo": "/img/flags/sg.png",
+                "locationCode": "SG",
+                "operatorList": [
+                    {
+                        "operatorName": "SingTel",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P07TJRC8Y",
+        "slug": "SG_0.5_Daily_nonhkip",
+        "name": "Singapore 500MB/Day (nonhkip)",
+        "price": 5500,
+        "currencyCode": "USD",
+        "volume": 524288000,
+        "smsStatus": 0,
+        "dataType": 2,
+        "unusedValidTime": 30,
+        "duration": 1,
+        "durationUnit": "DAY",
+        "location": "SG",
+        "description": "Singapore 500MB/Day (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 11000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 1,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Singapore",
+                "locationLogo": "/img/flags/sg.png",
+                "locationCode": "SG",
+                "operatorList": [
+                    {
+                        "operatorName": "SingTel",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P2B5NQ3VH",
+        "slug": "SG_1_Daily_nonhkip",
+        "name": "Singapore 1GB/Day (nonhkip)",
+        "price": 9500,
+        "currencyCode": "USD",
+        "volume": 1073741824,
+        "smsStatus": 0,
+        "dataType": 2,
+        "unusedValidTime": 30,
+        "duration": 1,
+        "durationUnit": "DAY",
+        "location": "SG",
+        "description": "Singapore 1GB/Day (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 19000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 1,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Singapore",
+                "locationLogo": "/img/flags/sg.png",
+                "locationCode": "SG",
+                "operatorList": [
+                    {
+                        "operatorName": "SingTel",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PHDQJ3J94",
+        "slug": "SG_2_Daily_nonhkip",
+        "name": "Singapore 2GB/Day (nonhkip)",
+        "price": 18000,
+        "currencyCode": "USD",
+        "volume": 2147483648,
+        "smsStatus": 0,
+        "dataType": 2,
+        "unusedValidTime": 30,
+        "duration": 1,
+        "durationUnit": "DAY",
+        "location": "SG",
+        "description": "Singapore 2GB/Day (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 36000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 1,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Singapore",
+                "locationLogo": "/img/flags/sg.png",
+                "locationCode": "SG",
+                "operatorList": [
+                    {
+                        "operatorName": "SingTel",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PU60C7NHY",
+        "slug": "KR_1_7_nonhkip",
+        "name": "South Korea 1GB 7Days (nonhkip)",
+        "price": 10500,
+        "currencyCode": "USD",
+        "volume": 1073741824,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "KR",
+        "description": "South Korea 1GB 7Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 21000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "South Korea",
+                "locationLogo": "/img/flags/kr.png",
+                "locationCode": "KR",
+                "operatorList": [
+                    {
+                        "operatorName": "SKTelecom",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P2FQ0VL1B",
+        "slug": "KR_3_15_nonhkip",
+        "name": "South Korea 3GB 15Days (nonhkip)",
+        "price": 26000,
+        "currencyCode": "USD",
+        "volume": 3221225472,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 15,
+        "durationUnit": "DAY",
+        "location": "KR",
+        "description": "South Korea 3GB 15Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 52000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "South Korea",
+                "locationLogo": "/img/flags/kr.png",
+                "locationCode": "KR",
+                "operatorList": [
+                    {
+                        "operatorName": "SKTelecom",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PQ708AANE",
+        "slug": "KR_5_30_nonhkip",
+        "name": "South Korea 5GB 30Days (nonhkip)",
+        "price": 42500,
+        "currencyCode": "USD",
+        "volume": 5368709120,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 30,
+        "durationUnit": "DAY",
+        "location": "KR",
+        "description": "South Korea 5GB 30Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 85000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "South Korea",
+                "locationLogo": "/img/flags/kr.png",
+                "locationCode": "KR",
+                "operatorList": [
+                    {
+                        "operatorName": "SKTelecom",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PRT9KC28R",
+        "slug": "KR_10_30_nonhkip",
+        "name": "South Korea 10GB 30Days (nonhkip)",
+        "price": 75000,
+        "currencyCode": "USD",
+        "volume": 10737418240,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 30,
+        "durationUnit": "DAY",
+        "location": "KR",
+        "description": "South Korea 10GB 30Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 150000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "South Korea",
+                "locationLogo": "/img/flags/kr.png",
+                "locationCode": "KR",
+                "operatorList": [
+                    {
+                        "operatorName": "SKTelecom",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PXYKK106H",
+        "slug": "KR_20_30_nonhkip",
+        "name": "South Korea 20GB 30Days (nonhkip)",
+        "price": 125000,
+        "currencyCode": "USD",
+        "volume": 21474836480,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 30,
+        "durationUnit": "DAY",
+        "location": "KR",
+        "description": "South Korea 20GB 30Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 250000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "South Korea",
+                "locationLogo": "/img/flags/kr.png",
+                "locationCode": "KR",
+                "operatorList": [
+                    {
+                        "operatorName": "SKTelecom",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PZ2UCMK37",
+        "slug": "KR_0.5_Daily_nonhkip",
+        "name": "South Korea 500MB/Day (nonhkip)",
+        "price": 5500,
+        "currencyCode": "USD",
+        "volume": 524288000,
+        "smsStatus": 0,
+        "dataType": 2,
+        "unusedValidTime": 30,
+        "duration": 1,
+        "durationUnit": "DAY",
+        "location": "KR",
+        "description": "South Korea 500MB/Day (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 11000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 1,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "South Korea",
+                "locationLogo": "/img/flags/kr.png",
+                "locationCode": "KR",
+                "operatorList": [
+                    {
+                        "operatorName": "SKTelecom",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P20PMGJQ5",
+        "slug": "KR_1_Daily_nonhkip",
+        "name": "South Korea 1GB/Day (nonhkip)",
+        "price": 9500,
+        "currencyCode": "USD",
+        "volume": 1073741824,
+        "smsStatus": 0,
+        "dataType": 2,
+        "unusedValidTime": 30,
+        "duration": 1,
+        "durationUnit": "DAY",
+        "location": "KR",
+        "description": "South Korea 1GB/Day (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 19000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 1,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "South Korea",
+                "locationLogo": "/img/flags/kr.png",
+                "locationCode": "KR",
+                "operatorList": [
+                    {
+                        "operatorName": "SKTelecom",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PLF859LWP",
+        "slug": "KR_2_Daily_nonhkip",
+        "name": "South Korea 2GB/Day (nonhkip)",
+        "price": 16500,
+        "currencyCode": "USD",
+        "volume": 2147483648,
+        "smsStatus": 0,
+        "dataType": 2,
+        "unusedValidTime": 30,
+        "duration": 1,
+        "durationUnit": "DAY",
+        "location": "KR",
+        "description": "South Korea 2GB/Day (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 33000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 1,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "South Korea",
+                "locationLogo": "/img/flags/kr.png",
+                "locationCode": "KR",
+                "operatorList": [
+                    {
+                        "operatorName": "SKTelecom",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PNLL0N5F4",
+        "slug": "MO_1_7_nonhkip",
+        "name": "Macao 1GB 7Days (nonhkip)",
+        "price": 11000,
+        "currencyCode": "USD",
+        "volume": 1073741824,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "MO",
+        "description": "Macao 1GB 7Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 22000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Macao (China)",
+                "locationLogo": "/img/flags/mo.png",
+                "locationCode": "MO",
+                "operatorList": [
+                    {
+                        "operatorName": "CTM",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PTJM6R2V5",
+        "slug": "MO_3_15_nonhkip",
+        "name": "Macao 3GB 15Days (nonhkip)",
+        "price": 28000,
+        "currencyCode": "USD",
+        "volume": 3221225472,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 15,
+        "durationUnit": "DAY",
+        "location": "MO",
+        "description": "Macao 3GB 15Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 56000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Macao (China)",
+                "locationLogo": "/img/flags/mo.png",
+                "locationCode": "MO",
+                "operatorList": [
+                    {
+                        "operatorName": "CTM",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PBR7AJ6V0",
+        "slug": "MO_5_30_nonhkip",
+        "name": "Macao 5GB 30Days (nonhkip)",
+        "price": 40000,
+        "currencyCode": "USD",
+        "volume": 5368709120,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 30,
+        "durationUnit": "DAY",
+        "location": "MO",
+        "description": "Macao 5GB 30Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 80000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Macao (China)",
+                "locationLogo": "/img/flags/mo.png",
+                "locationCode": "MO",
+                "operatorList": [
+                    {
+                        "operatorName": "CTM",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PEM0EL2D9",
+        "slug": "MO_10_30_nonhkip",
+        "name": "Macao 10GB 30Days (nonhkip)",
+        "price": 70000,
+        "currencyCode": "USD",
+        "volume": 10737418240,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 30,
+        "durationUnit": "DAY",
+        "location": "MO",
+        "description": "Macao 10GB 30Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 140000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Macao (China)",
+                "locationLogo": "/img/flags/mo.png",
+                "locationCode": "MO",
+                "operatorList": [
+                    {
+                        "operatorName": "CTM",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PYY68S4KT",
+        "slug": "MO_20_30_nonhkip",
+        "name": "Macao 20GB 30Days (nonhkip)",
+        "price": 120000,
+        "currencyCode": "USD",
+        "volume": 21474836480,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 30,
+        "durationUnit": "DAY",
+        "location": "MO",
+        "description": "Macao 20GB 30Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 240000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Macao (China)",
+                "locationLogo": "/img/flags/mo.png",
+                "locationCode": "MO",
+                "operatorList": [
+                    {
+                        "operatorName": "CTM",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P06DPM5ME",
+        "slug": "MO_0.5_Daily_nonhkip",
+        "name": "Macao 500MB/Day (nonhkip)",
+        "price": 6500,
+        "currencyCode": "USD",
+        "volume": 524288000,
+        "smsStatus": 0,
+        "dataType": 2,
+        "unusedValidTime": 30,
+        "duration": 1,
+        "durationUnit": "DAY",
+        "location": "MO",
+        "description": "Macao 500MB/Day (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 13000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 1,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Macao (China)",
+                "locationLogo": "/img/flags/mo.png",
+                "locationCode": "MO",
+                "operatorList": [
+                    {
+                        "operatorName": "CTM",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P0EA95AKM",
+        "slug": "MO_1_Daily_nonhkip",
+        "name": "Macao 1GB/Day (nonhkip)",
+        "price": 10500,
+        "currencyCode": "USD",
+        "volume": 1073741824,
+        "smsStatus": 0,
+        "dataType": 2,
+        "unusedValidTime": 30,
+        "duration": 1,
+        "durationUnit": "DAY",
+        "location": "MO",
+        "description": "Macao 1GB/Day (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 21000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 1,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Macao (China)",
+                "locationLogo": "/img/flags/mo.png",
+                "locationCode": "MO",
+                "operatorList": [
+                    {
+                        "operatorName": "CTM",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PMC972NJJ",
+        "slug": "MO_2_Daily_nonhkip",
+        "name": "Macao 2GB/Day (nonhkip)",
+        "price": 20000,
+        "currencyCode": "USD",
+        "volume": 2147483648,
+        "smsStatus": 0,
+        "dataType": 2,
+        "unusedValidTime": 30,
+        "duration": 1,
+        "durationUnit": "DAY",
+        "location": "MO",
+        "description": "Macao 2GB/Day (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 40000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 1,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Macao (China)",
+                "locationLogo": "/img/flags/mo.png",
+                "locationCode": "MO",
+                "operatorList": [
+                    {
+                        "operatorName": "CTM",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P298MQEKY",
+        "slug": "MY_1_7_nonhkip",
+        "name": "Malaysia 1GB 7Days (nonhkip)",
+        "price": 10000,
+        "currencyCode": "USD",
+        "volume": 1073741824,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "MY",
+        "description": "Malaysia 1GB 7Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 20000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Malaysia",
+                "locationLogo": "/img/flags/my.png",
+                "locationCode": "MY",
+                "operatorList": [
+                    {
+                        "operatorName": "Maxis",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P1UL34KDX",
+        "slug": "MY_3_15_nonhkip",
+        "name": "Malaysia 3GB 15Days (nonhkip)",
+        "price": 26000,
+        "currencyCode": "USD",
+        "volume": 3221225472,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 15,
+        "durationUnit": "DAY",
+        "location": "MY",
+        "description": "Malaysia 3GB 15Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 52000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Malaysia",
+                "locationLogo": "/img/flags/my.png",
+                "locationCode": "MY",
+                "operatorList": [
+                    {
+                        "operatorName": "Maxis",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PSG213EBL",
+        "slug": "MY_5_30_nonhkip",
+        "name": "Malaysia 5GB 30Days (nonhkip)",
+        "price": 40000,
+        "currencyCode": "USD",
+        "volume": 5368709120,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 30,
+        "durationUnit": "DAY",
+        "location": "MY",
+        "description": "Malaysia 5GB 30Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 80000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Malaysia",
+                "locationLogo": "/img/flags/my.png",
+                "locationCode": "MY",
+                "operatorList": [
+                    {
+                        "operatorName": "Maxis",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PLDG73P5E",
+        "slug": "MY_10_30_nonhkip",
+        "name": "Malaysia 10GB 30Days (nonhkip)",
+        "price": 70000,
+        "currencyCode": "USD",
+        "volume": 10737418240,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 30,
+        "durationUnit": "DAY",
+        "location": "MY",
+        "description": "Malaysia 10GB 30Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 140000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Malaysia",
+                "locationLogo": "/img/flags/my.png",
+                "locationCode": "MY",
+                "operatorList": [
+                    {
+                        "operatorName": "Maxis",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P04JBY6XN",
+        "slug": "MY_20_30_nonhkip",
+        "name": "Malaysia 20GB 30Days (nonhkip)",
+        "price": 120000,
+        "currencyCode": "USD",
+        "volume": 21474836480,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 30,
+        "durationUnit": "DAY",
+        "location": "MY",
+        "description": "Malaysia 20GB 30Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 240000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Malaysia",
+                "locationLogo": "/img/flags/my.png",
+                "locationCode": "MY",
+                "operatorList": [
+                    {
+                        "operatorName": "Maxis",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PJJ7HCK42",
+        "slug": "MY_0.5_Daily_nonhkip",
+        "name": "Malaysia 500MB/Day (nonhkip)",
+        "price": 5000,
+        "currencyCode": "USD",
+        "volume": 524288000,
+        "smsStatus": 0,
+        "dataType": 2,
+        "unusedValidTime": 30,
+        "duration": 1,
+        "durationUnit": "DAY",
+        "location": "MY",
+        "description": "Malaysia 500MB/Day (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 10000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 1,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Malaysia",
+                "locationLogo": "/img/flags/my.png",
+                "locationCode": "MY",
+                "operatorList": [
+                    {
+                        "operatorName": "Maxis",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PKFR059MT",
+        "slug": "MY_1_Daily_nonhkip",
+        "name": "Malaysia 1GB/Day (nonhkip)",
+        "price": 9000,
+        "currencyCode": "USD",
+        "volume": 1073741824,
+        "smsStatus": 0,
+        "dataType": 2,
+        "unusedValidTime": 30,
+        "duration": 1,
+        "durationUnit": "DAY",
+        "location": "MY",
+        "description": "Malaysia 1GB/Day (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 18000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 1,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Malaysia",
+                "locationLogo": "/img/flags/my.png",
+                "locationCode": "MY",
+                "operatorList": [
+                    {
+                        "operatorName": "Maxis",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P9BPF41DU",
+        "slug": "MY_2_Daily_nonhkip",
+        "name": "Malaysia 2GB/Day (nonhkip)",
+        "price": 17000,
+        "currencyCode": "USD",
+        "volume": 2147483648,
+        "smsStatus": 0,
+        "dataType": 2,
+        "unusedValidTime": 30,
+        "duration": 1,
+        "durationUnit": "DAY",
+        "location": "MY",
+        "description": "Malaysia 2GB/Day (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 34000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
+        "supportTopUpType": 1,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Malaysia",
+                "locationLogo": "/img/flags/my.png",
+                "locationCode": "MY",
+                "operatorList": [
+                    {
+                        "operatorName": "Maxis",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P06VBPU3J",
+        "slug": "VN_1_7_nonhkip",
+        "name": "Vietnam 1GB 7Days (nonhkip)",
+        "price": 18000,
+        "currencyCode": "USD",
+        "volume": 1073741824,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "VN",
+        "description": "Vietnam 1GB 7Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 36000,
+        "speed": "3G/4G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Vietnam",
+                "locationLogo": "/img/flags/vn.png",
+                "locationCode": "VN",
+                "operatorList": [
+                    {
+                        "operatorName": "Vinaphone",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P41ERHYB6",
+        "slug": "VN_3_15_nonhkip",
+        "name": "Vietnam 3GB 15Days (nonhkip)",
+        "price": 46000,
+        "currencyCode": "USD",
+        "volume": 3221225472,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 15,
+        "durationUnit": "DAY",
+        "location": "VN",
+        "description": "Vietnam 3GB 15Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 92000,
+        "speed": "3G/4G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Vietnam",
+                "locationLogo": "/img/flags/vn.png",
+                "locationCode": "VN",
+                "operatorList": [
+                    {
+                        "operatorName": "Vinaphone",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PEB708QBF",
+        "slug": "VN_5_30_nonhkip",
+        "name": "Vietnam 5GB 30Days (nonhkip)",
+        "price": 70000,
+        "currencyCode": "USD",
+        "volume": 5368709120,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 30,
+        "durationUnit": "DAY",
+        "location": "VN",
+        "description": "Vietnam 5GB 30Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 140000,
+        "speed": "3G/4G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Vietnam",
+                "locationLogo": "/img/flags/vn.png",
+                "locationCode": "VN",
+                "operatorList": [
+                    {
+                        "operatorName": "Vinaphone",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P2UWBW9F4",
+        "slug": "VN_10_30_nonhkip",
+        "name": "Vietnam 10GB 30Days (nonhkip)",
+        "price": 122000,
+        "currencyCode": "USD",
+        "volume": 10737418240,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 30,
+        "durationUnit": "DAY",
+        "location": "VN",
+        "description": "Vietnam 10GB 30Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 244000,
+        "speed": "3G/4G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Vietnam",
+                "locationLogo": "/img/flags/vn.png",
+                "locationCode": "VN",
+                "operatorList": [
+                    {
+                        "operatorName": "Vinaphone",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PTNY9DB82",
+        "slug": "VN_20_30_nonhkip",
+        "name": "Vietnam 20GB 30Days (nonhkip)",
+        "price": 200000,
+        "currencyCode": "USD",
+        "volume": 21474836480,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 30,
+        "durationUnit": "DAY",
+        "location": "VN",
+        "description": "Vietnam 20GB 30Days (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 400000,
+        "speed": "3G/4G",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Vietnam",
+                "locationLogo": "/img/flags/vn.png",
+                "locationCode": "VN",
+                "operatorList": [
+                    {
+                        "operatorName": "Vinaphone",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P9JL3S1GG",
+        "slug": "VN_0.5_Daily_nonhkip",
+        "name": "Vietnam 500MB/Day (nonhkip)",
+        "price": 5800,
+        "currencyCode": "USD",
+        "volume": 524288000,
+        "smsStatus": 0,
+        "dataType": 2,
+        "unusedValidTime": 30,
+        "duration": 1,
+        "durationUnit": "DAY",
+        "location": "VN",
+        "description": "Vietnam 500MB/Day (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 11600,
+        "speed": "3G/4G",
+        "ipExport": "",
+        "supportTopUpType": 1,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Vietnam",
+                "locationLogo": "/img/flags/vn.png",
+                "locationCode": "VN",
+                "operatorList": [
+                    {
+                        "operatorName": "Vinaphone",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PP9NT7XP0",
+        "slug": "VN_1_Daily_nonhkip",
+        "name": "Vietnam 1GB/Day (nonhkip)",
+        "price": 14600,
+        "currencyCode": "USD",
+        "volume": 1073741824,
+        "smsStatus": 0,
+        "dataType": 2,
+        "unusedValidTime": 30,
+        "duration": 1,
+        "durationUnit": "DAY",
+        "location": "VN",
+        "description": "Vietnam 1GB/Day (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 29200,
+        "speed": "3G/4G",
+        "ipExport": "",
+        "supportTopUpType": 1,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Vietnam",
+                "locationLogo": "/img/flags/vn.png",
+                "locationCode": "VN",
+                "operatorList": [
+                    {
+                        "operatorName": "Vinaphone",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PSCA610LL",
+        "slug": "VN_2_Daily_nonhkip",
+        "name": "Vietnam 2GB/Day (nonhkip)",
+        "price": 28000,
+        "currencyCode": "USD",
+        "volume": 2147483648,
+        "smsStatus": 0,
+        "dataType": 2,
+        "unusedValidTime": 30,
+        "duration": 1,
+        "durationUnit": "DAY",
+        "location": "VN",
+        "description": "Vietnam 2GB/Day (nonhkip)",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 56000,
+        "speed": "3G/4G",
+        "ipExport": "",
+        "supportTopUpType": 1,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Vietnam",
+                "locationLogo": "/img/flags/vn.png",
+                "locationCode": "VN",
+                "operatorList": [
+                    {
+                        "operatorName": "Vinaphone",
+                        "networkType": "4G"
                     }
                 ]
             }

@@ -4924,7 +4924,7 @@
         "unusedValidTime": 180,
         "duration": 8,
         "durationUnit": "DAY",
-        "location": "NP,BD,HK,TW,JO,BH,JP,BN,QA,SG,ID,KH,GE,OM,MN,MO,IL,UZ,IN,KR,CN,MY,KW,GU,KZ,AU,LA,VN,PH,PK,LK",
+        "location": "NP,BD,PS,HK,TW,JO,BH,JP,BN,QA,BT,SG,ID,KH,GE,OM,MN,MO,IL,UZ,IN,KR,CN,MY,KW,GU,KZ,AU,LA,VN,PH,PK,LK",
         "description": "Asia-Pacific 6GB 8Days",
         "activeType": 1,
         "favorite": false,
@@ -4944,6 +4944,12 @@
                 "locationName": "Nepal",
                 "locationLogo": "/img/flags/np.png",
                 "locationCode": "NP",
+                "operatorList": []
+            },
+            {
+                "locationName": "Bhutan",
+                "locationLogo": "/img/flags/bt.png",
+                "locationCode": "BT",
                 "operatorList": []
             },
             {
@@ -4974,6 +4980,12 @@
                 "locationName": "Australia",
                 "locationLogo": "/img/flags/au.png",
                 "locationCode": "AU",
+                "operatorList": []
+            },
+            {
+                "locationName": "Palestine",
+                "locationLogo": "/img/flags/ps.png",
+                "locationCode": "PS",
                 "operatorList": []
             },
             {
@@ -23815,8 +23827,8 @@
     },
     {
         "packageCode": "P9DH2MUN5",
-        "slug": "ME-6_10_30_End",
-        "name": "Gulf Region 10GB 30Days Single Use",
+        "slug": "ME-6_10_30",
+        "name": "Gulf Region 10GB 30Days",
         "price": 220000,
         "currencyCode": "USD",
         "volume": 10737418240,
@@ -23826,13 +23838,13 @@
         "duration": 30,
         "durationUnit": "DAY",
         "location": "QA,AE,BH,IQ,KW,SA",
-        "description": "Gulf Region 10GB 30Days Single Use",
+        "description": "Gulf Region 10GB 30Days",
         "activeType": 2,
         "favorite": false,
         "retailPrice": 330000.0,
         "speed": "3G/4G",
         "ipExport": "PL",
-        "supportTopUpType": 1,
+        "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
             {
@@ -23905,8 +23917,8 @@
     },
     {
         "packageCode": "PK2BXX9B4",
-        "slug": "ME-6_5_30_End",
-        "name": "Gulf Region  5GB  30Days Single Use",
+        "slug": "ME-6_5_30",
+        "name": "Gulf Region 5GB 30Days",
         "price": 108000,
         "currencyCode": "USD",
         "volume": 5368709120,
@@ -23916,13 +23928,13 @@
         "duration": 30,
         "durationUnit": "DAY",
         "location": "QA,AE,BH,IQ,KW,SA",
-        "description": "Gulf Region  5GB  30Days Single Use",
+        "description": "Gulf Region 5GB 30Days",
         "activeType": 2,
         "favorite": false,
         "retailPrice": 162000.0,
         "speed": "3G/4G",
         "ipExport": "PL",
-        "supportTopUpType": 1,
+        "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
             {
@@ -23995,8 +24007,8 @@
     },
     {
         "packageCode": "P8D7Q1CZY",
-        "slug": "ME-6_3_30_End",
-        "name": "Gulf Region  3GB  30Days Single Use",
+        "slug": "ME-6_3_30",
+        "name": "Gulf Region 3GB 30Days",
         "price": 68000,
         "currencyCode": "USD",
         "volume": 3221225472,
@@ -24006,13 +24018,13 @@
         "duration": 30,
         "durationUnit": "DAY",
         "location": "QA,AE,BH,IQ,KW,SA",
-        "description": "Gulf Region  3GB  30Days Single Use",
+        "description": "Gulf Region 3GB 30Days",
         "activeType": 2,
         "favorite": false,
         "retailPrice": 102000.0,
         "speed": "3G/4G",
         "ipExport": "PL",
-        "supportTopUpType": 1,
+        "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
             {
@@ -24085,8 +24097,8 @@
     },
     {
         "packageCode": "PTJX062PT",
-        "slug": "ME-6_1_7_End",
-        "name": "Gulf Region 1GB  7Days Single Use",
+        "slug": "ME-6_1_7",
+        "name": "Gulf Region 1GB 7Days",
         "price": 23000,
         "currencyCode": "USD",
         "volume": 1073741824,
@@ -24096,13 +24108,13 @@
         "duration": 7,
         "durationUnit": "DAY",
         "location": "QA,AE,BH,IQ,KW,SA",
-        "description": "Gulf Region 1GB  7Days Single Use",
+        "description": "Gulf Region 1GB 7Days",
         "activeType": 2,
         "favorite": false,
         "retailPrice": 34500.0,
         "speed": "3G/4G",
         "ipExport": "PL",
-        "supportTopUpType": 1,
+        "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
             {
