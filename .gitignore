@@ -27,3 +27,4 @@ yarn-error.log*
 .contentlayer
 __pycache__/models.cpython-311.pyc
 .env
+.env
