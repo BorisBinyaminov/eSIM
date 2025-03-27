@@ -3,8 +3,8 @@ import sys
 import logging
 import asyncio
 import os
-from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, WebAppInfo, BotCommand, ReplyKeyboardMarkup
-from telegram.ext import Application, CommandHandler, CallbackQueryHandler, CallbackContext, MessageHandler, filters
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, WebAppInfo, ReplyKeyboardMarkup
+from telegram.ext import Application, CommandHandler, CallbackContext, MessageHandler, filters
 from dotenv import load_dotenv
 
 load_dotenv()  # Загрузит переменные из .env
@@ -33,8 +33,8 @@ USER_SESSIONS = {}
 
 def main_menu_keyboard():
     keyboard = [
-        ["📄 Open Mini App"],
-        ["📄 Buy eSIM", "🔑 My eSIMs"],
+        ["🖥️ Open Mini App"],
+        ["🛒 Buy eSIM", "🔑 My eSIMs"],
         ["❓ FAQ", "📌 Guides"],
         ["🆕 Project News", "💬 Support"]
     ]
