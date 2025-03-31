@@ -128,7 +128,7 @@ def fetch_packages():
     print(f"\n✅ Packages updated at: {last_update_time}", flush=True)
 
 # ✅ Fetch packages immediately on startup
-#fetch_packages()
+fetch_packages()
 
 # ✅ Periodic update of JSON files every 6 hours
 def schedule_package_updates():

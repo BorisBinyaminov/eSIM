@@ -84925,7 +84925,12 @@
                 "locationName": "Japan",
                 "locationLogo": "/img/flags/jp.png",
                 "locationCode": "JP",
-                "operatorList": []
+                "operatorList": [
+                    {
+                        "operatorName": "NTT docomo",
+                        "networkType": "4G"
+                    }
+                ]
             }
         ]
     },
