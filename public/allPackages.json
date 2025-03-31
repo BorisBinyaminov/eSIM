@@ -11198,7 +11198,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 1,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 7,
         "durationUnit": "DAY",
         "location": "JP",
@@ -11233,7 +11233,7 @@
         "volume": 3221225472,
         "smsStatus": 0,
         "dataType": 1,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 15,
         "durationUnit": "DAY",
         "location": "JP",
@@ -11268,7 +11268,7 @@
         "volume": 5368709120,
         "smsStatus": 0,
         "dataType": 1,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 30,
         "durationUnit": "DAY",
         "location": "JP",
@@ -11303,7 +11303,7 @@
         "volume": 10737418240,
         "smsStatus": 0,
         "dataType": 1,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 30,
         "durationUnit": "DAY",
         "location": "JP",
@@ -25684,7 +25684,7 @@
         "volume": 21474836480,
         "smsStatus": 0,
         "dataType": 1,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 30,
         "durationUnit": "DAY",
         "location": "JP",
@@ -44921,7 +44921,7 @@
         "volume": 53687091200,
         "smsStatus": 0,
         "dataType": 1,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 180,
         "durationUnit": "DAY",
         "location": "JP",
@@ -47462,7 +47462,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "SG",
@@ -47501,7 +47501,7 @@
         "volume": 2147483648,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "SG",
@@ -47540,7 +47540,7 @@
         "volume": 1073741824,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "US",
@@ -47579,7 +47579,7 @@
         "volume": 1610612736,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "US",
@@ -47618,7 +47618,7 @@
         "volume": 2147483648,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "US",
@@ -47657,7 +47657,7 @@
         "volume": 1073741824,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "CA",
@@ -47696,7 +47696,7 @@
         "volume": 1610612736,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "CA",
@@ -47735,7 +47735,7 @@
         "volume": 2147483648,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "CA",
@@ -47774,7 +47774,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "HK",
@@ -47809,7 +47809,7 @@
         "volume": 2147483648,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "HK",
@@ -47844,7 +47844,7 @@
         "volume": 524288000,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "IN",
@@ -47883,7 +47883,7 @@
         "volume": 1073741824,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "IN",
@@ -47922,7 +47922,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "ID",
@@ -47961,7 +47961,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "ID",
@@ -48000,7 +48000,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "JP",
@@ -48035,7 +48035,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "JP",
@@ -48070,7 +48070,7 @@
         "volume": 2147483648,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "JP",
@@ -48105,7 +48105,7 @@
         "volume": 524288000,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MY",
@@ -48144,7 +48144,7 @@
         "volume": 1073741824,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MY",
@@ -48183,7 +48183,7 @@
         "volume": 2147483648,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MY",
@@ -48222,7 +48222,7 @@
         "volume": 524288000,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "PH",
@@ -48257,7 +48257,7 @@
         "volume": 1073741824,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "PH",
@@ -48292,7 +48292,7 @@
         "volume": 2147483648,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "PH",
@@ -48327,7 +48327,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "KR",
@@ -48362,7 +48362,7 @@
         "volume": 524288000,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "TH",
@@ -48397,7 +48397,7 @@
         "volume": 1073741824,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "TH",
@@ -48432,7 +48432,7 @@
         "volume": 524288000,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "GB",
@@ -48479,7 +48479,7 @@
         "volume": 1073741824,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "GB",
@@ -48526,7 +48526,7 @@
         "volume": 2147483648,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "GB",
@@ -48573,7 +48573,7 @@
         "volume": 524288000,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "AU",
@@ -48608,7 +48608,7 @@
         "volume": 1073741824,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "AU",
@@ -48643,7 +48643,7 @@
         "volume": 524288000,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "NZ",
@@ -48678,7 +48678,7 @@
         "volume": 1073741824,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "NZ",
@@ -48713,7 +48713,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MX,US,CA",
@@ -48794,7 +48794,7 @@
         "volume": 1610612736,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MX,US,CA",
@@ -48863,7 +48863,7 @@
         "volume": 2147483648,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MX,US,CA",
@@ -48932,7 +48932,7 @@
         "volume": 3221225472,
         "smsStatus": 0,
         "dataType": 1,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 30,
         "durationUnit": "DAY",
         "location": "JP",
@@ -49071,7 +49071,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "SG",
@@ -49149,7 +49149,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "KR",
@@ -49170,6 +49170,678 @@
                     {
                         "operatorName": "SKTelecom",
                         "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PTHP265BC",
+        "slug": "AS-12_3_30",
+        "name": "Asia (12 areas) 3GB 30Days",
+        "price": 90000,
+        "currencyCode": "USD",
+        "volume": 3221225472,
+        "smsStatus": 2,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 30,
+        "durationUnit": "DAY",
+        "location": "MO,HK,TW,TH,SG,JP,KR,VN,ID,CN,MY,KH",
+        "description": "Asia (12 areas) 3GB 30Days",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 135000.0,
+        "speed": "3G/4G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Vietnam",
+                "locationLogo": "/img/flags/vn.png",
+                "locationCode": "VN",
+                "operatorList": [
+                    {
+                        "operatorName": "MobiFone",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Vietnamobile",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Indonesia",
+                "locationLogo": "/img/flags/id.png",
+                "locationCode": "ID",
+                "operatorList": [
+                    {
+                        "operatorName": "Telkomsel",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "South Korea",
+                "locationLogo": "/img/flags/kr.png",
+                "locationCode": "KR",
+                "operatorList": [
+                    {
+                        "operatorName": "SKTelecom",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Cambodia",
+                "locationLogo": "/img/flags/kh.png",
+                "locationCode": "KH",
+                "operatorList": [
+                    {
+                        "operatorName": "Latelz",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "China mainland",
+                "locationLogo": "/img/flags/cn.png",
+                "locationCode": "CN",
+                "operatorList": [
+                    {
+                        "operatorName": "China Unicom",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Japan",
+                "locationLogo": "/img/flags/jp.png",
+                "locationCode": "JP",
+                "operatorList": [
+                    {
+                        "operatorName": "KDDI",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "SoftBank",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Hong Kong (China)",
+                "locationLogo": "/img/flags/hk.png",
+                "locationCode": "HK",
+                "operatorList": [
+                    {
+                        "operatorName": "csl",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Taiwan (China)",
+                "locationLogo": "/img/flags/tw.png",
+                "locationCode": "TW",
+                "operatorList": [
+                    {
+                        "operatorName": "Chunghwa",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Macao (China)",
+                "locationLogo": "/img/flags/mo.png",
+                "locationCode": "MO",
+                "operatorList": [
+                    {
+                        "operatorName": "CTM",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Thailand",
+                "locationLogo": "/img/flags/th.png",
+                "locationCode": "TH",
+                "operatorList": [
+                    {
+                        "operatorName": "AIS",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Malaysia",
+                "locationLogo": "/img/flags/my.png",
+                "locationCode": "MY",
+                "operatorList": [
+                    {
+                        "operatorName": "DiGi",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Maxis",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Singapore",
+                "locationLogo": "/img/flags/sg.png",
+                "locationCode": "SG",
+                "operatorList": [
+                    {
+                        "operatorName": "SingTel",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P9ESS1C2D",
+        "slug": "AS-12_5_30",
+        "name": "Asia (12 areas) 5GB 30Days",
+        "price": 135000,
+        "currencyCode": "USD",
+        "volume": 5368709120,
+        "smsStatus": 2,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 30,
+        "durationUnit": "DAY",
+        "location": "MO,HK,TW,TH,SG,JP,KR,VN,ID,CN,MY,KH",
+        "description": "Asia (12 areas) 5GB 30Days",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 202500.0,
+        "speed": "3G/4G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Vietnam",
+                "locationLogo": "/img/flags/vn.png",
+                "locationCode": "VN",
+                "operatorList": [
+                    {
+                        "operatorName": "MobiFone",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Vietnamobile",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Indonesia",
+                "locationLogo": "/img/flags/id.png",
+                "locationCode": "ID",
+                "operatorList": [
+                    {
+                        "operatorName": "Telkomsel",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "South Korea",
+                "locationLogo": "/img/flags/kr.png",
+                "locationCode": "KR",
+                "operatorList": [
+                    {
+                        "operatorName": "SKTelecom",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Cambodia",
+                "locationLogo": "/img/flags/kh.png",
+                "locationCode": "KH",
+                "operatorList": [
+                    {
+                        "operatorName": "Latelz",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "China mainland",
+                "locationLogo": "/img/flags/cn.png",
+                "locationCode": "CN",
+                "operatorList": [
+                    {
+                        "operatorName": "China Unicom",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Japan",
+                "locationLogo": "/img/flags/jp.png",
+                "locationCode": "JP",
+                "operatorList": [
+                    {
+                        "operatorName": "KDDI",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "SoftBank",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Hong Kong (China)",
+                "locationLogo": "/img/flags/hk.png",
+                "locationCode": "HK",
+                "operatorList": [
+                    {
+                        "operatorName": "csl",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Taiwan (China)",
+                "locationLogo": "/img/flags/tw.png",
+                "locationCode": "TW",
+                "operatorList": [
+                    {
+                        "operatorName": "Chunghwa",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Macao (China)",
+                "locationLogo": "/img/flags/mo.png",
+                "locationCode": "MO",
+                "operatorList": [
+                    {
+                        "operatorName": "CTM",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Thailand",
+                "locationLogo": "/img/flags/th.png",
+                "locationCode": "TH",
+                "operatorList": [
+                    {
+                        "operatorName": "AIS",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Malaysia",
+                "locationLogo": "/img/flags/my.png",
+                "locationCode": "MY",
+                "operatorList": [
+                    {
+                        "operatorName": "DiGi",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Maxis",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Singapore",
+                "locationLogo": "/img/flags/sg.png",
+                "locationCode": "SG",
+                "operatorList": [
+                    {
+                        "operatorName": "SingTel",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P32JCTKR0",
+        "slug": "AS-12_10_30",
+        "name": "Asia (12 areas) 10GB 30Days",
+        "price": 229000,
+        "currencyCode": "USD",
+        "volume": 10737418240,
+        "smsStatus": 2,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 30,
+        "durationUnit": "DAY",
+        "location": "MO,HK,TW,TH,SG,JP,KR,VN,ID,CN,MY,KH",
+        "description": "Asia (12 areas) 10GB 30Days",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 343500.0,
+        "speed": "3G/4G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Vietnam",
+                "locationLogo": "/img/flags/vn.png",
+                "locationCode": "VN",
+                "operatorList": [
+                    {
+                        "operatorName": "MobiFone",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Vietnamobile",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Indonesia",
+                "locationLogo": "/img/flags/id.png",
+                "locationCode": "ID",
+                "operatorList": [
+                    {
+                        "operatorName": "Telkomsel",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "South Korea",
+                "locationLogo": "/img/flags/kr.png",
+                "locationCode": "KR",
+                "operatorList": [
+                    {
+                        "operatorName": "SKTelecom",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Cambodia",
+                "locationLogo": "/img/flags/kh.png",
+                "locationCode": "KH",
+                "operatorList": [
+                    {
+                        "operatorName": "Latelz",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "China mainland",
+                "locationLogo": "/img/flags/cn.png",
+                "locationCode": "CN",
+                "operatorList": [
+                    {
+                        "operatorName": "China Unicom",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Japan",
+                "locationLogo": "/img/flags/jp.png",
+                "locationCode": "JP",
+                "operatorList": [
+                    {
+                        "operatorName": "KDDI",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "SoftBank",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Hong Kong (China)",
+                "locationLogo": "/img/flags/hk.png",
+                "locationCode": "HK",
+                "operatorList": [
+                    {
+                        "operatorName": "csl",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Taiwan (China)",
+                "locationLogo": "/img/flags/tw.png",
+                "locationCode": "TW",
+                "operatorList": [
+                    {
+                        "operatorName": "Chunghwa",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Macao (China)",
+                "locationLogo": "/img/flags/mo.png",
+                "locationCode": "MO",
+                "operatorList": [
+                    {
+                        "operatorName": "CTM",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Thailand",
+                "locationLogo": "/img/flags/th.png",
+                "locationCode": "TH",
+                "operatorList": [
+                    {
+                        "operatorName": "AIS",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Malaysia",
+                "locationLogo": "/img/flags/my.png",
+                "locationCode": "MY",
+                "operatorList": [
+                    {
+                        "operatorName": "DiGi",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Maxis",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Singapore",
+                "locationLogo": "/img/flags/sg.png",
+                "locationCode": "SG",
+                "operatorList": [
+                    {
+                        "operatorName": "SingTel",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PWXD16M3T",
+        "slug": "AS-12_20_30",
+        "name": "Asia (12 areas) 20GB 30Days",
+        "price": 399000,
+        "currencyCode": "USD",
+        "volume": 21474836480,
+        "smsStatus": 2,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 30,
+        "durationUnit": "DAY",
+        "location": "MO,HK,TW,TH,SG,JP,KR,VN,ID,CN,MY,KH",
+        "description": "Asia (12 areas) 20GB 30Days",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 598500.0,
+        "speed": "3G/4G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Vietnam",
+                "locationLogo": "/img/flags/vn.png",
+                "locationCode": "VN",
+                "operatorList": [
+                    {
+                        "operatorName": "MobiFone",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Vietnamobile",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Indonesia",
+                "locationLogo": "/img/flags/id.png",
+                "locationCode": "ID",
+                "operatorList": [
+                    {
+                        "operatorName": "Telkomsel",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "South Korea",
+                "locationLogo": "/img/flags/kr.png",
+                "locationCode": "KR",
+                "operatorList": [
+                    {
+                        "operatorName": "SKTelecom",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Cambodia",
+                "locationLogo": "/img/flags/kh.png",
+                "locationCode": "KH",
+                "operatorList": [
+                    {
+                        "operatorName": "Latelz",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "China mainland",
+                "locationLogo": "/img/flags/cn.png",
+                "locationCode": "CN",
+                "operatorList": [
+                    {
+                        "operatorName": "China Unicom",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Japan",
+                "locationLogo": "/img/flags/jp.png",
+                "locationCode": "JP",
+                "operatorList": [
+                    {
+                        "operatorName": "KDDI",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "SoftBank",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Hong Kong (China)",
+                "locationLogo": "/img/flags/hk.png",
+                "locationCode": "HK",
+                "operatorList": [
+                    {
+                        "operatorName": "csl",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Taiwan (China)",
+                "locationLogo": "/img/flags/tw.png",
+                "locationCode": "TW",
+                "operatorList": [
+                    {
+                        "operatorName": "Chunghwa",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Macao (China)",
+                "locationLogo": "/img/flags/mo.png",
+                "locationCode": "MO",
+                "operatorList": [
+                    {
+                        "operatorName": "CTM",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Thailand",
+                "locationLogo": "/img/flags/th.png",
+                "locationCode": "TH",
+                "operatorList": [
+                    {
+                        "operatorName": "AIS",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Malaysia",
+                "locationLogo": "/img/flags/my.png",
+                "locationCode": "MY",
+                "operatorList": [
+                    {
+                        "operatorName": "DiGi",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Maxis",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Singapore",
+                "locationLogo": "/img/flags/sg.png",
+                "locationCode": "SG",
+                "operatorList": [
+                    {
+                        "operatorName": "SingTel",
+                        "networkType": "4G"
                     }
                 ]
             }
@@ -49650,7 +50322,7 @@
         "volume": 10737418240,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "TH",
@@ -49685,7 +50357,7 @@
         "volume": 1073741824,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "VN",
@@ -54679,7 +55351,7 @@
         "volume": 1073741824,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "NO,DE,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,EE,CH,MT,IS,IT,GR,ES,AT,CY,CZ,PL,RO,LI,NL,TR",
@@ -55293,7 +55965,7 @@
         "volume": 1610612736,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "NO,DE,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,EE,CH,MT,IS,IT,GR,ES,AT,CY,CZ,PL,RO,LI,NL,TR",
@@ -68787,7 +69459,7 @@
         "volume": 2147483648,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "NO,DE,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,EE,CH,MT,IS,IT,GR,ES,AT,CY,CZ,PL,RO,LI,NL,TR",
@@ -69401,7 +70073,7 @@
         "volume": 3221225472,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "NO,DE,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,EE,CH,MT,IS,IT,GR,ES,AT,CY,CZ,PL,RO,LI,NL,TR",
@@ -70010,12 +70682,12 @@
         "packageCode": "PACK04L3R",
         "slug": "AS-12_0.5_Daily",
         "name": "Asia (12 areas) 500MB/Day",
-        "price": 25000,
+        "price": 19000,
         "currencyCode": "USD",
         "volume": 524288000,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MO,HK,TW,TH,SG,JP,KR,VN,ID,CN,MY,KH",
@@ -70178,12 +70850,12 @@
         "packageCode": "PXJ8HG40S",
         "slug": "AS-12_1_Daily",
         "name": "Asia (12 areas) 1GB/Day",
-        "price": 40000,
+        "price": 34000,
         "currencyCode": "USD",
         "volume": 1073741824,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MO,HK,TW,TH,SG,JP,KR,VN,ID,CN,MY,KH",
@@ -70346,12 +71018,12 @@
         "packageCode": "PVBKS19B4",
         "slug": "AS-12_2_Daily",
         "name": "Asia (12 areas) 2GB/Day",
-        "price": 75000,
+        "price": 66000,
         "currencyCode": "USD",
         "volume": 2147483648,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MO,HK,TW,TH,SG,JP,KR,VN,ID,CN,MY,KH",
@@ -70514,12 +71186,12 @@
         "packageCode": "PM5T3Z4UM",
         "slug": "AS-12_3_Daily",
         "name": "Asia (12 areas) 3GB/Day",
-        "price": 107000,
+        "price": 87000,
         "currencyCode": "USD",
         "volume": 3221225472,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MO,HK,TW,TH,SG,JP,KR,VN,ID,CN,MY,KH",
@@ -70687,7 +71359,7 @@
         "volume": 2147483648,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "AU",
@@ -70722,7 +71394,7 @@
         "volume": 3221225472,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "AU",
@@ -70757,7 +71429,7 @@
         "volume": 10737418240,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "AU",
@@ -70792,7 +71464,7 @@
         "volume": 524288000,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "BH",
@@ -70835,7 +71507,7 @@
         "volume": 1073741824,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "BH",
@@ -70878,7 +71550,7 @@
         "volume": 2147483648,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "BH",
@@ -70921,7 +71593,7 @@
         "volume": 3221225472,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "BH",
@@ -70964,7 +71636,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "BN",
@@ -70999,7 +71671,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "BN",
@@ -71034,7 +71706,7 @@
         "volume": 524288000,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "CA",
@@ -71073,7 +71745,7 @@
         "volume": 3221225472,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "CA",
@@ -71112,7 +71784,7 @@
         "volume": 524288000,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MO,HK,CN",
@@ -71169,7 +71841,7 @@
         "volume": 1073741824,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MO,HK,CN",
@@ -71226,7 +71898,7 @@
         "volume": 2147483648,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MO,HK,CN",
@@ -71283,7 +71955,7 @@
         "volume": 3221225472,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MO,HK,CN",
@@ -71340,7 +72012,7 @@
         "volume": 524288000,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "NO,DE,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,EE,CH,MT,IS,IT,GR,ES,AT,CY,CZ,PL,RO,LI,NL,TR",
@@ -71954,7 +72626,7 @@
         "volume": 314572800,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "NO,DE,BE,FI,PT,BG,DK,LT,LU,LV,HR,UA,FR,HU,SE,SI,SK,GB,IE,EE,CH,MT,IS,IT,GR,ES,AT,CY,CZ,PL,RO,LI,NL,TR",
@@ -72568,7 +73240,7 @@
         "volume": 2147483648,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "ID",
@@ -72607,7 +73279,7 @@
         "volume": 3221225472,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "ID",
@@ -72646,7 +73318,7 @@
         "volume": 10737418240,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "ID",
@@ -72685,7 +73357,7 @@
         "volume": 524288000,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "IQ",
@@ -72724,7 +73396,7 @@
         "volume": 1073741824,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "IQ",
@@ -72763,7 +73435,7 @@
         "volume": 2147483648,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "IQ",
@@ -72802,7 +73474,7 @@
         "volume": 3221225472,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "IQ",
@@ -72841,7 +73513,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "IL",
@@ -72888,7 +73560,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "IL",
@@ -72935,7 +73607,7 @@
         "volume": 2147483648,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "IL",
@@ -72982,7 +73654,7 @@
         "volume": 3221225472,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "IL",
@@ -73029,7 +73701,7 @@
         "volume": 3221225472,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "JP",
@@ -73064,7 +73736,7 @@
         "volume": 2147483648,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "NZ",
@@ -73099,7 +73771,7 @@
         "volume": 3221225472,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "NZ",
@@ -73134,7 +73806,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MX,US,CA",
@@ -73215,7 +73887,7 @@
         "volume": 3221225472,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MX,US,CA",
@@ -73284,7 +73956,7 @@
         "volume": 3221225472,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "PH",
@@ -73319,7 +73991,7 @@
         "volume": 524288000,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "RE",
@@ -73354,7 +74026,7 @@
         "volume": 1073741824,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "RE",
@@ -73389,7 +74061,7 @@
         "volume": 2147483648,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "RE",
@@ -73424,7 +74096,7 @@
         "volume": 3221225472,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "RE",
@@ -73459,7 +74131,7 @@
         "volume": 2147483648,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "KR",
@@ -73494,7 +74166,7 @@
         "volume": 3221225472,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "KR",
@@ -73529,7 +74201,7 @@
         "volume": 2147483648,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "TH",
@@ -73564,7 +74236,7 @@
         "volume": 3221225472,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "TH",
@@ -73599,7 +74271,7 @@
         "volume": 3221225472,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "US",
@@ -73638,7 +74310,7 @@
         "volume": 524288000,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "US",
@@ -73677,7 +74349,7 @@
         "volume": 10737418240,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "US",
@@ -73716,7 +74388,7 @@
         "volume": 5368709120,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "JP",
@@ -73751,7 +74423,7 @@
         "volume": 5368709120,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "KR",
@@ -73786,7 +74458,7 @@
         "volume": 10737418240,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "UZ,PK,KG,KZ,LK",
@@ -73865,7 +74537,7 @@
         "volume": 5368709120,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "UZ,PK,KG,KZ,LK",
@@ -73944,7 +74616,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "UZ,PK,KG,KZ,LK",
@@ -74023,7 +74695,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "UZ,PK,KG,KZ,LK",
@@ -74102,7 +74774,7 @@
         "volume": 10737418240,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "QA,AE,BH,IQ,KW,SA",
@@ -74192,7 +74864,7 @@
         "volume": 5368709120,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "QA,AE,BH,IQ,KW,SA",
@@ -74282,7 +74954,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "QA,AE,BH,IQ,KW,SA",
@@ -74372,7 +75044,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "QA,AE,BH,IQ,KW,SA",
@@ -74462,7 +75134,7 @@
         "volume": 5368709120,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "BB,PR,JM,PY,DM,DO,BO,BR,GD,GF,KN,UY,AG,MS,AI,GP,CO,AN,VC,KY,TC,AR,VG,PE,LC",
@@ -74765,7 +75437,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "BB,PR,JM,PY,DM,DO,BO,BR,GD,GF,KN,UY,AG,MS,AI,GP,CO,AN,VC,KY,TC,AR,VG,PE,LC",
@@ -75068,7 +75740,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "BB,PR,JM,PY,DM,DO,BO,BR,GD,GF,KN,UY,AG,MS,AI,GP,CO,AN,VC,KY,TC,AR,VG,PE,LC",
@@ -75371,7 +76043,7 @@
         "volume": 5368709120,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "BR",
@@ -75406,7 +76078,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "BR",
@@ -75441,7 +76113,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "BR",
@@ -75476,7 +76148,7 @@
         "volume": 10737418240,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MX,US,CA",
@@ -75557,7 +76229,7 @@
         "volume": 5368709120,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MX,US,CA",
@@ -78034,7 +78706,7 @@
         "volume": 10737418240,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "KR",
@@ -78069,7 +78741,7 @@
         "volume": 10737418240,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "VN",
@@ -78108,7 +78780,7 @@
         "volume": 10737418240,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "SG",
@@ -78147,7 +78819,7 @@
         "volume": 10737418240,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "PH",
@@ -78182,7 +78854,7 @@
         "volume": 10737418240,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "JP",
@@ -78217,7 +78889,7 @@
         "volume": 10737418240,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "HK",
@@ -78462,7 +79134,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "CN",
@@ -78497,7 +79169,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "CN",
@@ -78777,7 +79449,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "LK",
@@ -78812,7 +79484,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "LK",
@@ -78847,7 +79519,7 @@
         "volume": 2147483648,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "LK",
@@ -78882,7 +79554,7 @@
         "volume": 3221225472,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "LK",
@@ -78917,7 +79589,7 @@
         "volume": 5368709120,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "LK",
@@ -78991,7 +79663,7 @@
         "volume": 1073741824,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "DE",
@@ -79030,7 +79702,7 @@
         "volume": 1073741824,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "IT",
@@ -79073,7 +79745,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MA",
@@ -79108,7 +79780,7 @@
         "volume": 2147483648,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MA",
@@ -79143,7 +79815,7 @@
         "volume": 2147483648,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "EG",
@@ -79178,7 +79850,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "ZA",
@@ -79213,7 +79885,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "QA",
@@ -79248,7 +79920,7 @@
         "volume": 1073741824,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "AR",
@@ -79287,7 +79959,7 @@
         "volume": 2147483648,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MU",
@@ -79322,7 +79994,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "TR",
@@ -79357,7 +80029,7 @@
         "volume": 1073741824,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "EG",
@@ -79392,7 +80064,7 @@
         "volume": 1073741824,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "FR",
@@ -79435,7 +80107,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "UA",
@@ -79470,7 +80142,7 @@
         "volume": 1073741824,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "IE",
@@ -79513,7 +80185,7 @@
         "volume": 1073741824,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "TH,SG,VN,PH,ID,MY,KH",
@@ -79622,7 +80294,7 @@
         "volume": 1073741824,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "AE",
@@ -79657,7 +80329,7 @@
         "volume": 1073741824,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "BE",
@@ -79700,7 +80372,7 @@
         "volume": 1073741824,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "PT",
@@ -79743,7 +80415,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "TN",
@@ -79778,7 +80450,7 @@
         "volume": 1073741824,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "NO",
@@ -79813,7 +80485,7 @@
         "volume": 2147483648,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "CN",
@@ -79848,7 +80520,7 @@
         "volume": 5368709120,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "CN",
@@ -79883,7 +80555,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "TR",
@@ -79918,7 +80590,7 @@
         "volume": 2147483648,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "TR",
@@ -79953,7 +80625,7 @@
         "volume": 5368709120,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "TR",
@@ -79988,7 +80660,7 @@
         "volume": 524288000,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "DE",
@@ -80027,7 +80699,7 @@
         "volume": 2147483648,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "DE",
@@ -80066,7 +80738,7 @@
         "volume": 5368709120,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "DE",
@@ -80105,7 +80777,7 @@
         "volume": 524288000,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "AE",
@@ -80140,7 +80812,7 @@
         "volume": 2147483648,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "AE",
@@ -80175,7 +80847,7 @@
         "volume": 5368709120,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "AE",
@@ -80210,7 +80882,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MA",
@@ -80245,7 +80917,7 @@
         "volume": 524288000,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "TH,SG,VN,PH,ID,MY,KH",
@@ -80354,7 +81026,7 @@
         "volume": 2147483648,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "TH,SG,VN,PH,ID,MY,KH",
@@ -80463,7 +81135,7 @@
         "volume": 5368709120,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "TH,SG,VN,PH,ID,MY,KH",
@@ -80572,7 +81244,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "HK",
@@ -80607,7 +81279,7 @@
         "volume": 524288000,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "FR",
@@ -80650,7 +81322,7 @@
         "volume": 2147483648,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "FR",
@@ -80693,7 +81365,7 @@
         "volume": 5368709120,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "FR",
@@ -80736,7 +81408,7 @@
         "volume": 524288000,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "IT",
@@ -80779,7 +81451,7 @@
         "volume": 2147483648,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "IT",
@@ -80822,7 +81494,7 @@
         "volume": 5368709120,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "IT",
@@ -80865,7 +81537,7 @@
         "volume": 2147483648,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "IN",
@@ -80904,7 +81576,7 @@
         "volume": 524288000,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "EG",
@@ -80939,7 +81611,7 @@
         "volume": 2147483648,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "VN",
@@ -80978,7 +81650,7 @@
         "volume": 524288000,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "ES",
@@ -81025,7 +81697,7 @@
         "volume": 1073741824,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "ES",
@@ -81072,7 +81744,7 @@
         "volume": 2147483648,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "ES",
@@ -81119,7 +81791,7 @@
         "volume": 1073741824,
         "smsStatus": 1,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MU",
@@ -81276,7 +81948,7 @@
         "volume": 524288000,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "TH,SG,MY",
@@ -81337,7 +82009,7 @@
         "volume": 1073741824,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "TH,SG,MY",
@@ -81398,7 +82070,7 @@
         "volume": 2147483648,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "TH,SG,MY",
@@ -81825,7 +82497,7 @@
         "volume": 524288000,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "JP,KR,CN",
@@ -81886,7 +82558,7 @@
         "volume": 1073741824,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "JP,KR,CN",
@@ -81947,7 +82619,7 @@
         "volume": 2147483648,
         "smsStatus": 2,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "JP,KR,CN",
@@ -82842,41 +83514,6 @@
                 "operatorList": [
                     {
                         "operatorName": "AIS",
-                        "networkType": "5G"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "packageCode": "P1OZP2NM8",
-        "slug": "TW_0.1_7",
-        "name": "Taiwan (China) 100MB 7Days",
-        "price": 1000,
-        "currencyCode": "USD",
-        "volume": 104857600,
-        "smsStatus": 2,
-        "dataType": 1,
-        "unusedValidTime": 180,
-        "duration": 7,
-        "durationUnit": "DAY",
-        "location": "TW",
-        "description": "",
-        "activeType": 2,
-        "favorite": false,
-        "retailPrice": 1500.0,
-        "speed": "3G/4G/5G",
-        "ipExport": "HK",
-        "supportTopUpType": 2,
-        "fupPolicy": "",
-        "locationNetworkList": [
-            {
-                "locationName": "Taiwan (China)",
-                "locationLogo": "/img/flags/tw.png",
-                "locationCode": "TW",
-                "operatorList": [
-                    {
-                        "operatorName": "Chunghwa",
                         "networkType": "5G"
                     }
                 ]
@@ -84784,7 +85421,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "ID",
@@ -84819,7 +85456,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "ID",
@@ -84854,7 +85491,7 @@
         "volume": 2147483648,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "ID",
@@ -85064,7 +85701,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "JP",
@@ -85099,7 +85736,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "JP",
@@ -85134,7 +85771,7 @@
         "volume": 2147483648,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "JP",
@@ -85344,7 +85981,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "TH",
@@ -85379,7 +86016,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "TH",
@@ -85414,7 +86051,7 @@
         "volume": 2147483648,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "TH",
@@ -85624,7 +86261,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "CN",
@@ -85659,7 +86296,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "CN",
@@ -85694,7 +86331,7 @@
         "volume": 2147483648,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "CN",
@@ -85904,7 +86541,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "SG",
@@ -85939,7 +86576,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "SG",
@@ -85974,7 +86611,7 @@
         "volume": 2147483648,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "SG",
@@ -86184,7 +86821,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "KR",
@@ -86219,7 +86856,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "KR",
@@ -86254,7 +86891,7 @@
         "volume": 2147483648,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "KR",
@@ -86464,7 +87101,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MO",
@@ -86499,7 +87136,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MO",
@@ -86534,7 +87171,7 @@
         "volume": 2147483648,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MO",
@@ -86744,7 +87381,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MY",
@@ -86779,7 +87416,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MY",
@@ -86814,7 +87451,7 @@
         "volume": 2147483648,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "MY",
@@ -87024,7 +87661,7 @@
         "volume": 524288000,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "VN",
@@ -87059,7 +87696,7 @@
         "volume": 1073741824,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "VN",
@@ -87094,7 +87731,7 @@
         "volume": 2147483648,
         "smsStatus": 0,
         "dataType": 2,
-        "unusedValidTime": 30,
+        "unusedValidTime": 180,
         "duration": 1,
         "durationUnit": "DAY",
         "location": "VN",
@@ -87114,6 +87751,342 @@
                 "operatorList": [
                     {
                         "operatorName": "Vinaphone",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PMWKBKC8Q",
+        "slug": "AS-12_1_7",
+        "name": "Asia (12 areas) 1GB 7Days",
+        "price": 35000,
+        "currencyCode": "USD",
+        "volume": 1073741824,
+        "smsStatus": 2,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 7,
+        "durationUnit": "DAY",
+        "location": "MO,HK,TW,TH,SG,JP,KR,VN,ID,CN,MY,KH",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 52500.0,
+        "speed": "3G/4G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Vietnam",
+                "locationLogo": "/img/flags/vn.png",
+                "locationCode": "VN",
+                "operatorList": [
+                    {
+                        "operatorName": "MobiFone",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Vietnamobile",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Indonesia",
+                "locationLogo": "/img/flags/id.png",
+                "locationCode": "ID",
+                "operatorList": [
+                    {
+                        "operatorName": "Telkomsel",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "South Korea",
+                "locationLogo": "/img/flags/kr.png",
+                "locationCode": "KR",
+                "operatorList": [
+                    {
+                        "operatorName": "SKTelecom",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Cambodia",
+                "locationLogo": "/img/flags/kh.png",
+                "locationCode": "KH",
+                "operatorList": [
+                    {
+                        "operatorName": "Latelz",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "China mainland",
+                "locationLogo": "/img/flags/cn.png",
+                "locationCode": "CN",
+                "operatorList": [
+                    {
+                        "operatorName": "China Unicom",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Japan",
+                "locationLogo": "/img/flags/jp.png",
+                "locationCode": "JP",
+                "operatorList": [
+                    {
+                        "operatorName": "KDDI",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "SoftBank",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Hong Kong (China)",
+                "locationLogo": "/img/flags/hk.png",
+                "locationCode": "HK",
+                "operatorList": [
+                    {
+                        "operatorName": "csl",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Taiwan (China)",
+                "locationLogo": "/img/flags/tw.png",
+                "locationCode": "TW",
+                "operatorList": [
+                    {
+                        "operatorName": "Chunghwa",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Macao (China)",
+                "locationLogo": "/img/flags/mo.png",
+                "locationCode": "MO",
+                "operatorList": [
+                    {
+                        "operatorName": "CTM",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Thailand",
+                "locationLogo": "/img/flags/th.png",
+                "locationCode": "TH",
+                "operatorList": [
+                    {
+                        "operatorName": "AIS",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Malaysia",
+                "locationLogo": "/img/flags/my.png",
+                "locationCode": "MY",
+                "operatorList": [
+                    {
+                        "operatorName": "DiGi",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Maxis",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Singapore",
+                "locationLogo": "/img/flags/sg.png",
+                "locationCode": "SG",
+                "operatorList": [
+                    {
+                        "operatorName": "SingTel",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PDX275FW0",
+        "slug": "AS-12_3_15",
+        "name": "Asia (12 areas) 3GB 15Days",
+        "price": 88000,
+        "currencyCode": "USD",
+        "volume": 3221225472,
+        "smsStatus": 2,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 15,
+        "durationUnit": "DAY",
+        "location": "MO,HK,TW,TH,SG,JP,KR,VN,ID,CN,MY,KH",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 132000.0,
+        "speed": "3G/4G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Vietnam",
+                "locationLogo": "/img/flags/vn.png",
+                "locationCode": "VN",
+                "operatorList": [
+                    {
+                        "operatorName": "MobiFone",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Vietnamobile",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Indonesia",
+                "locationLogo": "/img/flags/id.png",
+                "locationCode": "ID",
+                "operatorList": [
+                    {
+                        "operatorName": "Telkomsel",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "South Korea",
+                "locationLogo": "/img/flags/kr.png",
+                "locationCode": "KR",
+                "operatorList": [
+                    {
+                        "operatorName": "SKTelecom",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Cambodia",
+                "locationLogo": "/img/flags/kh.png",
+                "locationCode": "KH",
+                "operatorList": [
+                    {
+                        "operatorName": "Latelz",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "China mainland",
+                "locationLogo": "/img/flags/cn.png",
+                "locationCode": "CN",
+                "operatorList": [
+                    {
+                        "operatorName": "China Unicom",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Japan",
+                "locationLogo": "/img/flags/jp.png",
+                "locationCode": "JP",
+                "operatorList": [
+                    {
+                        "operatorName": "KDDI",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "SoftBank",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Hong Kong (China)",
+                "locationLogo": "/img/flags/hk.png",
+                "locationCode": "HK",
+                "operatorList": [
+                    {
+                        "operatorName": "csl",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Taiwan (China)",
+                "locationLogo": "/img/flags/tw.png",
+                "locationCode": "TW",
+                "operatorList": [
+                    {
+                        "operatorName": "Chunghwa",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Macao (China)",
+                "locationLogo": "/img/flags/mo.png",
+                "locationCode": "MO",
+                "operatorList": [
+                    {
+                        "operatorName": "CTM",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Thailand",
+                "locationLogo": "/img/flags/th.png",
+                "locationCode": "TH",
+                "operatorList": [
+                    {
+                        "operatorName": "AIS",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Malaysia",
+                "locationLogo": "/img/flags/my.png",
+                "locationCode": "MY",
+                "operatorList": [
+                    {
+                        "operatorName": "DiGi",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Maxis",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Singapore",
+                "locationLogo": "/img/flags/sg.png",
+                "locationCode": "SG",
+                "operatorList": [
+                    {
+                        "operatorName": "SingTel",
                         "networkType": "4G"
                     }
                 ]

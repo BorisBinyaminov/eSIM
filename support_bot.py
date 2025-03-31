@@ -3,11 +3,15 @@ import sys
 import logging
 import re
 import os
-import openai
+from openai import OpenAI
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 from telegram import Update
 from telegram.ext import Application, MessageHandler, filters, CallbackContext
 from faq_entries import FAQ_ENTRIES
-import openai
+from openai import OpenAI
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 import os
 import datetime
 import logging
@@ -25,7 +29,6 @@ BOT_TOKEN = "7784825740:AAGPb1Rp0yn3yOZzeVViSy5DblYJsR4Bu2c"
 SUPPORT_GROUP_ID = -1002483073660
 
 # Set your OpenAI API key from environment variable
-openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Enable logging
 logging.basicConfig(level=logging.INFO)
@@ -65,16 +68,14 @@ async def get_ai_response(prompt: str) -> str:
         user_prompt = prompt  # Keep the original user input for detailed queries
 
     try:
-        response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
-            messages=[
-                {"role": "system", "content": system_message},
-                {"role": "user", "content": user_prompt}
-            ],
-            temperature=0.7,
-            max_tokens=400
-        )
-        ai_reply = response.choices[0].message["content"].strip()
+        response = client.chat.completions.create(model="gpt-3.5-turbo",
+        messages=[
+            {"role": "system", "content": system_message},
+            {"role": "user", "content": user_prompt}
+        ],
+        temperature=0.7,
+        max_tokens=400)
+        ai_reply = response.choices[0].message.content.strip()
         logging.info(f"AI Response generated successfully: {ai_reply}")
         return ai_reply
     except Exception as e:
@@ -89,16 +90,14 @@ async def check_escalation_intent(message: str) -> bool:
         f"Message: {message}"
     )
     try:
-        response = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
-            messages=[
-                {"role": "system", "content": "You are a helpful assistant that identifies if a user message is an escalation request."},
-                {"role": "user", "content": prompt}
-            ],
-            temperature=0,  # deterministic output
-            max_tokens=10
-        )
-        answer = response.choices[0].message["content"].strip().lower()
+        response = client.chat.completions.create(model="gpt-3.5-turbo",
+        messages=[
+            {"role": "system", "content": "You are a helpful assistant that identifies if a user message is an escalation request."},
+            {"role": "user", "content": prompt}
+        ],
+        temperature=0,  # deterministic output
+        max_tokens=10)
+        answer = response.choices[0].message.content.strip().lower()
         return answer.startswith("yes")
     except Exception as e:
         # Fallback to a conservative approach if the call fails.
@@ -136,7 +135,7 @@ async def forward_to_support(update: Update, context: CallbackContext):
         )
         # Notify the user that the file will be reviewed by an agent.
         await update.message.reply_text("Your file has been received and will be reviewed by our support team.")
-    
+
     if update.message.document:
         document = update.message.document
         file_name = document.file_name
@@ -158,17 +157,17 @@ async def forward_to_support(update: Update, context: CallbackContext):
     if escalation_triggered:
         # Compile the conversation history.
         conversation_history = "\n\n".join(context.chat_data['conversation'])
-        
+
         # Construct the file name and save the conversation log.
         LOG_FOLDER = "user_conv_logs"
         os.makedirs(LOG_FOLDER, exist_ok=True)
         timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
         username = user.username or user.first_name
         filename = os.path.join(LOG_FOLDER, f"{username}_{user.id}_{timestamp}.log")
-        
+
         with open(filename, "w", encoding="utf-8") as f:
             f.write(conversation_history)
-        
+
         escalation_message = (
             f"📩 Escalation request from {user.first_name} (@{user.username}, id: {user.id}):\n\n"
             f"Conversation history saved to {filename}:\n{conversation_history}\n\n"
