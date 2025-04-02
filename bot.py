@@ -77,6 +77,7 @@ GLOBAL_PACKAGE_TYPES = {
     "Global 20GB": 20,
 }
 
+#Base.metadata.drop_all(bind=engine)
 Base.metadata.create_all(bind=engine)
 print("[DEBUG] All tables created (if they did not exist already).")
 
@@ -237,7 +238,7 @@ async def button_handler(update: Update, context: CallbackContext) -> None:
             package_code = pkg.get("packageCode", "N/A")
             row_str = f"{volume_gb:>6.1f}GB | {duration:>7}d | ${price:>6.2f} | {support:>5}"
             table_rows.append(row_str)
-            btn_text = f"More Info {name}   ${price:.2f}"
+            btn_text = f"More Info on {name}   ${price:.2f}"
             keyboard_rows.append([InlineKeyboardButton(btn_text, callback_data=f"moreinfo_{package_code}")])
         table_body = "\n".join(table_rows)
         table_footer = "\n```"
@@ -288,7 +289,7 @@ async def button_handler(update: Update, context: CallbackContext) -> None:
             coverage = len(pkg.get("locationNetworkList", []))
             row_str = f"{volume_gb:>4.1f}GB| {duration_display:^4}| ${price:^7.2f}|{support_emoji:^3}| {coverage:^10}"
             table_rows.append(row_str)
-            btn_text = f"More Info {name}   ${price:.2f}"
+            btn_text = f"More Info on {name}   ${price:.2f}"
             keyboard_rows.append([InlineKeyboardButton(btn_text, callback_data=f"moreinfo_{pkg.get('packageCode', 'N/A')}")])
         table_body = "\n".join(table_rows)
         table_footer = "\n```"
@@ -332,7 +333,7 @@ async def button_handler(update: Update, context: CallbackContext) -> None:
             coverage = len(pkg.get("locationNetworkList", []))
             row_str = f"{volume_gb:>4.1f}GB| {duration_display:^4}| ${price:^7.2f}|{support_emoji:^3}| {coverage:^10}"
             table_rows.append(row_str)
-            btn_text = f"More Info {name}   ${price:.2f}"
+            btn_text = f"More Info on {name}   ${price:.2f}"
             keyboard_rows.append([InlineKeyboardButton(btn_text, callback_data=f"moreinfo_{pkg.get('packageCode', 'N/A')}")])
         table_body = "\n".join(table_rows)
         table_footer = "\n```"
@@ -403,16 +404,31 @@ async def button_handler(update: Update, context: CallbackContext) -> None:
 
     elif data.startswith("buypkg_"):
         package_code = data.split("_", 1)[1]
-        try:
-            balance_data = await buy_esim.check_balance()
-            balance_value = balance_data.get("obj", {}).get("balance", 0)
-            logger.info(f"ESIMAccess balance: ${balance_value/10000}")
-        except Exception as e:
-            logger.exception("Error checking balance:")
-            await query.message.reply_text(f"Error checking balance: {str(e)}. Please try again later.")
+        user_id = str(update.effective_user.id)
+        
+        # Locate package details from our packages lists to extract order price.
+        package = next((pkg for pkg in all_country_packages if pkg.get("packageCode") == package_code), None)
+        if package is None:
+            package = next((pkg for pkg in all_regional_packages if pkg.get("packageCode") == package_code), None)
+        if package is None:
+            package = next((pkg for pkg in all_global_packages if pkg.get("packageCode") == package_code), None)
+        if package is None:
+            await query.message.reply_text("Package not found.")
             return
-        # Proceed with the purchase process (TBD)
-        await query.message.reply_text(f"You selected package {package_code} for purchase (not implemented).")
+
+        # Use the "price" field for the cost (what we pay), not retailPrice.
+        order_price = package.get("price", 0)
+        retail_price = package.get("retailPrice", 0)
+        
+        try:
+            result = await buy_esim.process_purchase(package_code, user_id, order_price, retail_price)
+            logger.info(f"Purchase successful: {result}")
+            await query.message.reply_text(f"Purchase successful! Your QR code: {result.get('qrCode')}")
+        except Exception as e:
+            logger.exception("Error processing purchase:")
+            await query.message.reply_text(f"Error processing purchase: {str(e)}. Please try again later.")
+            return
+
 
 async def error_handler(update: object, context: CallbackContext) -> None:
     logger.error(msg="Exception while handling an update:", exc_info=context.error)

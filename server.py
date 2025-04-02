@@ -11,6 +11,8 @@ from fastapi.responses import FileResponse, JSONResponse
 from dotenv import load_dotenv
 from auth import router as auth_router
 from database import engine, Base  # Import engine and Base for DB initialization
+from fastapi import HTTPException
+import buy_esim
 
 # Load environment variables
 load_dotenv()
@@ -143,7 +145,19 @@ def run_support_bot():
         print("✅ Support Bot started successfully!")
     except Exception as e:
         print(f"❌ Error starting Support Bot: {e}")
-        
+
+from fastapi import HTTPException
+import buy_esim
+
+@app.get("/api/v1/buy_esim/balance")
+async def get_balance():
+    try:
+        data = await buy_esim.check_balance()
+        balance_value = data.get("obj", {}).get("balance", 0)
+        return {"balance": balance_value, "full_response": data}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error checking balance: {str(e)}")
+
 # Run the update task in a separate thread
 threading.Thread(target=schedule_package_updates, daemon=True).start()
 support_bot_thread = threading.Thread(target=run_support_bot, daemon=True)
