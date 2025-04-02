@@ -1,4 +1,3 @@
-# bot.py
 import sys
 import logging
 import asyncio
@@ -9,13 +8,7 @@ from telegram.ext import Application, CommandHandler, CallbackContext, MessageHa
 from dotenv import load_dotenv
 from database import SessionLocal, engine, Base
 from models import User
-
-# Try to import Request for custom timeout; fallback if unavailable.
-try:
-    from telegram.utils.request import Request
-    custom_request_available = True
-except ImportError:
-    custom_request_available = False
+import buy_esim
 
 load_dotenv()
 
@@ -56,14 +49,12 @@ except Exception as e:
     all_regional_packages = []
 
 # ====== 4) Define REGION_ICONS mapping without PNG file paths ======
-# Telegram bot buttons cannot display images, so we keep only the predicate functions.
 REGION_ICONS = {
     "Europe": lambda pkg: "Europe" in pkg.get("name", ""),
     "South America": lambda pkg: "South America" in pkg.get("name", ""),
     "North America": lambda pkg: "North America" in pkg.get("name", ""),
     "Africa": lambda pkg: "Africa" in pkg.get("name", ""),
-    "Asia (excl. China)": lambda pkg: ("Asia" in pkg.get("name", "") or
-                         "Singapore" in pkg.get("name", "")), 
+    "Asia (excl. China)": lambda pkg: ("Asia" in pkg.get("name", "") or "Singapore" in pkg.get("name", "")),
     "China": lambda pkg: ("China" in pkg.get("name", "")),
     "Gulf": lambda pkg: "Gulf" in pkg.get("name", ""),
     "Middle East": lambda pkg: "Middle East" in pkg.get("name", ""),
@@ -91,7 +82,6 @@ print("[DEBUG] All tables created (if they did not exist already).")
 
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 logger = logging.getLogger(__name__)
-
 USER_SESSIONS = {}
 
 # --- Helper: Build paginated inline keyboard for package buttons ---
@@ -129,7 +119,6 @@ def buy_esim_keyboard():
     return InlineKeyboardMarkup(keyboard)
 
 def country_code_to_emoji(country_code: str) -> str:
-    """Convert a 2-letter country code to a flag emoji."""
     if len(country_code) != 2:
         return ""
     offset = 127397
@@ -262,10 +251,9 @@ async def button_handler(update: Update, context: CallbackContext) -> None:
 
     elif data == "buy_regional":
         regions = list(REGION_ICONS.keys())
-        num_cols = 3  # Set number of columns per row
+        num_cols = 3
         keyboard = [
-            [InlineKeyboardButton(region, callback_data=f"regional_{region}") 
-             for region in regions[i:i+num_cols]]
+            [InlineKeyboardButton(region, callback_data=f"regional_{region}") for region in regions[i:i+num_cols]]
             for i in range(0, len(regions), num_cols)
         ]
         inline_markup = InlineKeyboardMarkup(keyboard)
@@ -309,12 +297,9 @@ async def button_handler(update: Update, context: CallbackContext) -> None:
             f"{table_header}{table_body}{table_footer}\n\n"
             "Select a package:"
         )
-        # Store the full table text and button list in chat_data for pagination callbacks.
         context.chat_data["current_table_text"] = full_table_text
         context.chat_data["current_button_rows"] = keyboard_rows
         context.chat_data["current_page"] = 0
-
-        # Build initial paginated inline keyboard for page 0.
         initial_markup = build_paginated_keyboard(keyboard_rows, page=0)
         await query.message.reply_text(full_table_text, parse_mode="Markdown", reply_markup=initial_markup)
 
@@ -363,9 +348,8 @@ async def button_handler(update: Update, context: CallbackContext) -> None:
         await query.message.reply_text(full_table_text, parse_mode="Markdown", reply_markup=initial_markup)
 
     elif data == "buy_global":
-        # Show Global categories first.
         categories = list(GLOBAL_PACKAGE_TYPES.keys())
-        num_cols = 2  # Adjust as needed.
+        num_cols = 2
         keyboard = [
             [InlineKeyboardButton(cat, callback_data=f"globalcat_{GLOBAL_PACKAGE_TYPES[cat]}") for cat in categories[i:i+num_cols]]
             for i in range(0, len(categories), num_cols)
@@ -374,7 +358,6 @@ async def button_handler(update: Update, context: CallbackContext) -> None:
         await query.message.reply_text("Select a global package category:", reply_markup=inline_markup)
 
     elif data.startswith("page_"):
-        # Handle pagination navigation for regional/global package buttons.
         page = int(data.split("_", 1)[1])
         table_text = context.chat_data.get("current_table_text")
         button_rows = context.chat_data.get("current_button_rows")
@@ -385,7 +368,6 @@ async def button_handler(update: Update, context: CallbackContext) -> None:
 
     elif data.startswith("moreinfo_"):
         package_code = data.split("_", 1)[1]
-        # Search for the package in local, regional and global lists.
         pkg = next((p for p in all_country_packages if p.get("packageCode") == package_code), None)
         if pkg is None:
             pkg = next((p for p in all_regional_packages if p.get("packageCode") == package_code), None)
@@ -406,7 +388,7 @@ async def button_handler(update: Update, context: CallbackContext) -> None:
             f"<b>Name:</b> {name}\n"
             f"<b>Data Volume:</b> {volume_gb}GB\n"
             f"<b>Duration:</b> {duration} days\n"
-            f"<b>Price:</b> <i><b>💲{price:.2f}</b></i>\n"
+            f"<b>Price:</b> <i><b>${price:.2f}</b></i>\n"
             f"<b>Top-Up:</b> {support}\n"
             f"<b>Coverage:</b> {coverage} Countries\n"
             f"<b>Supported Countries:</b> {supported_countries_str}"
@@ -414,28 +396,39 @@ async def button_handler(update: Update, context: CallbackContext) -> None:
         buy_button = InlineKeyboardButton("Buy", callback_data=f"buypkg_{package_code}")
         keyboard = InlineKeyboardMarkup([[buy_button]])
         await query.message.reply_text(
-                detailed_message,
-                parse_mode="HTML",
-                reply_markup=keyboard
-            )
+            detailed_message,
+            parse_mode="HTML",
+            reply_markup=keyboard
+        )
 
     elif data.startswith("buypkg_"):
         package_code = data.split("_", 1)[1]
+        try:
+            balance_data = await buy_esim.check_balance()
+            balance_value = balance_data.get("obj", {}).get("balance", 0)
+            logger.info(f"ESIMAccess balance: ${balance_value/10000}")
+        except Exception as e:
+            logger.exception("Error checking balance:")
+            await query.message.reply_text(f"Error checking balance: {str(e)}. Please try again later.")
+            return
+        # Proceed with the purchase process (TBD)
         await query.message.reply_text(f"You selected package {package_code} for purchase (not implemented).")
 
 async def error_handler(update: object, context: CallbackContext) -> None:
     logger.error(msg="Exception while handling an update:", exc_info=context.error)
 
+async def handle_message_wrapper(update: Update, context: CallbackContext) -> None:
+    try:
+        await handle_message(update, context)
+    except Exception as e:
+        logger.exception("Error in handle_message:")
+
 if __name__ == "__main__":
     if sys.platform == "win32":
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
-    if custom_request_available:
-        req = Request(connect_timeout=600)  # Increased timeout value
-        application = Application.builder().token(TELEGRAM_TOKEN).request(req).build()
-    else:
-        application = Application.builder().token(TELEGRAM_TOKEN).build()
+    application = Application.builder().token(TELEGRAM_TOKEN).build()
     application.add_handler(CommandHandler("start", start))
-    application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
+    application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message_wrapper))
     application.add_handler(CallbackQueryHandler(button_handler))
     application.add_error_handler(error_handler)
     application.run_polling()

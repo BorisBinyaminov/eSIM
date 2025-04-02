@@ -424,7 +424,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -1134,7 +1134,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -3441,7 +3441,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -4924,7 +4924,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -9429,7 +9429,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -9476,7 +9476,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -9523,7 +9523,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -9915,7 +9915,7 @@
         "price": 18000,
         "currencyCode": "USD",
         "volume": 1073741824,
-        "smsStatus": 2,
+        "smsStatus": 0,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 7,
@@ -9926,7 +9926,7 @@
         "favorite": false,
         "retailPrice": 36000,
         "speed": "3G/4G/5G",
-        "ipExport": "HK",
+        "ipExport": "",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -9950,7 +9950,7 @@
         "price": 46000,
         "currencyCode": "USD",
         "volume": 3221225472,
-        "smsStatus": 2,
+        "smsStatus": 0,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 15,
@@ -9961,7 +9961,7 @@
         "favorite": false,
         "retailPrice": 92000,
         "speed": "3G/4G/5G",
-        "ipExport": "HK",
+        "ipExport": "",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -9985,7 +9985,7 @@
         "price": 70000,
         "currencyCode": "USD",
         "volume": 5368709120,
-        "smsStatus": 2,
+        "smsStatus": 0,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 30,
@@ -9996,7 +9996,7 @@
         "favorite": false,
         "retailPrice": 140000,
         "speed": "3G/4G/5G",
-        "ipExport": "HK",
+        "ipExport": "",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -16208,7 +16208,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -16918,7 +16918,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -19412,7 +19412,7 @@
         "price": 122000,
         "currencyCode": "USD",
         "volume": 10737418240,
-        "smsStatus": 2,
+        "smsStatus": 0,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 30,
@@ -19423,7 +19423,42 @@
         "favorite": false,
         "retailPrice": 244000,
         "speed": "3G/4G/5G",
-        "ipExport": "HK",
+        "ipExport": "",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "New Zealand",
+                "locationLogo": "/img/flags/nz.png",
+                "locationCode": "NZ",
+                "operatorList": [
+                    {
+                        "operatorName": "Spark",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "JC083",
+        "slug": "NZ_20_30",
+        "name": "New Zealand 20GB 30Days",
+        "price": 200000,
+        "currencyCode": "USD",
+        "volume": 21474836480,
+        "smsStatus": 0,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 30,
+        "durationUnit": "DAY",
+        "location": "NZ",
+        "description": "New Zealand 20GB 30Days",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 400000,
+        "speed": "3G/4G/5G",
+        "ipExport": "",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -20215,7 +20250,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -22033,7 +22068,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -27866,7 +27901,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -29898,7 +29933,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -31930,7 +31965,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -37879,7 +37914,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -38589,7 +38624,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -39129,7 +39164,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -41052,7 +41087,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -43084,7 +43119,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -44555,48 +44590,13 @@
         ]
     },
     {
-        "packageCode": "P0FPKFWXZ",
-        "slug": "NZ_20_30",
-        "name": "New Zealand 20GB 30Days",
-        "price": 200000,
-        "currencyCode": "USD",
-        "volume": 21474836480,
-        "smsStatus": 2,
-        "dataType": 1,
-        "unusedValidTime": 180,
-        "duration": 30,
-        "durationUnit": "DAY",
-        "location": "NZ",
-        "description": "New Zealand 20GB 30Days",
-        "activeType": 2,
-        "favorite": false,
-        "retailPrice": 400000,
-        "speed": "3G/4G/5G",
-        "ipExport": "HK",
-        "supportTopUpType": 2,
-        "fupPolicy": "",
-        "locationNetworkList": [
-            {
-                "locationName": "New Zealand",
-                "locationLogo": "/img/flags/nz.png",
-                "locationCode": "NZ",
-                "operatorList": [
-                    {
-                        "operatorName": "Spark",
-                        "networkType": "4G"
-                    }
-                ]
-            }
-        ]
-    },
-    {
         "packageCode": "PEIHJAQVY",
         "slug": "NZ_50_180",
         "name": "New Zealand 50GB 180Days",
         "price": 450000,
         "currencyCode": "USD",
         "volume": 53687091200,
-        "smsStatus": 2,
+        "smsStatus": 0,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 180,
@@ -44607,7 +44607,7 @@
         "favorite": false,
         "retailPrice": 900000,
         "speed": "3G/4G/5G",
-        "ipExport": "HK",
+        "ipExport": "",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -45973,7 +45973,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -48451,7 +48451,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -48498,7 +48498,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -48545,7 +48545,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -48641,7 +48641,7 @@
         "price": 8000,
         "currencyCode": "USD",
         "volume": 524288000,
-        "smsStatus": 2,
+        "smsStatus": 0,
         "dataType": 2,
         "unusedValidTime": 180,
         "duration": 1,
@@ -48652,7 +48652,7 @@
         "favorite": false,
         "retailPrice": 24000,
         "speed": "3G/4G/5G",
-        "ipExport": "HK",
+        "ipExport": "",
         "supportTopUpType": 1,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -48676,7 +48676,7 @@
         "price": 15000,
         "currencyCode": "USD",
         "volume": 1073741824,
-        "smsStatus": 2,
+        "smsStatus": 0,
         "dataType": 2,
         "unusedValidTime": 180,
         "duration": 1,
@@ -48687,7 +48687,7 @@
         "favorite": false,
         "retailPrice": 45000,
         "speed": "3G/4G/5G",
-        "ipExport": "HK",
+        "ipExport": "",
         "supportTopUpType": 1,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -50761,7 +50761,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -51375,7 +51375,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -51989,7 +51989,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -52603,7 +52603,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -53217,7 +53217,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -53831,7 +53831,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -54445,7 +54445,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -55059,7 +55059,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -55673,7 +55673,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -56287,7 +56287,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -57365,7 +57365,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -59205,7 +59205,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -61045,7 +61045,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -62885,7 +62885,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -64725,7 +64725,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -66565,7 +66565,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -68405,7 +68405,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -69781,7 +69781,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -70395,7 +70395,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -72334,7 +72334,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -72948,7 +72948,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -73734,7 +73734,7 @@
         "price": 29000,
         "currencyCode": "USD",
         "volume": 2147483648,
-        "smsStatus": 2,
+        "smsStatus": 0,
         "dataType": 2,
         "unusedValidTime": 180,
         "duration": 1,
@@ -73745,7 +73745,7 @@
         "favorite": false,
         "retailPrice": 87000,
         "speed": "3G/4G",
-        "ipExport": "HK",
+        "ipExport": "",
         "supportTopUpType": 1,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -73769,7 +73769,7 @@
         "price": 42000,
         "currencyCode": "USD",
         "volume": 3221225472,
-        "smsStatus": 2,
+        "smsStatus": 0,
         "dataType": 2,
         "unusedValidTime": 180,
         "duration": 1,
@@ -73780,7 +73780,7 @@
         "favorite": false,
         "retailPrice": 126000,
         "speed": "3G/4G",
-        "ipExport": "HK",
+        "ipExport": "",
         "supportTopUpType": 1,
         "fupPolicy": "",
         "locationNetworkList": [
@@ -83069,7 +83069,7 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "T-Mobile",
+                        "operatorName": "EE",
                         "networkType": "4G"
                     },
                     {
@@ -84193,7 +84193,7 @@
         "price": 1900,
         "currencyCode": "USD",
         "volume": 104857600,
-        "smsStatus": 2,
+        "smsStatus": 0,
         "dataType": 1,
         "unusedValidTime": 180,
         "duration": 7,
@@ -84204,7 +84204,7 @@
         "favorite": false,
         "retailPrice": 2850.0,
         "speed": "3G/4G/5G",
-        "ipExport": "HK",
+        "ipExport": "",
         "supportTopUpType": 2,
         "fupPolicy": "",
         "locationNetworkList": [
