@@ -5,14 +5,18 @@ import json
 import time
 import threading
 import subprocess
-from fastapi import FastAPI
+import traceback
+import asyncio
+from fastapi import FastAPI, HTTPException
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse, JSONResponse
 from dotenv import load_dotenv
 from auth import router as auth_router
 from database import engine, Base  # Import engine and Base for DB initialization
-from fastapi import HTTPException
 import buy_esim
+from support_bot import create_bot_app
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 # Load environment variables
 load_dotenv()
@@ -23,6 +27,9 @@ sys.stderr.reconfigure(encoding="utf-8")
 
 # Create FastAPI app
 app = FastAPI()
+
+# Bot status flag
+bot_status = {"running": False}
 
 # Include auth router for mini app authentication
 app.include_router(auth_router)
@@ -56,6 +63,10 @@ if not os.path.exists(COUNTRIES_JSON_PATH):
 async def serve_index():
     return FileResponse("build/index.html")
 
+@app.get("/bot/status")
+async def get_bot_status():
+    return {"bot_running": bot_status["running"]}
+
 # ✅ Redirect all other routes to `index.html` (SPA support)
 @app.get("/{full_path:path}")
 async def serve_react_app(full_path: str):
@@ -68,6 +79,18 @@ HEADERS = {
     "RT-SecretKey": os.getenv("REACT_APP_ESIM_API_Secret_KEY"),
     "Content-Type": "application/json",
 }
+
+# Setup retry session
+session = requests.Session()
+retries = Retry(
+    total=3,
+    backoff_factor=1,
+    status_forcelist=[502, 503, 504],
+    allowed_methods=["POST"]
+)
+adapter = HTTPAdapter(max_retries=retries)
+session.mount("https://", adapter)
+session.mount("http://", adapter)
 
 def adjust_prices(packages):
     for package in packages:
@@ -91,7 +114,7 @@ def fetch_packages():
 
     for filename, body in package_types:
         try:
-            response = requests.post(ESIM_API_URL, json=body, headers=HEADERS)
+            response = session.post(ESIM_API_URL, json=body, headers=HEADERS, timeout=10)
             response_data = response.json()
 
             if response_data.get("success"):
@@ -104,15 +127,15 @@ def fetch_packages():
                 print(f"❌ Failed to fetch {filename}: {response_data.get('errorMsg')}", flush=True)
         except Exception as e:
             print(f"⚠️ Error fetching {filename}: {e}", flush=True)
+            print(traceback.format_exc())
 
-    # ✅ Filter country-specific packages
     try:
         with open("public/allPackages.json", "r", encoding="utf-8") as f:
             data = json.load(f)
-        
+
         country_packages = [
             package for package in data 
-            if package.get("location") and len(package["location"]) == 2  # Only country codes with 2 characters
+            if package.get("location") and len(package["location"]) == 2
         ]
 
         with open("public/countryPackages.json", "w", encoding="utf-8") as f:
@@ -122,7 +145,6 @@ def fetch_packages():
     except Exception as e:
         print(f"⚠️ Error filtering country-specific packages: {e}", flush=True)
 
-    # Save timestamp of the last update
     last_update_time = time.strftime("%Y-%m-%d %H:%M:%S")
     with open("public/lastUpdate.txt", "w", encoding="utf-8") as f:
         f.write(last_update_time)
@@ -130,24 +152,25 @@ def fetch_packages():
     print(f"\n✅ Packages updated at: {last_update_time}", flush=True)
 
 # ✅ Fetch packages immediately on startup
-fetch_packages()
+#fetch_packages()
 
 # ✅ Periodic update of JSON files every 6 hours
 def schedule_package_updates():
     while True:
-        time.sleep(3600*6)  # Wait for 6 hours
+        time.sleep(3600*6)
         fetch_packages()
 
 def run_support_bot():
-    print("🤖 Starting Support Bot...")
+    print("🤖 Starting integrated Support Bot...")
     try:
-        subprocess.Popen(["python", "support_bot.py"])
-        print("✅ Support Bot started successfully!")
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+        bot_app = create_bot_app()
+        bot_status["running"] = True
+        loop.run_until_complete(bot_app.run_polling())
     except Exception as e:
-        print(f"❌ Error starting Support Bot: {e}")
-
-from fastapi import HTTPException
-import buy_esim
+        bot_status["running"] = False
+        print(f"❌ Failed to start support bot: {e}")
 
 @app.get("/api/v1/buy_esim/balance")
 async def get_balance():
@@ -158,10 +181,10 @@ async def get_balance():
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error checking balance: {str(e)}")
 
-# Run the update task in a separate thread
+
+# Run the update task and bot in background threads
 threading.Thread(target=schedule_package_updates, daemon=True).start()
-support_bot_thread = threading.Thread(target=run_support_bot, daemon=True)
-support_bot_thread.start()
+threading.Thread(target=run_support_bot, daemon=True).start()
 
 if __name__ == "__main__":
     import uvicorn
