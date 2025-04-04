@@ -1,41 +1,82 @@
 # Improved support_bot.py
-import sys
 import logging
+import os
 import re
-import os
-from openai import OpenAI
-import asyncio
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-from telegram import Update
-from telegram.ext import Application, MessageHandler, filters, CallbackContext, CommandHandler
-from faq_entries import FAQ_ENTRIES
-from openai import OpenAI
-
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-import os
 import datetime
-import logging
+import asyncio
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram.ext import Application, CallbackContext, MessageHandler, CommandHandler, filters
+from openai import OpenAI
+from dotenv import load_dotenv
+from telegram.ext import CallbackQueryHandler
+from faq_entries import FAQ_ENTRIES
 
-# Force UTF-8 encoding (Windows Fix)
-sys.stdout.reconfigure(encoding="utf-8")
-sys.stderr.reconfigure(encoding="utf-8")
+load_dotenv()
+
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+BOT_TOKEN = os.getenv("SUPPORT_BOT_TOKEN")
+SUPPORT_GROUP_ID = int(os.getenv("SUPPORT_GROUP_ID", "0"))
+
+if not BOT_TOKEN or not client.api_key or not SUPPORT_GROUP_ID:
+    raise RuntimeError("❌ Required environment variables are missing: SUPPORT_BOT_TOKEN, OPENAI_API_KEY, SUPPORT_GROUP_ID")
 
 FAQ_TEXT = "\n\n".join(
     f"Q: {faq['question']}\nA: {faq['answer']}" for faq in FAQ_ENTRIES
 )
 
-# Replace with your bot token and support group ID
-BOT_TOKEN = "7784825740:AAGPb1Rp0yn3yOZzeVViSy5DblYJsR4Bu2c"
-SUPPORT_GROUP_ID = -1002483073660
-
-# Set your OpenAI API key from environment variable
-
 # Enable logging
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 global_human_sessions = {}
+START_TIME = datetime.datetime.utcnow()
 
+# ✅ /ping
+async def ping(update: Update, context: CallbackContext):
+    if update.effective_chat.id != SUPPORT_GROUP_ID:
+        return
+    uptime = datetime.datetime.utcnow() - START_TIME
+    await update.message.reply_text(f"✅ Pong! Uptime: {uptime}")
 
+# ✅ /status
+async def status(update: Update, context: CallbackContext):
+    if update.effective_chat.id != SUPPORT_GROUP_ID:
+        return
+    active = [str(uid) for uid, val in global_human_sessions.items() if val]
+    if active:
+        await update.message.reply_text(f"🟢 Active human sessions: {', '.join(active)}")
+    else:
+        await update.message.reply_text("✅ No active human sessions.")
+
+# ✅ /admin_panel
+async def admin_panel(update: Update, context: CallbackContext):
+    if update.effective_chat.id != SUPPORT_GROUP_ID:
+        return
+    keyboard = [
+        [InlineKeyboardButton("📊 Status", callback_data="status"),
+         InlineKeyboardButton("🔄 Ping", callback_data="ping")],
+        [InlineKeyboardButton("❌ End all sessions", callback_data="clear")]
+    ]
+    reply_markup = InlineKeyboardMarkup(keyboard)
+    await update.message.reply_text("🛠️ Admin Panel:", reply_markup=reply_markup)
+
+# ✅ handle button presses
+async def button_handler(update, context):
+    query = update.callback_query
+    await query.answer()
+    if update.effective_chat.id != SUPPORT_GROUP_ID:
+        return
+
+    if query.data == "status":
+        active = [str(uid) for uid, val in global_human_sessions.items() if val]
+        await query.edit_message_text(f"🟢 Active sessions: {', '.join(active)}" if active else "✅ No active sessions.")
+
+    elif query.data == "ping":
+        uptime = datetime.datetime.utcnow() - START_TIME
+        await query.edit_message_text(f"✅ Pong! Uptime: {uptime}")
+
+    elif query.data == "clear":
+        global_human_sessions.clear()
+        await query.edit_message_text("❌ All human-mode sessions have been ended.")
 
 async def get_ai_response(prompt: str, context_history: list = None):
     """
@@ -62,6 +103,7 @@ async def get_ai_response(prompt: str, context_history: list = None):
             "You are an eSIM support expert for the eSIM Unlimited product. "
             "Below is a list of frequently asked questions (FAQ) you should be familiar with:\n\n"
             f"{FAQ_TEXT}\n\n"
+            "Use Markdown formatting where helpful (e.g. bullet points, bold for headings, etc). "
             "Use this information to help troubleshoot user issues. "
             "If the user provides a detailed issue, generate a step-by-step troubleshooting guide that includes verifying activation, checking APN settings, ensuring automatic network selection, enabling data roaming, restarting the device, and updating carrier settings. "
             "If none of these steps resolve the issue, instruct the user to provide additional details for internal escalation rather than asking them to contact an external provider."
@@ -149,7 +191,7 @@ async def forward_to_support(update: Update, context: CallbackContext):
         await update.message.reply_text("✅ Your file has been sent to support.")
         return
 
-    if any(p in msg.lower() for p in ["human", "agent", "real person", "talk to support"]):
+    if await check_escalation_intent(msg):
         log = "\n\n".join(context.chat_data['conversation'])
         timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
         filename = f"user_conv_logs/{user.username or user.id}_{timestamp}.log"
@@ -164,12 +206,13 @@ async def forward_to_support(update: Update, context: CallbackContext):
         await update.message.reply_text("A human agent has been notified.")
         global_human_sessions[user_id] = True
         asyncio.create_task(auto_disable_human_mode(user_id, context))
+        asyncio.create_task(remind_about_session(user_id, context))  # ⏰
         return
 
     reply = await get_ai_response(msg, context.chat_data['conversation'])
     context.chat_data['conversation'].append(f"Bot: {reply}")
     try:
-        await update.message.reply_text(f"💬 {reply}")
+        await update.message.reply_text(f"💬 {reply}", parse_mode="Markdown")
     except Exception as e:
         logger.error(f"Reply send error: {e}")
 
@@ -224,15 +267,47 @@ async def stop_human_mode(update: Update, context: CallbackContext):
 
 
 async def auto_disable_human_mode(user_id: int, context: CallbackContext):
-    await asyncio.sleep(60)
+    await asyncio.sleep(900)
     if global_human_sessions.get(user_id):
         global_human_sessions[user_id] = False
         await context.bot.send_message(chat_id=user_id, text="ℹ️ Session expired. AI assistant is back.")
         await context.bot.send_message(chat_id=SUPPORT_GROUP_ID, text=f"⏱️ Session timeout for user {user_id}")
 
+async def ai_reply(update: Update, context: CallbackContext):
+    if update.effective_chat.id != SUPPORT_GROUP_ID:
+        return
+
+    if not update.message.reply_to_message:
+        await update.message.reply_text("⚠️ Please use /ai as a reply to a user's message.")
+        return
+
+    text = update.message.reply_to_message.text or update.message.reply_to_message.caption
+    if not text:
+        await update.message.reply_text("⚠️ Cannot find any text in the replied message.")
+        return
+
+    await update.message.reply_text("🧠 Thinking...")
+    try:
+        response = await get_ai_response(text)
+        await update.message.reply_text(f"💬 AI reply:\n\n{response}")
+    except Exception as e:
+        await update.message.reply_text(f"⚠️ Failed to get AI response: {e}")
+
+async def remind_about_session(user_id: int, context: CallbackContext):
+    await asyncio.sleep(600)  # 10 минут
+    if global_human_sessions.get(user_id):
+        await context.bot.send_message(
+            chat_id=SUPPORT_GROUP_ID,
+            text=f"⏰ Reminder: Human-mode still active for user {user_id}"
+        )
+
 def create_bot_app():
     app = Application.builder().token(BOT_TOKEN).build()
+    app.add_handler(CommandHandler("ping", ping))
+    app.add_handler(CommandHandler("status", status))
+    app.add_handler(CommandHandler("admin_panel", admin_panel))
+    app.add_handler(CommandHandler("ai", ai_reply))
     app.add_handler(MessageHandler(filters.ALL & ~filters.REPLY, forward_to_support))
     app.add_handler(MessageHandler(filters.REPLY, forward_reply_to_user))
+    app.add_handler(CallbackQueryHandler(button_handler))
     return app
-
