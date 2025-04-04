@@ -7,8 +7,7 @@ from database import SessionLocal
 import logging
 from urllib3.util.retry import Retry
 from requests.adapters import HTTPAdapter
-
-
+from models import Order
 
 logger = logging.getLogger(__name__)
 
@@ -56,7 +55,7 @@ async def user_payment():
 # -----------------------------
 def check_balance_sync():
     url = f"{BASE_URL}/balance/query"
-    response = requests.post(url, json={}, headers=API_HEADERS, timeout=600, verify=False)
+    response = requests.post(url, json={}, headers=API_HEADERS, timeout=30, verify=True)
     response.raise_for_status()
     return response.json()
 
@@ -80,7 +79,7 @@ def place_order_sync(package_code: str, order_price: int, transaction_id: str):
             }
         ]
     }
-    response = requests.post(url, json=payload, headers=API_HEADERS, timeout=600, verify=False)
+    response = requests.post(url, json=payload, headers=API_HEADERS, timeout=30, verify=True)
     response.raise_for_status()
     return response.json()
 
@@ -110,7 +109,7 @@ def query_profile_sync(order_no: str):
     session.mount("https://", adapter)
     
     # Disable SSL verification (for development only)
-    response = session.post(url, json=payload, headers=API_HEADERS, timeout=600, verify=False)
+    response = session.post(url, json=payload, headers=API_HEADERS, timeout=30, verify=True)
     response.raise_for_status()
     return response.json()
 
@@ -215,3 +214,49 @@ async def process_purchase(package_code: str, user_id: str, order_price: int, re
     
     # Step 6: Return the purchase result.
     return {"orderNo": order_no, "qrCode": qr_code, "status": "confirmed"}
+
+# -----------------------------
+# 5. Query eSIM Status by ICCID
+# -----------------------------
+def query_esim_by_iccid(iccid: str) -> dict:
+    url = f"{BASE_URL}/esim/query"
+    payload = {
+        "orderNo": "",
+        "iccid": iccid,
+        "pager": {
+            "pageNum": 1,
+            "pageSize": 20
+        }
+    }
+    try:
+        response = requests.post(
+            url,
+            json=payload,
+            headers=API_HEADERS,
+            timeout=30,
+            verify=True
+        )
+        response.raise_for_status()
+        data = response.json()
+
+        esim_list = data.get("obj", {}).get("esimList")
+        if not esim_list or not isinstance(esim_list, list):
+            return {"error": "No eSIM data returned."}
+
+        return esim_list[0]
+    except Exception as e:
+        return {"error": str(e)}
+    
+async def my_esim(user_id: str) -> list:
+    session = SessionLocal()
+    try:
+        iccids = session.query(Order.iccid).filter(Order.user_id == user_id).distinct().all()
+        results = []
+        for iccid_tuple in iccids:
+            iccid = iccid_tuple[0]
+            if iccid:
+                data = await asyncio.to_thread(query_esim_by_iccid, iccid)
+                results.append({"iccid": iccid, "data": data})
+        return results
+    finally:
+        session.close()    

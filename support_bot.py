@@ -87,6 +87,14 @@ async def get_ai_response(prompt: str, context_history: list = None):
     """
     prompt_clean = prompt.strip().lower()
 
+    # Load additional guide context once
+    try:
+        with open("esim_guides.md", "r", encoding="utf-8") as f:
+            guides_text = f.read()
+    except Exception as e:
+        guides_text = ""
+        logging.warning(f"Could not load esim_guides.md: {e}")
+
     # Define common generic greetings
     generic_greetings = {"hi", "hello", "hey", "hi there", "hello there", "greetings"}
 
@@ -103,10 +111,13 @@ async def get_ai_response(prompt: str, context_history: list = None):
             "You are an eSIM support expert for the eSIM Unlimited product. "
             "Below is a list of frequently asked questions (FAQ) you should be familiar with:\n\n"
             f"{FAQ_TEXT}\n\n"
+            "Here are detailed setup and troubleshooting guides you should reference:\n\n"
+            f"{guides_text}\n\n"
             "Use Markdown formatting where helpful (e.g. bullet points, bold for headings, etc). "
             "Use this information to help troubleshoot user issues. "
             "If the user provides a detailed issue, generate a step-by-step troubleshooting guide that includes verifying activation, checking APN settings, ensuring automatic network selection, enabling data roaming, restarting the device, and updating carrier settings. "
             "If none of these steps resolve the issue, instruct the user to provide additional details for internal escalation rather than asking them to contact an external provider."
+            "Always reply in the same language used by the user."
         )
         user_prompt = prompt  # Keep the original user input for detailed queries
 
@@ -118,7 +129,7 @@ async def get_ai_response(prompt: str, context_history: list = None):
             {"role": "user", "content": user_prompt}
         ],
         temperature=0.7,
-        max_tokens=400)
+        max_tokens=800)
         ai_reply = response.choices[0].message.content.strip()
         logging.info(f"AI Response generated successfully: {ai_reply}")
         return ai_reply

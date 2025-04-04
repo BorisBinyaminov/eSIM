@@ -4,11 +4,12 @@ import asyncio
 import os
 import json
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, WebAppInfo, ReplyKeyboardMarkup
-from telegram.ext import Application, CommandHandler, CallbackContext, MessageHandler, filters, CallbackQueryHandler
+from telegram.ext import Application, CommandHandler, CallbackContext, MessageHandler, filters, CallbackQueryHandler, ContextTypes
 from dotenv import load_dotenv
 from database import SessionLocal, engine, Base
 from models import User
 import buy_esim
+from models import Order
 
 load_dotenv()
 
@@ -198,6 +199,33 @@ async def handle_message(update: Update, context: CallbackContext) -> None:
         await update.message.reply_text("Click here to open Guides:", reply_markup=keyboard)
     elif text == "🛒 Buy eSIM":
         await update.message.reply_text("Choose your eSIM plan:", reply_markup=buy_esim_keyboard())
+    elif text == "🔑 My eSIMs":
+        await update.message.reply_text("🔍 Checking your eSIMs...")
+        esim_data = await buy_esim.my_esim(str(update.effective_user.id))
+        if not esim_data:
+            await update.message.reply_text("You have no eSIMs yet.")
+            return
+        session = SessionLocal()
+        for entry in esim_data:
+            iccid = entry["iccid"]
+            api_data = entry["data"]
+            db_entry = session.query(Order).filter(Order.iccid == iccid).first()
+
+            text = format_esim_info(iccid, api_data, db_entry)
+
+            keyboard = InlineKeyboardMarkup([
+                [
+                    InlineKeyboardButton("❌ Cancel", callback_data=f"cancel_{iccid}"),
+                    InlineKeyboardButton("➕ Top-up", callback_data=f"topup_{iccid}")
+                ]
+            ])
+
+            await update.message.reply_text(
+                text,
+                parse_mode="HTML",
+                reply_markup=keyboard,
+                disable_web_page_preview=True
+            )
 
 async def button_handler(update: Update, context: CallbackContext) -> None:
     query = update.callback_query
@@ -429,6 +457,49 @@ async def button_handler(update: Update, context: CallbackContext) -> None:
             await query.message.reply_text(f"Error processing purchase: {str(e)}. Please try again later.")
             return
 
+def get_esim_status_label(smdp: str, esim: str) -> str:
+    if smdp == "RELEASED" and esim == "GOT_RESOURCE":
+        return "New"
+    elif smdp == "ENABLED" and esim in {"IN_USE", "GOT_RESOURCE"}:
+        return "Onboard"
+    elif smdp == "ENABLED" and esim == "IN_USE":
+        return "In Use"
+    elif smdp in {"ENABLED", "DISABLED"} and esim == "USED_UP":
+        return "Depleted"
+    elif smdp == "DELETED" and esim in {"USED_UP", "IN_USE"}:
+        return "Deleted"
+    return f"{smdp} / {esim}"  # fallback
+
+def format_esim_info(iccid: str, data: dict, db_entry: Order = None) -> str:
+    package_name = "-"
+    if data.get("packageList") and isinstance(data["packageList"], list):
+        package_name = data["packageList"][0].get("packageName", "-")
+
+    usage = round(data.get("orderUsage", 0) / (1024 * 1024), 1)  # in MB
+    total = round(data.get("totalVolume", 1) / (1024 * 1024), 1)
+    expired_raw = data.get("expiredTime", "N/A")
+    expired = expired_raw[:10] if expired_raw != "N/A" else expired_raw
+    esim = data.get("esimStatus", "N/A")
+    smdp = data.get("smdpStatus", "N/A")
+    status = get_esim_status_label(smdp, esim)
+    qr = data.get("qrCodeUrl", "-").replace(".png", "")
+    retail_price = round(db_entry.retail_price / 10000, 2) if db_entry and db_entry.retail_price else "-"
+
+    # Extract order date from createTime
+    order_date = "-"
+    if data.get("packageList") and isinstance(data["packageList"], list):
+        order_date_raw = data["packageList"][0].get("createTime")
+        if order_date_raw:
+            order_date = order_date_raw[:10]
+
+    return (
+        f"📱 <b>eSIM:</b> {package_name}\n"
+        f"📦 <b>Data:</b> {total}MB | <b>Used:</b> {usage}MB\n"
+        f"📅 <b>Order:</b> {order_date} | <b>Expires:</b> {expired}\n"
+        f"📶 <b>Status:</b> {status}\n"
+        f"💰 <b>Price:</b> ${retail_price}\n"
+        f"🔗 <b>QR:</b> <a href=\"{qr}\">Open Link</a>"
+    )
 
 async def error_handler(update: object, context: CallbackContext) -> None:
     logger.error(msg="Exception while handling an update:", exc_info=context.error)
