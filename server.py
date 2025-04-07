@@ -4,7 +4,6 @@ import requests
 import json
 import time
 import threading
-import subprocess
 import traceback
 import asyncio
 from fastapi import FastAPI, HTTPException
