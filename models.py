@@ -1,6 +1,7 @@
 from sqlalchemy import Column, Integer, String, DateTime, BigInteger, Text, ForeignKey
 from sqlalchemy.sql import func
 from database import Base
+from sqlalchemy import UniqueConstraint
 
 class User(Base):
     __tablename__ = "users"
@@ -15,13 +16,14 @@ class User(Base):
 
 class Order(Base):
     __tablename__ = "orders"
+    __table_args__ = (UniqueConstraint("order_id", "iccid", name="uq_order_iccid"),)
     id = Column(Integer, primary_key=True, index=True)
     
     # Basic order info
     user_id = Column(String, index=True)  # Consider linking to the User table via a ForeignKey.
     package_code = Column(String, nullable=False)
-    order_id = Column(String, unique=True, index=True)      # Order number returned by the API.
-    transaction_id = Column(String, unique=True, index=True)  # External transaction ID from payment.
+    order_id = Column(String, index=True)  # Order number returned by the API.
+    transaction_id = Column(String, index=True)  # External transaction ID from payment.
     iccid = Column(String, nullable=True)                     # ICCID from the allocated profile.
     
     # Purchase details

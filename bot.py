@@ -156,6 +156,40 @@ async def start(update: Update, context: CallbackContext) -> None:
 
 async def handle_message(update: Update, context: CallbackContext) -> None:
     text = update.message.text
+    if "pending_purchase" in context.chat_data:
+        try:
+            quantity = int(text.strip())
+            if quantity <= 0:
+                raise ValueError()
+        except ValueError:
+            await update.message.reply_text("Please enter a valid positive number.")
+            return
+
+        purchase = context.chat_data.pop("pending_purchase")
+        try:
+            result = await buy_esim.process_purchase(
+                package_code=purchase["package_code"],
+                user_id=str(update.effective_user.id),
+                order_price=purchase["order_price"],
+                retail_price=purchase["retail_price"],
+                count=1 if purchase["duration"] == 1 else quantity,
+                period_num=quantity if purchase["duration"] == 1 else None
+            )
+            qr_codes = result.get("qrCodes")
+            if isinstance(qr_codes, list) and len(qr_codes) > 1:
+                await update.message.reply_text(f"✅ You purchased {len(qr_codes)} eSIMs. Here are your QR codes:")
+                for idx, qr in enumerate(qr_codes, 1):
+                    await update.message.reply_text(f"eSIM #{idx}:\n{qr}")
+            elif qr_codes:
+                await update.message.reply_text(f"✅ Purchase successful! Your QR code:\n{qr_codes[0]}")
+            else:
+                await update.message.reply_text("✅ Purchase completed, but no QR code was returned.")
+        except Exception as e:
+            import traceback
+            import html
+            error_msg = html.escape(traceback.format_exc())
+            await update.message.reply_text(f"❌ Error:\n<code>{error_msg}</code>", parse_mode="HTML")
+        return
 
     # If awaiting country search (for local packages)
     if context.chat_data.get("awaiting_country_search"):
@@ -214,12 +248,11 @@ async def handle_message(update: Update, context: CallbackContext) -> None:
             update_usage_by_iccid(session, iccid, api_data)
             text = format_esim_info(iccid, api_data, db_entry)
 
-            keyboard = InlineKeyboardMarkup([
-                [
-                    InlineKeyboardButton("❌ Cancel", callback_data=f"cancel_{iccid}"),
-                    InlineKeyboardButton("➕ Top-up", callback_data=f"topup_{iccid}")
-                ]
-            ])
+            buttons = []
+            if api_data.get("smdpStatus") == "RELEASED" and api_data.get("esimStatus") == "GOT_RESOURCE":
+                buttons.append(InlineKeyboardButton("❌ Cancel", callback_data=f"cancel_{iccid}"))
+            buttons.append(InlineKeyboardButton("➕ Top-up", callback_data=f"topup_{iccid}"))
+            keyboard = InlineKeyboardMarkup([buttons])
 
             await update.message.reply_text(
                 text,
@@ -434,29 +467,59 @@ async def button_handler(update: Update, context: CallbackContext) -> None:
     elif data.startswith("buypkg_"):
         package_code = data.split("_", 1)[1]
         user_id = str(update.effective_user.id)
-        
-        # Locate package details from our packages lists to extract order price.
-        package = next((pkg for pkg in all_country_packages if pkg.get("packageCode") == package_code), None)
-        if package is None:
-            package = next((pkg for pkg in all_regional_packages if pkg.get("packageCode") == package_code), None)
-        if package is None:
-            package = next((pkg for pkg in all_global_packages if pkg.get("packageCode") == package_code), None)
-        if package is None:
+
+        # Find the selected package
+        package = next((p for p in all_country_packages if p.get("packageCode") == package_code), None)
+        if not package:
+            package = next((p for p in all_regional_packages if p.get("packageCode") == package_code), None)
+        if not package:
+            package = next((p for p in all_global_packages if p.get("packageCode") == package_code), None)
+        if not package:
             await query.message.reply_text("Package not found.")
             return
 
-        # Use the "price" field for the cost (what we pay), not retailPrice.
-        order_price = package.get("price", 0)
-        retail_price = package.get("retailPrice", 0)
-        
+        duration = package.get("duration", 1)
+        context.chat_data["pending_purchase"] = {
+            "package_code": package_code,
+            "order_price": package.get("price", 0),
+            "retail_price": package.get("retailPrice", 0),
+            "duration": duration
+        }
+
+        if duration == 1:
+            await query.message.reply_text("🕓 This is a daily plan. How many days do you need?")
+        else:
+            await query.message.reply_text("📱 How many eSIMs would you like to purchase?")
+
+    elif data.startswith("cancel_"):
+        iccid = data.split("_", 1)[1]
+        await query.message.reply_text("🔄 Cancelling eSIM...")
+
+        # Get esimTranNo from DB
+        session = SessionLocal()
         try:
-            result = await buy_esim.process_purchase(package_code, user_id, order_price, retail_price)
-            logger.info(f"Purchase successful: {result}")
-            await query.message.reply_text(f"Purchase successful! Your QR code: {result.get('qrCode')}")
-        except Exception as e:
-            logger.exception("Error processing purchase:")
-            await query.message.reply_text(f"Error processing purchase: {str(e)}. Please try again later.")
-            return
+            from models import Order
+            order = session.query(Order).filter(Order.iccid == iccid).first()
+            if not order:
+                await query.message.reply_text("❌ eSIM not found in database.")
+                return
+
+            import json
+            esim_list = json.loads(order.esim_list)
+            esim_tran_no = esim_list[0].get("esimTranNo")
+            if not esim_tran_no:
+                await query.message.reply_text("❌ eSIM transaction number not found.")
+                return
+        finally:
+            session.close()
+
+        cancel_result = await buy_esim.cancel_esim(esim_tran_no)
+        logger.info(f"Cancel result: {cancel_result}")
+        if cancel_result.get("success") is True:
+            await query.message.reply_text("✅ eSIM cancelled and refunded successfully.")
+        else:
+            error_msg = cancel_result.get("errorMessage") or cancel_result.get("errorMsg") or "Unknown error."
+            await query.message.reply_text(f"❌ Cancel failed: {error_msg}")
 
 def get_esim_status_label(smdp: str, esim: str) -> str:
     if smdp == "RELEASED" and esim == "GOT_RESOURCE":

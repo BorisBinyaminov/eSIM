@@ -101,3 +101,6 @@ DATABASE_URL=postgresql://boris:Toro0011@localhost/esimUnlimited
 BOT_TOKEN=YOUR_TELEGRAM_BOT_TOKEN
 TEST_MODE=false
 
+Add admin notifications on purchase
+update the DB (all users) every hour
+Export all orders to CSV/JSON

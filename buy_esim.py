@@ -23,18 +23,29 @@ async def poll_profile(order_no: str, timeout: int = 30, interval: int = 5):
     """
     Poll the query_profile endpoint until an allocated profile is returned or the timeout is reached.
     """
+    logger.info(f"⏳ Polling for profile allocation (order {order_no})...")
+
     start_time = asyncio.get_event_loop().time()
     while True:
         query_response = await query_profile(order_no)
         if query_response is not None:
             esim_list_raw = query_response.get("obj", {}).get("esimList", [])
             if esim_list_raw:
+                logger.info(f"✅ QR profiles allocated: {len(esim_list_raw)}")
                 return query_response
-        # If query_response is None or no profiles found, wait and try again.
+            else:
+                logger.info("⚠️ Polling result: No profiles allocated yet.")
+        else:
+            logger.warning("⚠️ No response from query_profile API.")
+
         if asyncio.get_event_loop().time() - start_time > timeout:
+            logger.error("❌ Timeout reached while waiting for profile allocation.")
             break
+
         await asyncio.sleep(interval)
-    raise Exception("Timeout: eSIM profiles are still being allocated; please try again later.")
+
+    raise Exception("Timeout: eSIM profiles are still being allocated. Please try again later.")
+
 
 # -----------------------------
 # 0. User Payment Simulation
@@ -119,101 +130,112 @@ async def query_profile(order_no: str):
 # -----------------------------
 # 4. Process Purchase
 # -----------------------------
-async def process_purchase(package_code: str, user_id: str, order_price: int, retail_price: int) -> dict:
-    """
-    Process the eSIM purchase:
-      1. Check Balance.
-      2. Payment (simulated) to obtain a transaction ID.
-      3. Place Order via the order API.
-      4. Query Profile to retrieve allocated eSIM profile details.
-      5. Update Database: Create a new Order record including additional fields.
-      6. Return purchase details (orderNo, qrCode, etc.)
-    """
-    # Step 1: Check Balance
+async def process_purchase(package_code: str, user_id: str, order_price: int, retail_price: int, count: int = 1, period_num: int = None) -> dict:
     balance_data = await check_balance()
     available_balance = balance_data.get("obj", {}).get("balance", 0)
-    if available_balance < order_price:
-        logger.error(f"Insufficient funds: available {available_balance}, required {order_price}")
-        raise Exception("Insufficient funds to place the order. Please add funds or choose a different package.")
-    
-    # Step 2: Payment Step (simulate and get transaction ID)
+    if available_balance < order_price * count:
+        logger.error(f"Insufficient funds: available {available_balance}, required {order_price * count}")
+        raise Exception("Insufficient funds to place the order.")
+
     transaction_id = await user_payment()
     logger.info(f"Simulated transaction ID: {transaction_id}")
-    
-    # Step 3: Place Order using the external transaction ID
-    order_response = await place_order(package_code, order_price, transaction_id)
+
+    def place_order_custom():
+        url = f"{BASE_URL}/esim/order"
+        # Calculate correct amount
+        if period_num:  # daily plan
+            final_count = 1
+            total_amount = order_price * period_num
+        else:  # multi-day plan
+            final_count = count
+            total_amount = order_price * count
+
+        payload = {
+            "transactionId": transaction_id,
+            "amount": total_amount,
+            "packageInfoList": [{
+                "packageCode": package_code,
+                "count": final_count,
+                "price": order_price
+            }]
+        }
+        if period_num:
+            payload["packageInfoList"][0]["periodNum"] = period_num
+
+        response = requests.post(url, json=payload, headers=API_HEADERS, timeout=30, verify=True)
+        response.raise_for_status()
+        return response.json()
+
+    order_response = await asyncio.to_thread(place_order_custom)
+    if not order_response or not isinstance(order_response, dict):
+        raise Exception("Order request failed or returned unexpected result.")
+    logger.info(f"Order response: {order_response}")
+    if not order_response.get("success"):
+        raise Exception(f"Order failed: {order_response.get('errorMsg')}")
     order_no = order_response.get("obj", {}).get("orderNo")
     if not order_no:
         raise Exception("Order API did not return an orderNo.")
-    
-    # Wait 3 seconds before polling for the allocated profile.
-    await asyncio.sleep(3)
 
-    # Step 4: Query Profile – retrieve the allocated profile details.
+    await asyncio.sleep(3)
     query_response = await poll_profile(order_no, timeout=30, interval=5)
+    if not query_response or not isinstance(query_response, dict):
+        raise Exception("Polling failed: no profile response received.")
+
     esim_list_raw = query_response.get("obj", {}).get("esimList", [])
     if not esim_list_raw:
-        error_code = query_response.get("errorCode")
-        if error_code == "200010":
-            raise Exception("eSIM profiles are still being allocated; please try again later.")
-        raise Exception("Query API did not return any eSIM profiles.")
-    
-    profile = esim_list_raw[0]  # Use the first allocated profile.
-    qr_code = profile.get("qrCodeUrl")
-    if not qr_code:
-        raise Exception("QR code not found in the query response.")
-    
-    # Extract additional details from the profile.
-    iccid_value = profile.get("iccid")  # New: retrieve ICCID.
-    esim_status = profile.get("esimStatus")
-    smdp_status = profile.get("smdpStatus")
-    expired_time = profile.get("expiredTime")  # ISO string; convert if needed.
-    total_volume = profile.get("totalVolume")
-    total_duration = profile.get("totalDuration")
-    order_usage = profile.get("orderUsage")
-    package_list = profile.get("packageList")
-    
-    # Convert the full esimList to a JSON string for storage.
-    import json
-    esim_list_str = json.dumps(esim_list_raw)
-    package_list_str = json.dumps(package_list) if package_list is not None else None
-    
-    # Step 5: Update Database
+        raise Exception("No eSIM profile returned.")
+
+    profile = esim_list_raw[0]
+    qr_codes = [profile.get("qrCodeUrl") for profile in esim_list_raw if profile.get("qrCodeUrl")]
+    if not qr_codes:
+        raise Exception("No QR codes found in the response.")
+
+    # Store data
     from models import Order
+    import json
+
     session = SessionLocal()
+    orders_created = []
     try:
-        new_order = Order(
-            user_id=user_id,
-            package_code=package_code,
-            order_id=order_no,
-            transaction_id=transaction_id,
-            iccid=iccid_value,              # New: store the ICCID.
-            count=1,                        # Default; can be updated in future.
-            period_num=None,                # TBD for daily plans.
-            price=order_price,
-            retail_price=retail_price,
-            qr_code=qr_code,
-            status="confirmed",
-            details=None,
-            esim_status=esim_status,
-            smdp_status=smdp_status,
-            expired_time=expired_time,
-            total_volume=total_volume,
-            total_duration=total_duration,
-            order_usage=order_usage,
-            esim_list=esim_list_str,
-            package_list=package_list_str
-        )
-        session.add(new_order)
+        for profile in esim_list_raw:
+            iccid_value = profile.get("iccid")
+            qr_code = profile.get("qrCodeUrl")
+            if not iccid_value or not qr_code:
+                continue
+
+            new_order = Order(
+                user_id=user_id,
+                package_code=package_code,
+                order_id=order_no,
+                transaction_id=transaction_id,
+                iccid=iccid_value,
+                count=1,
+                period_num=period_num,
+                price=order_price,
+                retail_price=retail_price,
+                qr_code=qr_code,
+                status="confirmed",
+                details=None,
+                esim_status=profile.get("esimStatus"),
+                smdp_status=profile.get("smdpStatus"),
+                expired_time=profile.get("expiredTime"),
+                total_volume=profile.get("totalVolume"),
+                total_duration=profile.get("totalDuration"),
+                order_usage=profile.get("orderUsage"),
+                esim_list=json.dumps([profile]),  # store only 1 profile per row
+                package_list=json.dumps(profile.get("packageList"))
+            )
+            session.add(new_order)
+            orders_created.append(qr_code)
+
         session.commit()
     except Exception as e:
         session.rollback()
-        raise Exception(f"Error updating database: {str(e)}")
+        raise Exception(f"Database error: {str(e)}")
     finally:
         session.close()
-    
-    # Step 6: Return the purchase result.
-    return {"orderNo": order_no, "qrCode": qr_code, "status": "confirmed"}
+
+    return {"orderNo": order_no, "qrCodes": orders_created, "status": "confirmed"}
 
 # -----------------------------
 # 5. Query eSIM Status by ICCID
@@ -270,3 +292,22 @@ async def my_esim(user_id: str) -> list:
         return results
     finally:
         session.close()    
+
+async def cancel_esim(esim_tran_no: str) -> dict:
+    url = f"{BASE_URL}/esim/cancel"
+    payload = {
+        "esimTranNo": esim_tran_no
+    }
+    try:
+        response = requests.post(
+            url,
+            json=payload,
+            headers=API_HEADERS,
+            timeout=30,
+            verify=True
+        )
+        response.raise_for_status()
+        return response.json()
+    except Exception as e:
+        return {"success": False, "errorMessage": str(e)}
+
