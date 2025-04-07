@@ -10,6 +10,7 @@ from database import SessionLocal, engine, Base
 from models import User
 import buy_esim
 from models import Order
+from sqlalchemy.orm import Session
 
 load_dotenv()
 
@@ -210,7 +211,7 @@ async def handle_message(update: Update, context: CallbackContext) -> None:
             iccid = entry["iccid"]
             api_data = entry["data"]
             db_entry = session.query(Order).filter(Order.iccid == iccid).first()
-
+            update_usage_by_iccid(session, iccid, api_data)
             text = format_esim_info(iccid, api_data, db_entry)
 
             keyboard = InlineKeyboardMarkup([
@@ -500,6 +501,14 @@ def format_esim_info(iccid: str, data: dict, db_entry: Order = None) -> str:
         f"💰 <b>Price:</b> ${retail_price}\n"
         f"🔗 <b>QR:</b> <a href=\"{qr}\">Open Link</a>"
     )
+
+def update_usage_by_iccid(db: Session, iccid: str, data: dict):
+    order = db.query(Order).filter(Order.iccid == iccid).first()
+    if not order:
+        return False  # no match
+    order.order_usage = data.get("orderUsage", order.order_usage)
+    db.commit()
+    return True
 
 async def error_handler(update: object, context: CallbackContext) -> None:
     logger.error(msg="Exception while handling an update:", exc_info=context.error)

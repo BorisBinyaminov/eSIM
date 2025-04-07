@@ -247,6 +247,16 @@ def query_esim_by_iccid(iccid: str) -> dict:
     except Exception as e:
         return {"error": str(e)}
     
+async def fetch_esim_with_retry(iccid, retries=3, delay=1):
+    for attempt in range(retries):
+        data = await asyncio.to_thread(query_esim_by_iccid, iccid)
+        if data and "iccid" in data:
+            return data
+        logging.warning(f"Retry {attempt+1}/{retries} failed for ICCID {iccid}")
+        await asyncio.sleep(delay)
+    logging.error(f"❌ All retries failed for ICCID {iccid}")
+    return None
+    
 async def my_esim(user_id: str) -> list:
     session = SessionLocal()
     try:
@@ -255,7 +265,7 @@ async def my_esim(user_id: str) -> list:
         for iccid_tuple in iccids:
             iccid = iccid_tuple[0]
             if iccid:
-                data = await asyncio.to_thread(query_esim_by_iccid, iccid)
+                data = await fetch_esim_with_retry(iccid)
                 results.append({"iccid": iccid, "data": data})
         return results
     finally:
