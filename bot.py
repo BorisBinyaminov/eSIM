@@ -11,6 +11,8 @@ from models import User
 import buy_esim
 from models import Order
 from sqlalchemy.orm import Session
+from datetime import datetime
+from typing import Optional
 
 load_dotenv()
 
@@ -235,7 +237,7 @@ async def handle_message(update: Update, context: CallbackContext) -> None:
     elif text == "🛒 Buy eSIM":
         await update.message.reply_text("Choose your eSIM plan:", reply_markup=buy_esim_keyboard())
     elif text == "🔑 My eSIMs":
-        await update.message.reply_text("🔍 Checking your eSIMs...")
+        await update.message.reply_text("🔍 Checking your eSIMs... This may take a few seconds ⏳")
         esim_data = await buy_esim.my_esim(str(update.effective_user.id))
         if not esim_data:
             await update.message.reply_text("You have no eSIMs yet.")
@@ -246,13 +248,36 @@ async def handle_message(update: Update, context: CallbackContext) -> None:
             api_data = entry["data"]
             db_entry = session.query(Order).filter(Order.iccid == iccid).first()
             update_usage_by_iccid(session, iccid, api_data)
-            text = format_esim_info(iccid, api_data, db_entry)
+            text = format_esim_info(api_data, db_entry)
 
             buttons = []
+
+            # ❌ Показать "Cancel", если eSIM не установлена и активна
             if api_data.get("smdpStatus") == "RELEASED" and api_data.get("esimStatus") == "GOT_RESOURCE":
                 buttons.append(InlineKeyboardButton("❌ Cancel", callback_data=f"cancel_{iccid}"))
-            buttons.append(InlineKeyboardButton("➕ Top-up", callback_data=f"topup_{iccid}"))
-            keyboard = InlineKeyboardMarkup([buttons])
+
+            # ✅ Показать "Top-Up", если:
+            # 1. В профиле указано supportTopUpType == 2
+            # 2. Актуальный статус eSIM допускает пополнение
+            try:
+                esim_list = json.loads(db_entry.esim_list)
+                support_topup = esim_list[0].get("supportTopUpType", 0)
+
+                # Состояния eSIM, при которых разрешён Top-Up:
+                allowed_status = (
+                    api_data.get("smdpStatus") in ["RELEASED", "ENABLED"] and
+                    api_data.get("esimStatus") in ["GOT_RESOURCE", "IN_USE"]
+                )
+
+                if support_topup == 2 and allowed_status:
+                    buttons.append(InlineKeyboardButton("➕ Top-up", callback_data=f"topup_{iccid}"))
+
+            except Exception as e:
+                logger.warning(f"Failed to parse supportTopUpType or status: {e}")
+
+            buttons.append(InlineKeyboardButton("🔄 Refresh Usage", callback_data=f"refresh_{iccid}"))
+            keyboard = InlineKeyboardMarkup([buttons]) if buttons else None
+
 
             await update.message.reply_text(
                 text,
@@ -492,34 +517,205 @@ async def button_handler(update: Update, context: CallbackContext) -> None:
             await query.message.reply_text("📱 How many eSIMs would you like to purchase?")
 
     elif data.startswith("cancel_"):
-        iccid = data.split("_", 1)[1]
-        await query.message.reply_text("🔄 Cancelling eSIM...")
-
-        # Get esimTranNo from DB
-        session = SessionLocal()
         try:
-            from models import Order
+            await query.answer()
+            iccid = data.split("_", 1)[1]
+            await query.message.reply_text("⏳ Cancelling eSIM...")
+
+            session = SessionLocal()
             order = session.query(Order).filter(Order.iccid == iccid).first()
+
             if not order:
-                await query.message.reply_text("❌ eSIM not found in database.")
+                await query.message.reply_text("❌ Order not found.")
                 return
 
-            import json
-            esim_list = json.loads(order.esim_list)
-            esim_tran_no = esim_list[0].get("esimTranNo")
-            if not esim_tran_no:
-                await query.message.reply_text("❌ eSIM transaction number not found.")
+            logger.info(f"[Cancel] user={update.effective_user.id} → Requested cancel for ICCID {iccid}")
+
+            # Проверим поддерживается ли cancel по статусам
+            esim_data = buy_esim.query_esim_by_iccid(iccid)
+            smdp = esim_data.get("smdpStatus")
+            esim = esim_data.get("esimStatus")
+
+            if smdp != "RELEASED" or esim != "GOT_RESOURCE":
+                await query.message.reply_text(
+                    "❌ This eSIM cannot be cancelled.\n"
+                    "It may already be installed or activated on your device."
+                )
                 return
+
+            # Cancel по esimTranNo
+            esim_list = json.loads(order.esim_list or "[]")
+            tran_no = esim_list[0].get("esimTranNo")
+
+            result = buy_esim.cancel_esim(tran_no=tran_no)
+            if result.get("success") is True:
+                # Обновим БД
+                updated_data = buy_esim.query_esim_by_iccid(iccid)
+                buy_esim.update_order_from_api(session, iccid, updated_data)
+                await query.message.reply_text(
+                    "✅ eSIM successfully cancelled and removed.\n"
+                    "💸 A refund will be issued shortly according to your payment method."
+                )
+            else:
+                err = result.get("errorMessage") or result.get("errorMsg") or "Unknown error"
+                await query.message.reply_text(
+                    "⚠️ The cancellation request is taking longer than expected.\n"
+                    "Please try again in a few minutes or contact support if the issue persists."
+                )
+                logger.error(f"[Cancel API] Timeout or network error during cancel for ICCID {iccid}: {e}")
+        except Exception as e:
+            logger.exception("Cancel execution failed:")
+            await query.message.reply_text(f"❌ Unexpected error:\n<code>{e}</code>", parse_mode="HTML")
         finally:
             session.close()
 
-        cancel_result = await buy_esim.cancel_esim(esim_tran_no)
-        logger.info(f"Cancel result: {cancel_result}")
-        if cancel_result.get("success") is True:
-            await query.message.reply_text("✅ eSIM cancelled and refunded successfully.")
-        else:
-            error_msg = cancel_result.get("errorMessage") or cancel_result.get("errorMsg") or "Unknown error."
-            await query.message.reply_text(f"❌ Cancel failed: {error_msg}")
+    elif data.startswith("topup_"):
+        iccid = data.split("_", 1)[1]
+        session = SessionLocal()
+        order = session.query(Order).filter(Order.iccid == iccid).first()
+        session.close()
+
+        if not order:
+            await query.message.reply_text("❌ eSIM not found in database.")
+            logger.warning(f"[Top-Up] ICCID {iccid} not found in DB.")
+            return
+
+        try:
+            esim_list = json.loads(order.esim_list)
+            if not esim_list:
+                await query.message.reply_text("❌ No eSIM profiles found.")
+                return
+            esim_tran_no = esim_list[0].get("esimTranNo")
+        except Exception as e:
+            await query.message.reply_text("❌ Failed to extract eSIM transaction number.")
+            logger.exception("Failed to parse esim_list:")
+            return
+
+        if not esim_tran_no:
+            await query.message.reply_text("❌ eSIM transaction number is missing.")
+            logger.warning(f"[Top-Up] No esimTranNo found for ICCID {iccid}")
+            return
+
+        # Get top-up packages
+        packages = await buy_esim.get_topup_packages(iccid)
+        if not packages:
+            await query.message.reply_text("❌ No available Top-Up packages.")
+            return
+
+        # ✅ Sort packages by retailPrice
+        packages.sort(key=lambda p: int(p.get("retailPrice", 0)))
+
+        # Render buttons
+        buttons = []
+        for pkg in packages:
+            name = pkg.get("name", "")
+            retail_price = int(pkg.get("retailPrice", 0)) / 10000
+            pkg_code = pkg["packageCode"]
+            raw_amount = int(pkg.get("price", 0))
+            callback = f"topupdo|{esim_tran_no}|{pkg_code}|{raw_amount}"
+            buttons.append([
+                InlineKeyboardButton(f"💳 {name} — ${retail_price:.2f}", callback_data=callback)
+            ])
+
+        await query.message.reply_text(
+            "Choose a top-up package:",
+            reply_markup=InlineKeyboardMarkup(buttons)
+        )
+
+    elif data.startswith("topupdo|"):
+        try:
+            await query.answer()
+            _, tran_no, package_code, amount = data.split("|", 3)
+            await query.message.reply_text("⏳ Please wait, processing your top-up...")
+
+            logger.info(f"[Top-Up] user={update.effective_user.id} → Top-Up requested: tranNo={tran_no}, package={package_code}, amount={amount}")
+
+            result = buy_esim.topup_esim(tran_no, package_code, int(amount))
+
+            if result.get("success") is True:
+                obj = result.get("obj", {})
+                vol = int(obj.get("totalVolume", 0)) / 1024 / 1024
+                dur = obj.get("totalDuration", "-")
+                await query.message.reply_text(
+                    f"✅ Top-up successful!\n📦 New data volume: {vol:.1f} MB\n⏳ Valid for: {dur} days"
+                )
+
+                # DB sync after top-up
+                iccid = buy_esim.get_iccid_from_tranno(tran_no)
+                if iccid:
+                    session = SessionLocal()
+                    try:
+                        api_data = buy_esim.query_esim_by_iccid(iccid)
+                        buy_esim.update_order_from_api(session, iccid, api_data)
+                    except Exception as e:
+                        logger.warning(f"[Top-Up] DB update failed after top-up: {e}")
+                    finally:
+                        session.close()
+            else:
+                err = result.get("errorMessage") or result.get("errorMsg") or "Unknown error"
+                if "status doesn`t support" in err:
+                    await query.message.reply_text(
+                        "❌ Unable to top-up this eSIM: its current status does not allow it.\n\n"
+                        "📌 This usually means the eSIM hasn't been activated on your device yet.\n"
+                        "Top-up is only available after the eSIM has been installed and activated."
+                    )
+                else:
+                    await query.message.reply_text(f"❌ Top-up failed: {err}")
+
+        except Exception as e:
+            logger.exception("Top-Up execution failed:")
+            await query.message.reply_text(f"❌ Unexpected error:\n<code>{e}</code>", parse_mode="HTML")
+
+    elif data.startswith("refresh_"):
+        try:
+            await query.answer()
+            iccid = data.split("_", 1)[1]
+
+            session = SessionLocal()
+            order = session.query(Order).filter(Order.iccid == iccid).first()
+
+            if not order:
+                await query.message.reply_text("❌ Order not found.")
+                return
+
+            logger.info(f"[Refresh] user={update.effective_user.id} → Refresh usage for ICCID {iccid}")
+            await query.message.reply_text("⏳ Syncing usage data...")
+            try:
+                esim_list = json.loads(order.esim_list or "[]")
+            except Exception as e:
+                logger.warning(f"[Refresh] Failed to parse esim_list: {e}")
+                await query.message.reply_text("❌ Failed to parse eSIM profile info.")
+                return
+
+            if not esim_list or not esim_list[0].get("esimTranNo"):
+                await query.message.reply_text("❌ eSIM profile info is missing.")
+                return
+
+            tran_no = esim_list[0]["esimTranNo"]
+
+            # Проверка: только если eSIM активна
+            api_data = buy_esim.query_esim_by_iccid(iccid)
+            if api_data.get("esimStatus") != "IN_USE":
+                await query.message.reply_text("⚠️ Usage data is only available for active eSIMs (IN_USE).")
+                return
+
+            # Обновляем usage
+            usage_info = buy_esim.query_usage(tran_no)
+            if usage_info:
+                updated = buy_esim.update_usage_by_iccid(session, iccid, usage_info)
+                if updated:
+                    refreshed = buy_esim.query_esim_by_iccid(iccid)
+                    msg = format_esim_info(refreshed, order)
+                    await query.message.reply_text(msg, parse_mode="HTML", disable_web_page_preview=True)
+                else:
+                    await query.message.reply_text("⚠️ Usage data received but update failed.")
+            else:
+                await query.message.reply_text("❌ Failed to fetch usage data.")
+        except Exception as e:
+            logger.exception("Refresh usage failed:")
+            await query.message.reply_text(f"❌ Unexpected error:\n<code>{e}</code>", parse_mode="HTML")
+        finally:
+            session.close()
 
 def get_esim_status_label(smdp: str, esim: str) -> str:
     if smdp == "RELEASED" and esim == "GOT_RESOURCE":
@@ -534,12 +730,12 @@ def get_esim_status_label(smdp: str, esim: str) -> str:
         return "Deleted"
     return f"{smdp} / {esim}"  # fallback
 
-def format_esim_info(iccid: str, data: dict, db_entry: Order = None) -> str:
+def format_esim_info(data: dict, db_entry: Optional[Order] = None) -> str:
     package_name = "-"
     if data.get("packageList") and isinstance(data["packageList"], list):
         package_name = data["packageList"][0].get("packageName", "-")
 
-    usage = round(data.get("orderUsage", 0) / (1024 * 1024), 1)  # in MB
+    usage = round(data.get("orderUsage", 0) / (1024 * 1024), 1)
     total = round(data.get("totalVolume", 1) / (1024 * 1024), 1)
     expired_raw = data.get("expiredTime", "N/A")
     expired = expired_raw[:10] if expired_raw != "N/A" else expired_raw
@@ -549,12 +745,17 @@ def format_esim_info(iccid: str, data: dict, db_entry: Order = None) -> str:
     qr = data.get("qrCodeUrl", "-").replace(".png", "")
     retail_price = round(db_entry.retail_price / 10000, 2) if db_entry and db_entry.retail_price else "-"
 
-    # Extract order date from createTime
+    # Order date
     order_date = "-"
     if data.get("packageList") and isinstance(data["packageList"], list):
         order_date_raw = data["packageList"][0].get("createTime")
         if order_date_raw:
             order_date = order_date_raw[:10]
+
+    # Last sync time
+    usage_sync = "-"
+    if db_entry and db_entry.last_update_time:
+        usage_sync = db_entry.last_update_time.strftime("%Y-%m-%d %H:%M UTC")
 
     return (
         f"📱 <b>eSIM:</b> {package_name}\n"
@@ -562,6 +763,7 @@ def format_esim_info(iccid: str, data: dict, db_entry: Order = None) -> str:
         f"📅 <b>Order:</b> {order_date} | <b>Expires:</b> {expired}\n"
         f"📶 <b>Status:</b> {status}\n"
         f"💰 <b>Price:</b> ${retail_price}\n"
+        f"🔄 <b>Usage Sync:</b> {usage_sync}\n"
         f"🔗 <b>QR:</b> <a href=\"{qr}\">Open Link</a>"
     )
 
@@ -570,6 +772,12 @@ def update_usage_by_iccid(db: Session, iccid: str, data: dict):
     if not order:
         return False  # no match
     order.order_usage = data.get("orderUsage", order.order_usage)
+    # ✅ Add this line:
+    if "lastUpdateTime" in data:
+        try:
+            order.last_update_time = datetime.fromisoformat(data["lastUpdateTime"])
+        except Exception:
+            order.last_update_time = None
     db.commit()
     return True
 

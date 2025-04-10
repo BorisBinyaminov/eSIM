@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, DateTime, BigInteger, Text, ForeignKey
+from sqlalchemy import Column, Integer, String, DateTime, BigInteger, Text
 from sqlalchemy.sql import func
 from database import Base
 from sqlalchemy import UniqueConstraint
@@ -48,6 +48,8 @@ class Order(Base):
     # Timestamps
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     updated_at = Column(DateTime(timezone=True), onupdate=func.now())
+
+    last_update_time = Column(DateTime(timezone=True), nullable=True)
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)

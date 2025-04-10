@@ -8,6 +8,12 @@ import logging
 from urllib3.util.retry import Retry
 from requests.adapters import HTTPAdapter
 from models import Order
+from typing import Optional
+from datetime import datetime
+from sqlalchemy.orm import Session
+from typing import List
+import json
+
 
 logger = logging.getLogger(__name__)
 
@@ -190,10 +196,7 @@ async def process_purchase(package_code: str, user_id: str, order_price: int, re
     if not qr_codes:
         raise Exception("No QR codes found in the response.")
 
-    # Store data
-    from models import Order
-    import json
-
+  
     session = SessionLocal()
     orders_created = []
     try:
@@ -287,27 +290,152 @@ async def my_esim(user_id: str) -> list:
         for iccid_tuple in iccids:
             iccid = iccid_tuple[0]
             if iccid:
+                logger.debug(f"[my_esim] Fetching API status for ICCID {iccid}")
                 data = await fetch_esim_with_retry(iccid)
                 results.append({"iccid": iccid, "data": data})
         return results
     finally:
         session.close()    
 
-async def cancel_esim(esim_tran_no: str) -> dict:
-    url = f"{BASE_URL}/esim/cancel"
-    payload = {
-        "esimTranNo": esim_tran_no
-    }
+def cancel_esim(iccid: str = None, tran_no: str = None) -> dict:
+    if not iccid and not tran_no:
+        return {"success": False, "errorMessage": "ICCID or tranNo required"}
+
+    payload = {"iccid": iccid} if iccid else {"esimTranNo": tran_no}
     try:
         response = requests.post(
-            url,
-            json=payload,
+            f"{BASE_URL}/esim/cancel",
             headers=API_HEADERS,
-            timeout=30,
-            verify=True
+            json=payload,
+            timeout=15
         )
         response.raise_for_status()
         return response.json()
     except Exception as e:
+        logger.warning(f"[Cancel API] Failed: {e}")
         return {"success": False, "errorMessage": str(e)}
 
+async def get_topup_packages(iccid: str) -> list:
+    url = f"{BASE_URL}/package/list"
+    payload = {
+        "type": "TOPUP",
+        "iccid": iccid
+    }
+    try:
+        response = requests.post(url, json=payload, headers=API_HEADERS, timeout=30)
+        response.raise_for_status()
+        result = response.json()
+        if result.get("success"):
+            return result["obj"].get("packageList", [])
+    except Exception as e:
+        logger.error(f"Top-Up packages error: {e}")
+    return []
+
+def topup_esim(esim_tran_no: str, package_code: str, amount: int) -> dict:
+    txn_id = str(uuid.uuid4())
+    payload = {
+        "esimTranNo": esim_tran_no,
+        "packageCode": package_code,
+        "price": amount,
+        "transactionId": txn_id
+    }
+    logger.info(f"[Top-Up API] Top-Up requested: tranNo={esim_tran_no}, package={package_code}, amount={amount}, txn_id={txn_id}")
+    try:
+        response = requests.post(
+            f"{BASE_URL}/esim/topup",
+            headers=API_HEADERS,
+            json=payload,
+            timeout=15
+        )
+        response.raise_for_status()
+        return response.json()
+    except Exception as e:
+        logger.warning(f"[Top-Up API] Failed: {e}")
+        return {"success": False, "errorMessage": str(e)}
+
+def update_usage_by_iccid(db: Session, iccid: str, data: dict) -> bool:
+    order = db.query(Order).filter(Order.iccid == iccid).first()
+    if not order:
+        logger.warning(f"[Usage Sync] Order not found for ICCID {iccid}")
+        return False
+
+    if "orderUsage" in data:
+        order.order_usage = data["orderUsage"]
+
+    if "lastUpdateTime" in data:
+        try:
+            order.last_update_time = datetime.fromisoformat(data["lastUpdateTime"])
+        except Exception as e:
+            logger.warning(f"[Usage Sync] Failed to parse lastUpdateTime for ICCID {iccid}: {e}")
+            order.last_update_time = None
+
+    order.updated_at = datetime.utcnow()
+
+    db.commit()
+    logger.info(f"[Usage Sync] Updated usage for ICCID {iccid} — {order.order_usage / 1024 / 1024:.1f} MB used")
+    return True
+
+def update_order_from_api(session: Session, iccid: str, data: dict) -> None:
+    """
+    Update Order row in DB using latest API response for a given ICCID.
+    """
+    order = session.query(Order).filter(Order.iccid == iccid).first()
+    if not order:
+        logger.warning(f"[DB Sync] No order found for ICCID: {iccid}")
+        return
+
+    update_order_fields(order, data)
+    session.commit()
+    logger.info(f"[DB Sync] Order updated for ICCID: {iccid}")
+
+async def get_iccid_from_tranno(tran_no: str) -> Optional[str]:
+    """
+    Get ICCID by querying the profile with tran_no.
+    Used after top-up to re-sync data.
+    """
+    try:
+        resp = query_allocated_profiles()
+        for profile in resp:
+            if profile.get("esimTranNo") == tran_no:
+                return profile.get("iccid")
+    except Exception as e:
+        logger.warning(f"[Lookup] Failed to get ICCID from tranNo {tran_no}: {e}")
+    return None
+
+def query_allocated_profiles() -> List[dict]:
+    url = f"{BASE_URL}/esim/query"
+    try:
+        response = requests.post(url, headers=API_HEADERS, timeout=30)
+        response.raise_for_status()
+        data = response.json()
+        if data.get("success") and isinstance(data.get("obj"), list):
+            return data["obj"]
+    except Exception as e:
+        logger.warning(f"[Query Profiles] Failed to fetch allocated profiles: {e}")
+    return []
+
+def update_order_fields(order: Order, api_data: dict):
+    """
+    Safely updates Order fields based on latest API data.
+    """
+    if not order or not api_data:
+        return
+
+    try:
+        order.expired_time = api_data.get("expiredTime", order.expired_time)
+        order.total_volume = api_data.get("totalVolume", order.total_volume)
+        order.total_duration = api_data.get("totalDuration", order.total_duration)
+        order.order_usage = api_data.get("orderUsage", order.order_usage)
+        order.esim_status = api_data.get("esimStatus", order.esim_status)
+        order.smdp_status = api_data.get("smdpStatus", order.smdp_status)
+
+        # Extra: update last sync time from usage API
+        if "lastUpdateTime" in api_data:
+            try:
+                order.last_update_time = datetime.fromisoformat(api_data["lastUpdateTime"])
+            except Exception:
+                order.last_update_time = None
+
+        order.updated_at = datetime.utcnow()
+    except Exception as e:
+        logger.warning(f"[DB Sync] Failed to update order fields for ICCID {order.iccid}: {e}")
