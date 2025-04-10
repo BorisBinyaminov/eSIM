@@ -158,6 +158,25 @@ async def start(update: Update, context: CallbackContext) -> None:
 
 async def handle_message(update: Update, context: CallbackContext) -> None:
     text = update.message.text
+    def sort_esims_priority(esim_data):
+        def get_priority(entry):
+            status = entry["data"].get("esimStatus", "")
+            smdp = entry["data"].get("smdpStatus", "")
+            if smdp == "RELEASED" and status == "GOT_RESOURCE":
+                return 0  # New
+            elif smdp == "ENABLED" and status == "IN_USE":
+                return 1  # In Use
+            elif smdp == "ENABLED" and status == "GOT_RESOURCE":
+                return 2  # Onboard
+            elif status == "USED_UP":
+                return 3  # Depleted
+            elif status == "DELETED":
+                return 4  # Deleted
+            else:
+                return 5  # Unknown or less relevant
+
+        return sorted(esim_data, key=get_priority)
+
     if "pending_purchase" in context.chat_data:
         try:
             quantity = int(text.strip())
@@ -243,6 +262,7 @@ async def handle_message(update: Update, context: CallbackContext) -> None:
             await update.message.reply_text("You have no eSIMs yet.")
             return
         session = SessionLocal()
+        esim_data = sort_esims_priority(esim_data)
         for entry in esim_data:
             iccid = entry["iccid"]
             api_data = entry["data"]
@@ -254,7 +274,7 @@ async def handle_message(update: Update, context: CallbackContext) -> None:
 
             # ❌ Показать "Cancel", если eSIM не установлена и активна
             if api_data.get("smdpStatus") == "RELEASED" and api_data.get("esimStatus") == "GOT_RESOURCE":
-                buttons.append(InlineKeyboardButton("❌ Cancel", callback_data=f"cancel_{iccid}"))
+                buttons.append(InlineKeyboardButton("❌ Cancel", callback_data=f"precancel_{iccid}"))
 
             # ✅ Показать "Top-Up", если:
             # 1. В профиле указано supportTopUpType == 2
@@ -516,6 +536,24 @@ async def button_handler(update: Update, context: CallbackContext) -> None:
         else:
             await query.message.reply_text("📱 How many eSIMs would you like to purchase?")
 
+    elif data.startswith("precancel_"):
+        iccid = data.split("_", 1)[1]
+        keyboard = InlineKeyboardMarkup([
+            [
+                InlineKeyboardButton("✅ Yes, cancel", callback_data=f"cancel_{iccid}"),
+                InlineKeyboardButton("❌ No", callback_data="cancel_ignore")
+            ]
+        ])
+        await query.message.reply_text(
+            "⚠️ Are you sure you want to cancel this eSIM?\nThis action is irreversible and will refund the balance (if eligible).",
+            reply_markup=keyboard
+        )
+        return
+
+    elif data == "cancel_ignore":
+        await query.message.reply_text("❎ Cancel request aborted.")
+        return
+
     elif data.startswith("cancel_"):
         try:
             await query.answer()
@@ -553,8 +591,8 @@ async def button_handler(update: Update, context: CallbackContext) -> None:
                 updated_data = buy_esim.query_esim_by_iccid(iccid)
                 buy_esim.update_order_from_api(session, iccid, updated_data)
                 await query.message.reply_text(
-                    "✅ eSIM successfully cancelled and removed.\n"
-                    "💸 A refund will be issued shortly according to your payment method."
+                    "✅ eSIM successfully cancelled.\n"
+                    "💸 A refund will be issued shortly."
                 )
             else:
                 err = result.get("errorMessage") or result.get("errorMsg") or "Unknown error"

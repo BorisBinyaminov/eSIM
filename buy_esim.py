@@ -388,7 +388,7 @@ def update_order_from_api(session: Session, iccid: str, data: dict) -> None:
     session.commit()
     logger.info(f"[DB Sync] Order updated for ICCID: {iccid}")
 
-async def get_iccid_from_tranno(tran_no: str) -> Optional[str]:
+def get_iccid_from_tranno(tran_no: str) -> Optional[str]:
     """
     Get ICCID by querying the profile with tran_no.
     Used after top-up to re-sync data.
