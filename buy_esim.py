@@ -1,21 +1,29 @@
-# buy_esim.py
+"""
+Refactored buy_esim.py
+
+This module interacts with the ESIMAccess API using asynchronous HTTP calls via aiohttp.
+It handles processes such as balance checking, order placement, profile querying (including polling),
+and related operations (e.g. top-up and cancellation).
+
+All database operations use context managers for safe session management.
+"""
+
 import os
-import requests
 import asyncio
 import uuid
-from database import SessionLocal
 import logging
-from urllib3.util.retry import Retry
-from requests.adapters import HTTPAdapter
-from models import Order
-from typing import Optional
-from datetime import datetime
-from sqlalchemy.orm import Session
-from typing import List
 import json
+import aiohttp
+from datetime import datetime
+from typing import Optional, List
 
+from sqlalchemy.orm import Session
+from database import SessionLocal
+from models import Order
 
+# Configure logger
 logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
 
 # Global constants for the ESIMAccess API
 BASE_URL = "https://api.esimaccess.com/api/v1/open"
@@ -25,24 +33,130 @@ API_HEADERS = {
     "Content-Type": "application/json"
 }
 
-async def poll_profile(order_no: str, timeout: int = 30, interval: int = 5):
-    """
-    Poll the query_profile endpoint until an allocated profile is returned or the timeout is reached.
-    """
-    logger.info(f"⏳ Polling for profile allocation (order {order_no})...")
 
+async def api_post(url: str, payload: dict, timeout: int = 30, retries: int = 3, backoff_factor: float = 1.0) -> dict:
+    """
+    Helper function to send POST requests to the API asynchronously using aiohttp.
+    Implements a simple retry mechanism with exponential backoff.
+    """
+    for attempt in range(retries):
+        try:
+            async with aiohttp.ClientSession() as session:
+                async with session.post(url, json=payload, headers=API_HEADERS, timeout=timeout) as response:
+                    response.raise_for_status()
+                    data = await response.json()
+                    return data
+        except Exception as e:
+            logger.warning(f"[API POST] Attempt {attempt+1} for URL {url} failed: {e}")
+            if attempt < retries - 1:
+                await asyncio.sleep(backoff_factor * (2 ** attempt))
+            else:
+                logger.error(f"[API POST] All attempts failed for URL {url}")
+                raise
+
+
+# -----------------------------
+# 0. User Payment Simulation
+# -----------------------------
+def user_payment_sync() -> str:
+    """
+    Simulate user payment approval.
+    In production, integrate with an actual payment gateway.
+    """
+    return str(uuid.uuid4())
+
+
+async def user_payment() -> str:
+    return await asyncio.to_thread(user_payment_sync)
+
+
+# -----------------------------
+# 1. Check Balance
+# -----------------------------
+async def check_balance() -> dict:
+    """
+    Check account balance from the ESIMAccess API.
+    """
+    url = f"{BASE_URL}/balance/query"
+    return await api_post(url, payload={}, timeout=30)
+
+
+# -----------------------------
+# 2. Place Order
+# -----------------------------
+async def place_order(
+    package_code: str, 
+    order_price: int, 
+    transaction_id: str, 
+    period_num: Optional[int] = None, 
+    count: int = 1
+) -> dict:
+    """
+    Place an eSIM order. For daily plans, `period_num` is provided.
+    """
+    url = f"{BASE_URL}/esim/order"
+    if period_num:  # daily plan
+        final_count = 1
+        total_amount = order_price * period_num
+    else:
+        final_count = count
+        total_amount = order_price * count
+
+    payload = {
+        "transactionId": transaction_id,
+        "amount": total_amount,
+        "packageInfoList": [{
+            "packageCode": package_code,
+            "count": final_count,
+            "price": order_price
+        }]
+    }
+    if period_num:
+        payload["packageInfoList"][0]["periodNum"] = period_num
+
+    return await api_post(url, payload, timeout=30)
+
+
+# -----------------------------
+# 3. Query Profile (Retrieve QR Code/Profile)
+# -----------------------------
+async def query_profile(order_no: str) -> dict:
+    """
+    Query the ESIMAccess API for allocated eSIM profiles associated with an order.
+    """
+    url = f"{BASE_URL}/esim/query"
+    payload = {"orderNo": order_no, "pager": {"pageNum": 1, "pageSize": 20}}
+    return await api_post(url, payload, timeout=60)
+
+
+async def poll_profile(order_no: str, timeout: int = 30, interval: int = 5) -> dict:
+    logger.info(f"⏳ Polling for profile allocation (order {order_no})...")
     start_time = asyncio.get_event_loop().time()
     while True:
         query_response = await query_profile(order_no)
-        if query_response is not None:
-            esim_list_raw = query_response.get("obj", {}).get("esimList", [])
-            if esim_list_raw:
-                logger.info(f"✅ QR profiles allocated: {len(esim_list_raw)}")
-                return query_response
-            else:
-                logger.info("⚠️ Polling result: No profiles allocated yet.")
+        if not isinstance(query_response, dict):
+            logger.warning(f"Unexpected response type ({type(query_response)}) for order {order_no}. Using empty dict.")
+            query_response = {}
+
+        obj_data = query_response.get("obj")
+        esim_list_raw = []  # default
+
+        # Handle the case where 'obj' is a dict
+        if isinstance(obj_data, dict):
+            esim_list_raw = obj_data.get("esimList", [])
+
+        # Or where 'obj' is a list
+        elif isinstance(obj_data, list):
+            # E.g. if each item might contain an 'esimList'
+            for item in obj_data:
+                if isinstance(item, dict) and "esimList" in item:
+                    esim_list_raw.extend(item["esimList"])
+
+        if esim_list_raw:
+            logger.info(f"✅ QR profiles allocated: {len(esim_list_raw)}")
+            return query_response
         else:
-            logger.warning("⚠️ No response from query_profile API.")
+            logger.info("⚠️ Polling result: No profiles allocated yet.")
 
         if asyncio.get_event_loop().time() - start_time > timeout:
             logger.error("❌ Timeout reached while waiting for profile allocation.")
@@ -54,89 +168,23 @@ async def poll_profile(order_no: str, timeout: int = 30, interval: int = 5):
 
 
 # -----------------------------
-# 0. User Payment Simulation
-# -----------------------------
-def user_payment_sync():
-    """
-    Simulate the user payment approval step.
-    In a real scenario, this would integrate with a payment gateway.
-    For now, we just generate and return a unique transaction ID.
-    """
-    return str(uuid.uuid4())
-
-async def user_payment():
-    return await asyncio.to_thread(user_payment_sync)
-
-# -----------------------------
-# 1. Check Balance
-# -----------------------------
-def check_balance_sync():
-    url = f"{BASE_URL}/balance/query"
-    response = requests.post(url, json={}, headers=API_HEADERS, timeout=30, verify=True)
-    response.raise_for_status()
-    return response.json()
-
-async def check_balance():
-    return await asyncio.to_thread(check_balance_sync)
-
-# -----------------------------
-# 2. Place Order
-# -----------------------------
-def place_order_sync(package_code: str, order_price: int, transaction_id: str):
-    url = f"{BASE_URL}/esim/order"
-    payload = {
-        "transactionId": transaction_id,
-        "amount": order_price,
-        "packageInfoList": [
-            {
-                "packageCode": package_code,
-                "count": 1,       # Default to ordering one package; adjust if needed.
-                "price": order_price
-                # Optionally add "periodNum": <value> for daily plans.
-            }
-        ]
-    }
-    response = requests.post(url, json=payload, headers=API_HEADERS, timeout=30, verify=True)
-    response.raise_for_status()
-    return response.json()
-
-async def place_order(package_code: str, order_price: int, transaction_id: str):
-    return await asyncio.to_thread(place_order_sync, package_code, order_price, transaction_id)
-
-# -----------------------------
-# 3. Query Profile (retrieve QR code/profile)
-# -----------------------------
-def query_profile_sync(order_no: str):
-    """
-    Calls the query API to get allocated eSIM profiles for a given order number.
-    Uses a custom requests session with retries to mitigate SSL errors.
-    """
-    url = f"{BASE_URL}/esim/query"
-    payload = {"orderNo": order_no, "pager": {"pageNum": 1, "pageSize": 20}}
-    
-    # Create a custom session with retries.
-    session = requests.Session()
-    retries = Retry(
-        total=5, 
-        backoff_factor=1, 
-        status_forcelist=[502, 503, 504],
-        raise_on_status=False
-    )
-    adapter = HTTPAdapter(max_retries=retries)
-    session.mount("https://", adapter)
-    
-    # Disable SSL verification (for development only)
-    response = session.post(url, json=payload, headers=API_HEADERS, timeout=30, verify=True)
-    response.raise_for_status()
-    return response.json()
-
-async def query_profile(order_no: str):
-    return await asyncio.to_thread(query_profile_sync, order_no)
-
-# -----------------------------
 # 4. Process Purchase
 # -----------------------------
-async def process_purchase(package_code: str, user_id: str, order_price: int, retail_price: int, count: int = 1, period_num: int = None) -> dict:
+async def process_purchase(
+    package_code: str, 
+    user_id: str, 
+    order_price: int, 
+    retail_price: int, 
+    count: int = 1, 
+    period_num: Optional[int] = None
+) -> dict:
+    """
+    Process the purchase flow:
+      - Check balance
+      - Simulate payment
+      - Place order and poll for profile allocation
+      - Save order data in the database
+    """
     balance_data = await check_balance()
     available_balance = balance_data.get("obj", {}).get("balance", 0)
     if available_balance < order_price * count:
@@ -146,33 +194,7 @@ async def process_purchase(package_code: str, user_id: str, order_price: int, re
     transaction_id = await user_payment()
     logger.info(f"Simulated transaction ID: {transaction_id}")
 
-    def place_order_custom():
-        url = f"{BASE_URL}/esim/order"
-        # Calculate correct amount
-        if period_num:  # daily plan
-            final_count = 1
-            total_amount = order_price * period_num
-        else:  # multi-day plan
-            final_count = count
-            total_amount = order_price * count
-
-        payload = {
-            "transactionId": transaction_id,
-            "amount": total_amount,
-            "packageInfoList": [{
-                "packageCode": package_code,
-                "count": final_count,
-                "price": order_price
-            }]
-        }
-        if period_num:
-            payload["packageInfoList"][0]["periodNum"] = period_num
-
-        response = requests.post(url, json=payload, headers=API_HEADERS, timeout=30, verify=True)
-        response.raise_for_status()
-        return response.json()
-
-    order_response = await asyncio.to_thread(place_order_custom)
+    order_response = await place_order(package_code, order_price, transaction_id, period_num=period_num, count=count)
     if not order_response or not isinstance(order_response, dict):
         raise Exception("Order request failed or returned unexpected result.")
     logger.info(f"Order response: {order_response}")
@@ -182,7 +204,6 @@ async def process_purchase(package_code: str, user_id: str, order_price: int, re
     if not order_no:
         raise Exception("Order API did not return an orderNo.")
 
-    await asyncio.sleep(3)
     query_response = await poll_profile(order_no, timeout=30, interval=5)
     if not query_response or not isinstance(query_response, dict):
         raise Exception("Polling failed: no profile response received.")
@@ -191,15 +212,13 @@ async def process_purchase(package_code: str, user_id: str, order_price: int, re
     if not esim_list_raw:
         raise Exception("No eSIM profile returned.")
 
-    profile = esim_list_raw[0]
     qr_codes = [profile.get("qrCodeUrl") for profile in esim_list_raw if profile.get("qrCodeUrl")]
     if not qr_codes:
         raise Exception("No QR codes found in the response.")
 
-  
-    session = SessionLocal()
     orders_created = []
-    try:
+    # Use a context manager for DB session to ensure safe commit/rollback.
+    with SessionLocal() as session:
         for profile in esim_list_raw:
             iccid_value = profile.get("iccid")
             qr_code = profile.get("qrCodeUrl")
@@ -225,113 +244,119 @@ async def process_purchase(package_code: str, user_id: str, order_price: int, re
                 total_volume=profile.get("totalVolume"),
                 total_duration=profile.get("totalDuration"),
                 order_usage=profile.get("orderUsage"),
-                esim_list=json.dumps([profile]),  # store only 1 profile per row
+                esim_list=json.dumps([profile]),
                 package_list=json.dumps(profile.get("packageList"))
             )
             session.add(new_order)
             orders_created.append(qr_code)
-
-        session.commit()
-    except Exception as e:
-        session.rollback()
-        raise Exception(f"Database error: {str(e)}")
-    finally:
-        session.close()
+        try:
+            session.commit()
+        except Exception as e:
+            session.rollback()
+            raise Exception(f"Database error: {str(e)}")
 
     return {"orderNo": order_no, "qrCodes": orders_created, "status": "confirmed"}
+
 
 # -----------------------------
 # 5. Query eSIM Status by ICCID
 # -----------------------------
-def query_esim_by_iccid(iccid: str) -> dict:
+async def query_esim_by_iccid(iccid: str) -> dict:
+    """
+    Query the status of an eSIM using its ICCID.
+    """
     url = f"{BASE_URL}/esim/query"
     payload = {
         "orderNo": "",
         "iccid": iccid,
-        "pager": {
-            "pageNum": 1,
-            "pageSize": 20
-        }
+        "pager": {"pageNum": 1, "pageSize": 20}
     }
     try:
-        response = requests.post(
-            url,
-            json=payload,
-            headers=API_HEADERS,
-            timeout=30,
-            verify=True
-        )
-        response.raise_for_status()
-        data = response.json()
-
+        data = await api_post(url, payload, timeout=30)
         esim_list = data.get("obj", {}).get("esimList")
         if not esim_list or not isinstance(esim_list, list):
             return {"error": "No eSIM data returned."}
-
         return esim_list[0]
     except Exception as e:
         return {"error": str(e)}
-    
-async def fetch_esim_with_retry(iccid, retries=3, delay=1):
+
+
+async def fetch_esim_with_retry(iccid: str, retries: int = 3, delay: int = 1) -> Optional[dict]:
+    """
+    Retry querying the eSIM by ICCID if necessary.
+    """
     for attempt in range(retries):
-        data = await asyncio.to_thread(query_esim_by_iccid, iccid)
+        data = await query_esim_by_iccid(iccid)
         if data and "iccid" in data:
             return data
-        logging.warning(f"Retry {attempt+1}/{retries} failed for ICCID {iccid}")
+        logger.warning(f"Retry {attempt+1}/{retries} failed for ICCID {iccid}")
         await asyncio.sleep(delay)
-    logging.error(f"❌ All retries failed for ICCID {iccid}")
+    logger.error(f"❌ All retries failed for ICCID {iccid}")
     return None
-    
-async def my_esim(user_id: str) -> list:
-    session = SessionLocal()
-    try:
-        iccids = session.query(Order.iccid).filter(Order.user_id == user_id).distinct().all()
-        results = []
-        for iccid_tuple in iccids:
-            iccid = iccid_tuple[0]
-            if iccid:
-                logger.debug(f"[my_esim] Fetching API status for ICCID {iccid}")
-                data = await fetch_esim_with_retry(iccid)
-                results.append({"iccid": iccid, "data": data})
-        return results
-    finally:
-        session.close()    
 
-def cancel_esim(iccid: str = None, tran_no: str = None) -> dict:
+
+async def my_esim(user_id: str) -> list:
+    """
+    Retrieve the list of eSIMs associated with a user, updating their status from the API.
+    """
+    with SessionLocal() as session:
+        iccid_tuples = session.query(Order.iccid).filter(Order.user_id == user_id).distinct().all()
+    results = []
+    for iccid_tuple in iccid_tuples:
+        iccid = iccid_tuple[0]
+        if iccid:
+            logger.debug(f"[my_esim] Fetching API status for ICCID {iccid}")
+            data = await fetch_esim_with_retry(iccid)
+            results.append({"iccid": iccid, "data": data})
+    return results
+
+
+# -----------------------------
+# 6. Cancel eSIM
+# -----------------------------
+async def cancel_esim(iccid: str = None, tran_no: str = None) -> dict:
+    """
+    Cancel an eSIM using either ICCID or transaction number.
+    """
     if not iccid and not tran_no:
         return {"success": False, "errorMessage": "ICCID or tranNo required"}
-
     payload = {"iccid": iccid} if iccid else {"esimTranNo": tran_no}
+    url = f"{BASE_URL}/esim/cancel"
     try:
-        response = requests.post(
-            f"{BASE_URL}/esim/cancel",
-            headers=API_HEADERS,
-            json=payload,
-            timeout=15
-        )
-        response.raise_for_status()
-        return response.json()
+        return await api_post(url, payload, timeout=15)
     except Exception as e:
         logger.warning(f"[Cancel API] Failed: {e}")
         return {"success": False, "errorMessage": str(e)}
 
+
+# -----------------------------
+# 7. Get Top-Up Packages
+# -----------------------------
 async def get_topup_packages(iccid: str) -> list:
+    """
+    Retrieve available top-up packages for a given eSIM (by ICCID).
+    """
     url = f"{BASE_URL}/package/list"
     payload = {
         "type": "TOPUP",
         "iccid": iccid
     }
     try:
-        response = requests.post(url, json=payload, headers=API_HEADERS, timeout=30)
-        response.raise_for_status()
-        result = response.json()
+        result = await api_post(url, payload, timeout=30)
         if result.get("success"):
             return result["obj"].get("packageList", [])
     except Exception as e:
         logger.error(f"Top-Up packages error: {e}")
     return []
 
-def topup_esim(esim_tran_no: str, package_code: str, amount: int) -> dict:
+
+# -----------------------------
+# 8. Top-Up eSIM
+# -----------------------------
+async def topup_esim(esim_tran_no: str, package_code: str, amount: int) -> dict:
+    """
+    Process a top-up request.
+    """
     txn_id = str(uuid.uuid4())
     payload = {
         "esimTranNo": esim_tran_no,
@@ -340,20 +365,21 @@ def topup_esim(esim_tran_no: str, package_code: str, amount: int) -> dict:
         "transactionId": txn_id
     }
     logger.info(f"[Top-Up API] Top-Up requested: tranNo={esim_tran_no}, package={package_code}, amount={amount}, txn_id={txn_id}")
+    url = f"{BASE_URL}/esim/topup"
     try:
-        response = requests.post(
-            f"{BASE_URL}/esim/topup",
-            headers=API_HEADERS,
-            json=payload,
-            timeout=15
-        )
-        response.raise_for_status()
-        return response.json()
+        return await api_post(url, payload, timeout=15)
     except Exception as e:
         logger.warning(f"[Top-Up API] Failed: {e}")
         return {"success": False, "errorMessage": str(e)}
 
+
+# -----------------------------
+# 9. Update Usage and Order Data
+# -----------------------------
 def update_usage_by_iccid(db: Session, iccid: str, data: dict) -> bool:
+    """
+    Update an Order record's usage information in the database.
+    """
     order = db.query(Order).filter(Order.iccid == iccid).first()
     if not order:
         logger.warning(f"[Usage Sync] Order not found for ICCID {iccid}")
@@ -370,14 +396,14 @@ def update_usage_by_iccid(db: Session, iccid: str, data: dict) -> bool:
             order.last_update_time = None
 
     order.updated_at = datetime.utcnow()
-
     db.commit()
     logger.info(f"[Usage Sync] Updated usage for ICCID {iccid} — {order.order_usage / 1024 / 1024:.1f} MB used")
     return True
 
+
 def update_order_from_api(session: Session, iccid: str, data: dict) -> None:
     """
-    Update Order row in DB using latest API response for a given ICCID.
+    Update an Order record in the database with the latest API data.
     """
     order = session.query(Order).filter(Order.iccid == iccid).first()
     if not order:
@@ -388,39 +414,11 @@ def update_order_from_api(session: Session, iccid: str, data: dict) -> None:
     session.commit()
     logger.info(f"[DB Sync] Order updated for ICCID: {iccid}")
 
-def get_iccid_from_tranno(tran_no: str) -> Optional[str]:
-    """
-    Get ICCID by querying the profile with tran_no.
-    Used after top-up to re-sync data.
-    """
-    try:
-        resp = query_allocated_profiles()
-        for profile in resp:
-            if profile.get("esimTranNo") == tran_no:
-                return profile.get("iccid")
-    except Exception as e:
-        logger.warning(f"[Lookup] Failed to get ICCID from tranNo {tran_no}: {e}")
-    return None
-
-def query_allocated_profiles() -> List[dict]:
-    url = f"{BASE_URL}/esim/query"
-    try:
-        response = requests.post(url, headers=API_HEADERS, timeout=30)
-        response.raise_for_status()
-        data = response.json()
-        if data.get("success") and isinstance(data.get("obj"), list):
-            return data["obj"]
-    except Exception as e:
-        logger.warning(f"[Query Profiles] Failed to fetch allocated profiles: {e}")
-    return []
 
 def update_order_fields(order: Order, api_data: dict):
     """
-    Safely updates Order fields based on latest API data.
+    Update order fields safely based on API response data.
     """
-    if not order or not api_data:
-        return
-
     try:
         order.expired_time = api_data.get("expiredTime", order.expired_time)
         order.total_volume = api_data.get("totalVolume", order.total_volume)
@@ -429,7 +427,7 @@ def update_order_fields(order: Order, api_data: dict):
         order.esim_status = api_data.get("esimStatus", order.esim_status)
         order.smdp_status = api_data.get("smdpStatus", order.smdp_status)
 
-        # Extra: update last sync time from usage API
+        # Update last sync time from API
         if "lastUpdateTime" in api_data:
             try:
                 order.last_update_time = datetime.fromisoformat(api_data["lastUpdateTime"])
@@ -439,3 +437,33 @@ def update_order_fields(order: Order, api_data: dict):
         order.updated_at = datetime.utcnow()
     except Exception as e:
         logger.warning(f"[DB Sync] Failed to update order fields for ICCID {order.iccid}: {e}")
+
+
+# -----------------------------
+# 10. Lookup ICCID from Transaction Number
+# -----------------------------
+async def query_allocated_profiles() -> List[dict]:
+    """
+    Query the API to retrieve allocated profiles.
+    This version assumes an empty payload.
+    """
+    url = f"{BASE_URL}/esim/query"
+    payload = {}
+    try:
+        data = await api_post(url, payload, timeout=30)
+        if data.get("success") and isinstance(data.get("obj"), list):
+            return data["obj"]
+    except Exception as e:
+        logger.warning(f"[Query Profiles] Failed to fetch allocated profiles: {e}")
+    return []
+
+
+async def get_iccid_from_tranno(tran_no: str) -> Optional[str]:
+    """
+    Retrieve the ICCID corresponding to a given transaction number.
+    """
+    profiles = await query_allocated_profiles()
+    for profile in profiles:
+        if profile.get("esimTranNo") == tran_no:
+            return profile.get("iccid")
+    return None

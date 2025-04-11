@@ -702,7 +702,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 537000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -713,11 +713,11 @@
                 "locationCode": "AZ",
                 "operatorList": [
                     {
-                        "operatorName": "Azercell",
-                        "networkType": "4G"
+                        "operatorName": "Bakcell",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Bakcell",
+                        "operatorName": "Azercell",
                         "networkType": "5G"
                     }
                 ]
@@ -776,7 +776,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 228000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -787,15 +787,15 @@
                 "locationCode": "BH",
                 "operatorList": [
                     {
-                        "operatorName": "Batelco",
-                        "networkType": "3G"
-                    },
-                    {
                         "operatorName": "Zain",
                         "networkType": "5G"
                     },
                     {
                         "operatorName": "STC",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Batelco",
                         "networkType": "5G"
                     }
                 ]
@@ -854,7 +854,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 69000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -893,7 +893,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 46000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -936,7 +936,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 69000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -947,15 +947,15 @@
                 "locationCode": "BG",
                 "operatorList": [
                     {
+                        "operatorName": "Vivacom",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "A1",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telenor",
-                        "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Vivacom",
                         "networkType": "5G"
                     }
                 ]
@@ -979,7 +979,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 60000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -1018,7 +1018,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 69000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -1061,7 +1061,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 69000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -1100,7 +1100,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 60000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -1143,7 +1143,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 69000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -1186,7 +1186,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 54000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -1272,7 +1272,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 60000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -1311,7 +1311,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 60000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -1471,7 +1471,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 60000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -2345,7 +2345,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 146000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -2380,7 +2380,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 102000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -2419,7 +2419,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 68000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -2462,7 +2462,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 88000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -2501,7 +2501,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 102000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -2544,7 +2544,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 102000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -2583,7 +2583,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 88000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -2626,7 +2626,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 102000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -2669,7 +2669,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 81000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -2755,7 +2755,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 88000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -2794,7 +2794,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 88000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -2954,7 +2954,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 88000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -6032,15 +6032,15 @@
                 "locationCode": "BG",
                 "operatorList": [
                     {
+                        "operatorName": "Vivacom",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "A1",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telenor",
-                        "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Vivacom",
                         "networkType": "5G"
                     }
                 ]
@@ -6075,15 +6075,15 @@
                 "locationCode": "BG",
                 "operatorList": [
                     {
+                        "operatorName": "Vivacom",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "A1",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telenor",
-                        "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Vivacom",
                         "networkType": "5G"
                     }
                 ]
@@ -6118,15 +6118,15 @@
                 "locationCode": "BG",
                 "operatorList": [
                     {
+                        "operatorName": "Vivacom",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "A1",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telenor",
-                        "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Vivacom",
                         "networkType": "5G"
                     }
                 ]
@@ -10521,11 +10521,11 @@
                 "locationCode": "AZ",
                 "operatorList": [
                     {
-                        "operatorName": "Azercell",
-                        "networkType": "4G"
+                        "operatorName": "Bakcell",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Bakcell",
+                        "operatorName": "Azercell",
                         "networkType": "5G"
                     }
                 ]
@@ -10560,11 +10560,11 @@
                 "locationCode": "AZ",
                 "operatorList": [
                     {
-                        "operatorName": "Azercell",
-                        "networkType": "4G"
+                        "operatorName": "Bakcell",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Bakcell",
+                        "operatorName": "Azercell",
                         "networkType": "5G"
                     }
                 ]
@@ -10704,15 +10704,15 @@
                 "locationCode": "BH",
                 "operatorList": [
                     {
-                        "operatorName": "Batelco",
-                        "networkType": "3G"
-                    },
-                    {
                         "operatorName": "Zain",
                         "networkType": "5G"
                     },
                     {
                         "operatorName": "STC",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Batelco",
                         "networkType": "5G"
                     }
                 ]
@@ -10747,15 +10747,15 @@
                 "locationCode": "BH",
                 "operatorList": [
                     {
-                        "operatorName": "Batelco",
-                        "networkType": "3G"
-                    },
-                    {
                         "operatorName": "Zain",
                         "networkType": "5G"
                     },
                     {
                         "operatorName": "STC",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Batelco",
                         "networkType": "5G"
                     }
                 ]
@@ -10791,11 +10791,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -10830,11 +10830,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -10869,7 +10869,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -10904,7 +10904,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -10970,7 +10970,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 114000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -11009,7 +11009,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 171000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "BE",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -11044,7 +11044,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 138000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -11079,7 +11079,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 138000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -11114,7 +11114,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 171000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -11161,7 +11161,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 171000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -11204,7 +11204,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 138000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -11508,7 +11508,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 282000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -11547,7 +11547,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 420000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "BE",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -11582,7 +11582,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 336000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -11617,7 +11617,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 336000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -11652,7 +11652,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 423000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -11699,7 +11699,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 423000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -11742,7 +11742,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 336000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -12143,7 +12143,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 213000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -12154,12 +12154,12 @@
                 "locationCode": "BW",
                 "operatorList": [
                     {
-                        "operatorName": "Mascom",
-                        "networkType": "3G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "Mascom",
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -12182,7 +12182,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 213000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -12287,7 +12287,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 106500.0,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -12322,7 +12322,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 54000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -12357,7 +12357,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 92000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -13042,7 +13042,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 528000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -13053,12 +13053,12 @@
                 "locationCode": "BW",
                 "operatorList": [
                     {
-                        "operatorName": "Mascom",
-                        "networkType": "3G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "Mascom",
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -13081,7 +13081,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 528000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -13186,7 +13186,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 264000.0,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -13221,7 +13221,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 138000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -13256,7 +13256,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 224000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -13836,7 +13836,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 780000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -13941,7 +13941,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 390000.0,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -13976,7 +13976,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 264000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -14299,7 +14299,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 366000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -14404,7 +14404,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 58000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -14439,7 +14439,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 144000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -14945,7 +14945,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 258000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -14988,7 +14988,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 258000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -15105,7 +15105,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 258000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -15144,7 +15144,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 212000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -15187,7 +15187,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 258000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -15955,7 +15955,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 178000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -16099,7 +16099,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 213000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -16110,12 +16110,12 @@
                 "locationCode": "CM",
                 "operatorList": [
                     {
-                        "operatorName": "MTN Cameroon",
-                        "networkType": "4G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "MTN Cameroon",
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -16352,7 +16352,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 318000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -16391,7 +16391,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 258000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -16430,7 +16430,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 318000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -16469,7 +16469,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 258000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -16804,7 +16804,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 420000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -16839,7 +16839,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 660000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -16913,7 +16913,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 528000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -16924,12 +16924,12 @@
                 "locationCode": "CM",
                 "operatorList": [
                     {
-                        "operatorName": "MTN Cameroon",
-                        "networkType": "4G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "MTN Cameroon",
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -18237,7 +18237,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 318000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -19679,7 +19679,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 114000,
-        "speed": "2G/3G",
+        "speed": "3G",
         "ipExport": "HK",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -19714,7 +19714,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 282000,
-        "speed": "2G/3G",
+        "speed": "3G",
         "ipExport": "HK",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -19749,7 +19749,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 420000,
-        "speed": "2G/3G",
+        "speed": "3G",
         "ipExport": "HK",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -19784,7 +19784,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 1260000,
-        "speed": "2G/3G",
+        "speed": "3G",
         "ipExport": "HK",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -20407,7 +20407,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -20547,11 +20547,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -20761,7 +20761,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 560000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -20804,7 +20804,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 560000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -20878,7 +20878,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 560000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -20952,7 +20952,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 440000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -20995,7 +20995,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 560000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -21132,7 +21132,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 660000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -21171,7 +21171,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 560000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -21210,7 +21210,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 740000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -21249,7 +21249,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 560000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -21452,7 +21452,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 740000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -21495,7 +21495,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 740000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -21538,7 +21538,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 740000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -21663,7 +21663,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 740000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -21674,15 +21674,15 @@
                 "locationCode": "BG",
                 "operatorList": [
                     {
+                        "operatorName": "Vivacom",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "A1",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telenor",
-                        "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Vivacom",
                         "networkType": "5G"
                     }
                 ]
@@ -22400,7 +22400,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 560000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -24586,7 +24586,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 40000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -24621,7 +24621,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 57000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -24656,7 +24656,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 186000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -24691,7 +24691,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 67500,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -24702,15 +24702,15 @@
                 "locationCode": "BH",
                 "operatorList": [
                     {
-                        "operatorName": "Batelco",
-                        "networkType": "3G"
-                    },
-                    {
                         "operatorName": "Zain",
                         "networkType": "5G"
                     },
                     {
                         "operatorName": "STC",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Batelco",
                         "networkType": "5G"
                     }
                 ]
@@ -24734,7 +24734,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 135000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -24745,15 +24745,15 @@
                 "locationCode": "BH",
                 "operatorList": [
                     {
-                        "operatorName": "Batelco",
-                        "networkType": "3G"
-                    },
-                    {
                         "operatorName": "Zain",
                         "networkType": "5G"
                     },
                     {
                         "operatorName": "STC",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Batelco",
                         "networkType": "5G"
                     }
                 ]
@@ -24777,7 +24777,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 267000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -24788,15 +24788,15 @@
                 "locationCode": "BH",
                 "operatorList": [
                     {
-                        "operatorName": "Batelco",
-                        "networkType": "3G"
-                    },
-                    {
                         "operatorName": "Zain",
                         "networkType": "5G"
                     },
                     {
                         "operatorName": "STC",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Batelco",
                         "networkType": "5G"
                     }
                 ]
@@ -24820,7 +24820,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 333000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -24831,15 +24831,15 @@
                 "locationCode": "BH",
                 "operatorList": [
                     {
-                        "operatorName": "Batelco",
-                        "networkType": "3G"
-                    },
-                    {
                         "operatorName": "Zain",
                         "networkType": "5G"
                     },
                     {
                         "operatorName": "STC",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Batelco",
                         "networkType": "5G"
                     }
                 ]
@@ -27287,7 +27287,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 59000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -27322,7 +27322,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 375000.0,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -27641,7 +27641,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 9000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -27680,7 +27680,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 9000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -27793,7 +27793,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 42000.0,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -27910,11 +27910,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -28007,7 +28007,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 44000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -28042,7 +28042,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 17000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -28198,7 +28198,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 20000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -28529,7 +28529,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 9000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -28568,7 +28568,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 30000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -28607,7 +28607,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 50000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -28821,7 +28821,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 9000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -28864,7 +28864,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 24000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -28907,7 +28907,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 46000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -28950,7 +28950,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 9000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -28993,7 +28993,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 30000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -29036,7 +29036,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 46000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -29118,7 +29118,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 22000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -29520,11 +29520,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -29625,7 +29625,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 8550.0,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -30038,7 +30038,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 8550.0,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -31066,7 +31066,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 11850.0,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -31077,11 +31077,11 @@
                 "locationCode": "AZ",
                 "operatorList": [
                     {
-                        "operatorName": "Azercell",
-                        "networkType": "4G"
+                        "operatorName": "Bakcell",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Bakcell",
+                        "operatorName": "Azercell",
                         "networkType": "5G"
                     }
                 ]
@@ -31117,7 +31117,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -31261,7 +31261,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 8550.0,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -31335,7 +31335,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 3300.0,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -31370,7 +31370,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 8400.0,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "BE",
         "supportTopUpType": 2,
         "fupPolicy": "",
@@ -31405,7 +31405,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 8550.0,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "UK/NO",
         "supportTopUpType": 2,
         "fupPolicy": "",

@@ -1220,15 +1220,15 @@
                 "locationCode": "BG",
                 "operatorList": [
                     {
+                        "operatorName": "Vivacom",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "A1",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telenor",
-                        "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Vivacom",
                         "networkType": "5G"
                     }
                 ]
@@ -1962,11 +1962,11 @@
                 "locationCode": "AZ",
                 "operatorList": [
                     {
-                        "operatorName": "Azercell",
-                        "networkType": "4G"
+                        "operatorName": "Bakcell",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Bakcell",
+                        "operatorName": "Azercell",
                         "networkType": "5G"
                     }
                 ]
@@ -1998,15 +1998,15 @@
                 "locationCode": "BH",
                 "operatorList": [
                     {
-                        "operatorName": "Batelco",
-                        "networkType": "3G"
-                    },
-                    {
                         "operatorName": "Zain",
                         "networkType": "5G"
                     },
                     {
                         "operatorName": "STC",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Batelco",
                         "networkType": "5G"
                     }
                 ]
@@ -2063,11 +2063,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -2078,7 +2078,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -2349,12 +2349,12 @@
                 "locationCode": "BW",
                 "operatorList": [
                     {
-                        "operatorName": "Mascom",
-                        "networkType": "3G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "Mascom",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -2869,12 +2869,12 @@
                 "locationCode": "CM",
                 "operatorList": [
                     {
-                        "operatorName": "MTN Cameroon",
-                        "networkType": "4G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "MTN Cameroon",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3252,15 +3252,15 @@
                 "locationCode": "BG",
                 "operatorList": [
                     {
+                        "operatorName": "Vivacom",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "A1",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telenor",
-                        "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Vivacom",
                         "networkType": "5G"
                     }
                 ]
@@ -3994,11 +3994,11 @@
                 "locationCode": "AZ",
                 "operatorList": [
                     {
-                        "operatorName": "Azercell",
-                        "networkType": "4G"
+                        "operatorName": "Bakcell",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Bakcell",
+                        "operatorName": "Azercell",
                         "networkType": "5G"
                     }
                 ]
@@ -4030,15 +4030,15 @@
                 "locationCode": "BH",
                 "operatorList": [
                     {
-                        "operatorName": "Batelco",
-                        "networkType": "3G"
-                    },
-                    {
                         "operatorName": "Zain",
                         "networkType": "5G"
                     },
                     {
                         "operatorName": "STC",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Batelco",
                         "networkType": "5G"
                     }
                 ]
@@ -4095,11 +4095,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4110,7 +4110,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4381,12 +4381,12 @@
                 "locationCode": "BW",
                 "operatorList": [
                     {
-                        "operatorName": "Mascom",
-                        "networkType": "3G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "Mascom",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4901,12 +4901,12 @@
                 "locationCode": "CM",
                 "operatorList": [
                     {
-                        "operatorName": "MTN Cameroon",
-                        "networkType": "4G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "MTN Cameroon",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -5284,15 +5284,15 @@
                 "locationCode": "BG",
                 "operatorList": [
                     {
+                        "operatorName": "Vivacom",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "A1",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telenor",
-                        "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Vivacom",
                         "networkType": "5G"
                     }
                 ]
@@ -6026,11 +6026,11 @@
                 "locationCode": "AZ",
                 "operatorList": [
                     {
-                        "operatorName": "Azercell",
-                        "networkType": "4G"
+                        "operatorName": "Bakcell",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Bakcell",
+                        "operatorName": "Azercell",
                         "networkType": "5G"
                     }
                 ]
@@ -6062,15 +6062,15 @@
                 "locationCode": "BH",
                 "operatorList": [
                     {
-                        "operatorName": "Batelco",
-                        "networkType": "3G"
-                    },
-                    {
                         "operatorName": "Zain",
                         "networkType": "5G"
                     },
                     {
                         "operatorName": "STC",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Batelco",
                         "networkType": "5G"
                     }
                 ]
@@ -6127,11 +6127,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -6142,7 +6142,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -6413,12 +6413,12 @@
                 "locationCode": "BW",
                 "operatorList": [
                     {
-                        "operatorName": "Mascom",
-                        "networkType": "3G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "Mascom",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -6933,12 +6933,12 @@
                 "locationCode": "CM",
                 "operatorList": [
                     {
-                        "operatorName": "MTN Cameroon",
-                        "networkType": "4G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "MTN Cameroon",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -7316,15 +7316,15 @@
                 "locationCode": "BG",
                 "operatorList": [
                     {
+                        "operatorName": "Vivacom",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "A1",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telenor",
-                        "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Vivacom",
                         "networkType": "5G"
                     }
                 ]
@@ -8058,11 +8058,11 @@
                 "locationCode": "AZ",
                 "operatorList": [
                     {
-                        "operatorName": "Azercell",
-                        "networkType": "4G"
+                        "operatorName": "Bakcell",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Bakcell",
+                        "operatorName": "Azercell",
                         "networkType": "5G"
                     }
                 ]
@@ -8094,15 +8094,15 @@
                 "locationCode": "BH",
                 "operatorList": [
                     {
-                        "operatorName": "Batelco",
-                        "networkType": "3G"
-                    },
-                    {
                         "operatorName": "Zain",
                         "networkType": "5G"
                     },
                     {
                         "operatorName": "STC",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Batelco",
                         "networkType": "5G"
                     }
                 ]
@@ -8159,11 +8159,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -8174,7 +8174,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -8445,12 +8445,12 @@
                 "locationCode": "BW",
                 "operatorList": [
                     {
-                        "operatorName": "Mascom",
-                        "networkType": "3G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "Mascom",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -8965,12 +8965,12 @@
                 "locationCode": "CM",
                 "operatorList": [
                     {
-                        "operatorName": "MTN Cameroon",
-                        "networkType": "4G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "MTN Cameroon",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9348,15 +9348,15 @@
                 "locationCode": "BG",
                 "operatorList": [
                     {
+                        "operatorName": "Vivacom",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "A1",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telenor",
-                        "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Vivacom",
                         "networkType": "5G"
                     }
                 ]
@@ -10090,11 +10090,11 @@
                 "locationCode": "AZ",
                 "operatorList": [
                     {
-                        "operatorName": "Azercell",
-                        "networkType": "4G"
+                        "operatorName": "Bakcell",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Bakcell",
+                        "operatorName": "Azercell",
                         "networkType": "5G"
                     }
                 ]
@@ -10126,15 +10126,15 @@
                 "locationCode": "BH",
                 "operatorList": [
                     {
-                        "operatorName": "Batelco",
-                        "networkType": "3G"
-                    },
-                    {
                         "operatorName": "Zain",
                         "networkType": "5G"
                     },
                     {
                         "operatorName": "STC",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Batelco",
                         "networkType": "5G"
                     }
                 ]
@@ -10191,11 +10191,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -10206,7 +10206,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -10477,12 +10477,12 @@
                 "locationCode": "BW",
                 "operatorList": [
                     {
-                        "operatorName": "Mascom",
-                        "networkType": "3G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "Mascom",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -10997,12 +10997,12 @@
                 "locationCode": "CM",
                 "operatorList": [
                     {
-                        "operatorName": "MTN Cameroon",
-                        "networkType": "4G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "MTN Cameroon",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -11380,15 +11380,15 @@
                 "locationCode": "BG",
                 "operatorList": [
                     {
+                        "operatorName": "Vivacom",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "A1",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telenor",
-                        "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Vivacom",
                         "networkType": "5G"
                     }
                 ]
@@ -12122,11 +12122,11 @@
                 "locationCode": "AZ",
                 "operatorList": [
                     {
-                        "operatorName": "Azercell",
-                        "networkType": "4G"
+                        "operatorName": "Bakcell",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Bakcell",
+                        "operatorName": "Azercell",
                         "networkType": "5G"
                     }
                 ]
@@ -12158,15 +12158,15 @@
                 "locationCode": "BH",
                 "operatorList": [
                     {
-                        "operatorName": "Batelco",
-                        "networkType": "3G"
-                    },
-                    {
                         "operatorName": "Zain",
                         "networkType": "5G"
                     },
                     {
                         "operatorName": "STC",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Batelco",
                         "networkType": "5G"
                     }
                 ]
@@ -12223,11 +12223,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -12238,7 +12238,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -12509,12 +12509,12 @@
                 "locationCode": "BW",
                 "operatorList": [
                     {
-                        "operatorName": "Mascom",
-                        "networkType": "3G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "Mascom",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -13029,12 +13029,12 @@
                 "locationCode": "CM",
                 "operatorList": [
                     {
-                        "operatorName": "MTN Cameroon",
-                        "networkType": "4G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "MTN Cameroon",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -13382,15 +13382,15 @@
                 "locationCode": "BG",
                 "operatorList": [
                     {
+                        "operatorName": "Vivacom",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "A1",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telenor",
-                        "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Vivacom",
                         "networkType": "5G"
                     }
                 ]
@@ -14080,11 +14080,11 @@
                 "locationCode": "AZ",
                 "operatorList": [
                     {
-                        "operatorName": "Azercell",
-                        "networkType": "4G"
+                        "operatorName": "Bakcell",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Bakcell",
+                        "operatorName": "Azercell",
                         "networkType": "5G"
                     }
                 ]
@@ -14141,11 +14141,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -14156,7 +14156,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -14394,12 +14394,12 @@
                 "locationCode": "BW",
                 "operatorList": [
                     {
-                        "operatorName": "Mascom",
-                        "networkType": "3G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "Mascom",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -14886,12 +14886,12 @@
                 "locationCode": "CM",
                 "operatorList": [
                     {
-                        "operatorName": "MTN Cameroon",
-                        "networkType": "4G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "MTN Cameroon",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -15222,15 +15222,15 @@
                 "locationCode": "BG",
                 "operatorList": [
                     {
+                        "operatorName": "Vivacom",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "A1",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telenor",
-                        "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Vivacom",
                         "networkType": "5G"
                     }
                 ]
@@ -15920,11 +15920,11 @@
                 "locationCode": "AZ",
                 "operatorList": [
                     {
-                        "operatorName": "Azercell",
-                        "networkType": "4G"
+                        "operatorName": "Bakcell",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Bakcell",
+                        "operatorName": "Azercell",
                         "networkType": "5G"
                     }
                 ]
@@ -15981,11 +15981,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -15996,7 +15996,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -16234,12 +16234,12 @@
                 "locationCode": "BW",
                 "operatorList": [
                     {
-                        "operatorName": "Mascom",
-                        "networkType": "3G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "Mascom",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -16726,12 +16726,12 @@
                 "locationCode": "CM",
                 "operatorList": [
                     {
-                        "operatorName": "MTN Cameroon",
-                        "networkType": "4G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "MTN Cameroon",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -17062,15 +17062,15 @@
                 "locationCode": "BG",
                 "operatorList": [
                     {
+                        "operatorName": "Vivacom",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "A1",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telenor",
-                        "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Vivacom",
                         "networkType": "5G"
                     }
                 ]
@@ -17760,11 +17760,11 @@
                 "locationCode": "AZ",
                 "operatorList": [
                     {
-                        "operatorName": "Azercell",
-                        "networkType": "4G"
+                        "operatorName": "Bakcell",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Bakcell",
+                        "operatorName": "Azercell",
                         "networkType": "5G"
                     }
                 ]
@@ -17821,11 +17821,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -17836,7 +17836,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -18074,12 +18074,12 @@
                 "locationCode": "BW",
                 "operatorList": [
                     {
-                        "operatorName": "Mascom",
-                        "networkType": "3G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "Mascom",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -18566,12 +18566,12 @@
                 "locationCode": "CM",
                 "operatorList": [
                     {
-                        "operatorName": "MTN Cameroon",
-                        "networkType": "4G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "MTN Cameroon",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -18902,15 +18902,15 @@
                 "locationCode": "BG",
                 "operatorList": [
                     {
+                        "operatorName": "Vivacom",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "A1",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telenor",
-                        "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Vivacom",
                         "networkType": "5G"
                     }
                 ]
@@ -19600,11 +19600,11 @@
                 "locationCode": "AZ",
                 "operatorList": [
                     {
-                        "operatorName": "Azercell",
-                        "networkType": "4G"
+                        "operatorName": "Bakcell",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Bakcell",
+                        "operatorName": "Azercell",
                         "networkType": "5G"
                     }
                 ]
@@ -19661,11 +19661,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -19676,7 +19676,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -19914,12 +19914,12 @@
                 "locationCode": "BW",
                 "operatorList": [
                     {
-                        "operatorName": "Mascom",
-                        "networkType": "3G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "Mascom",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -20406,12 +20406,12 @@
                 "locationCode": "CM",
                 "operatorList": [
                     {
-                        "operatorName": "MTN Cameroon",
-                        "networkType": "4G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "MTN Cameroon",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -20742,15 +20742,15 @@
                 "locationCode": "BG",
                 "operatorList": [
                     {
+                        "operatorName": "Vivacom",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "A1",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telenor",
-                        "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Vivacom",
                         "networkType": "5G"
                     }
                 ]
@@ -21440,11 +21440,11 @@
                 "locationCode": "AZ",
                 "operatorList": [
                     {
-                        "operatorName": "Azercell",
-                        "networkType": "4G"
+                        "operatorName": "Bakcell",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Bakcell",
+                        "operatorName": "Azercell",
                         "networkType": "5G"
                     }
                 ]
@@ -21501,11 +21501,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -21516,7 +21516,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -21754,12 +21754,12 @@
                 "locationCode": "BW",
                 "operatorList": [
                     {
-                        "operatorName": "Mascom",
-                        "networkType": "3G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "Mascom",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -22246,12 +22246,12 @@
                 "locationCode": "CM",
                 "operatorList": [
                     {
-                        "operatorName": "MTN Cameroon",
-                        "networkType": "4G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "MTN Cameroon",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -22582,15 +22582,15 @@
                 "locationCode": "BG",
                 "operatorList": [
                     {
+                        "operatorName": "Vivacom",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "A1",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telenor",
-                        "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Vivacom",
                         "networkType": "5G"
                     }
                 ]
@@ -23280,11 +23280,11 @@
                 "locationCode": "AZ",
                 "operatorList": [
                     {
-                        "operatorName": "Azercell",
-                        "networkType": "4G"
+                        "operatorName": "Bakcell",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Bakcell",
+                        "operatorName": "Azercell",
                         "networkType": "5G"
                     }
                 ]
@@ -23341,11 +23341,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -23356,7 +23356,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -23594,12 +23594,12 @@
                 "locationCode": "BW",
                 "operatorList": [
                     {
-                        "operatorName": "Mascom",
-                        "networkType": "3G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "Mascom",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -24086,12 +24086,12 @@
                 "locationCode": "CM",
                 "operatorList": [
                     {
-                        "operatorName": "MTN Cameroon",
-                        "networkType": "4G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "MTN Cameroon",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -24422,15 +24422,15 @@
                 "locationCode": "BG",
                 "operatorList": [
                     {
+                        "operatorName": "Vivacom",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "A1",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telenor",
-                        "networkType": "4G"
-                    },
-                    {
-                        "operatorName": "Vivacom",
                         "networkType": "5G"
                     }
                 ]
@@ -25120,11 +25120,11 @@
                 "locationCode": "AZ",
                 "operatorList": [
                     {
-                        "operatorName": "Azercell",
-                        "networkType": "4G"
+                        "operatorName": "Bakcell",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Bakcell",
+                        "operatorName": "Azercell",
                         "networkType": "5G"
                     }
                 ]
@@ -25181,11 +25181,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -25196,7 +25196,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -25434,12 +25434,12 @@
                 "locationCode": "BW",
                 "operatorList": [
                     {
-                        "operatorName": "Mascom",
-                        "networkType": "3G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "Mascom",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -25926,12 +25926,12 @@
                 "locationCode": "CM",
                 "operatorList": [
                     {
-                        "operatorName": "MTN Cameroon",
-                        "networkType": "4G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "4G"
+                        "operatorName": "MTN Cameroon",
+                        "networkType": "5G"
                     }
                 ]
             },
