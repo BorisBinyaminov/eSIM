@@ -89,7 +89,7 @@
                     },
                     {
                         "operatorName": "Bite",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -99,15 +99,15 @@
                 "locationCode": "LT",
                 "operatorList": [
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Telia",
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "BIT\u0116",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telia",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -177,6 +177,10 @@
                     {
                         "operatorName": "Play",
                         "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Plus",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -243,11 +247,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "A1",
-                        "networkType": "4G"
+                        "operatorName": "Telemach",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telemach",
+                        "operatorName": "A1",
                         "networkType": "5G"
                     }
                 ]
@@ -271,7 +275,7 @@
                     },
                     {
                         "operatorName": "Yoigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -330,10 +334,6 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "EE",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "Vodafone",
                         "networkType": "5G"
                     },
@@ -343,6 +343,10 @@
                     },
                     {
                         "operatorName": "3",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "EE",
                         "networkType": "5G"
                     }
                 ]
@@ -365,7 +369,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Pronto GSM",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -424,7 +428,11 @@
                 "operatorList": [
                     {
                         "operatorName": "vip",
-                        "networkType": "4G"
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Telekom.mk",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -547,11 +555,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "PrimeTel",
-                        "networkType": "4G"
+                        "operatorName": "Epic",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Epic",
+                        "operatorName": "PrimeTel",
                         "networkType": "5G"
                     }
                 ]
@@ -615,11 +623,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Elisa",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Elisa",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -703,7 +711,7 @@
                     },
                     {
                         "operatorName": "Vodafone",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -799,7 +807,7 @@
                     },
                     {
                         "operatorName": "Bite",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -809,15 +817,15 @@
                 "locationCode": "LT",
                 "operatorList": [
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Telia",
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "BIT\u0116",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telia",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -887,6 +895,10 @@
                     {
                         "operatorName": "Play",
                         "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Plus",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -953,11 +965,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "A1",
-                        "networkType": "4G"
+                        "operatorName": "Telemach",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telemach",
+                        "operatorName": "A1",
                         "networkType": "5G"
                     }
                 ]
@@ -981,7 +993,7 @@
                     },
                     {
                         "operatorName": "Yoigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -1040,10 +1052,6 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "EE",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "Vodafone",
                         "networkType": "5G"
                     },
@@ -1053,6 +1061,10 @@
                     },
                     {
                         "operatorName": "3",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "EE",
                         "networkType": "5G"
                     }
                 ]
@@ -1075,7 +1087,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Pronto GSM",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -1134,7 +1146,11 @@
                 "operatorList": [
                     {
                         "operatorName": "vip",
-                        "networkType": "4G"
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Telekom.mk",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -1257,11 +1273,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "PrimeTel",
-                        "networkType": "4G"
+                        "operatorName": "Epic",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Epic",
+                        "operatorName": "PrimeTel",
                         "networkType": "5G"
                     }
                 ]
@@ -1325,11 +1341,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Elisa",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Elisa",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -1413,7 +1429,7 @@
                     },
                     {
                         "operatorName": "Vodafone",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -1509,7 +1525,7 @@
                     },
                     {
                         "operatorName": "Bite",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -1519,15 +1535,15 @@
                 "locationCode": "LT",
                 "operatorList": [
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Telia",
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "BIT\u0116",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telia",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -1597,6 +1613,10 @@
                     {
                         "operatorName": "Play",
                         "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Plus",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -1663,11 +1683,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "A1",
-                        "networkType": "4G"
+                        "operatorName": "Telemach",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telemach",
+                        "operatorName": "A1",
                         "networkType": "5G"
                     }
                 ]
@@ -1691,7 +1711,7 @@
                     },
                     {
                         "operatorName": "Yoigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -1750,10 +1770,6 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "EE",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "Vodafone",
                         "networkType": "5G"
                     },
@@ -1763,6 +1779,10 @@
                     },
                     {
                         "operatorName": "3",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "EE",
                         "networkType": "5G"
                     }
                 ]
@@ -1785,7 +1805,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Pronto GSM",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -1844,7 +1864,11 @@
                 "operatorList": [
                     {
                         "operatorName": "vip",
-                        "networkType": "4G"
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Telekom.mk",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -1967,11 +1991,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "PrimeTel",
-                        "networkType": "4G"
+                        "operatorName": "Epic",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Epic",
+                        "operatorName": "PrimeTel",
                         "networkType": "5G"
                     }
                 ]
@@ -2035,11 +2059,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Elisa",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Elisa",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -2123,7 +2147,7 @@
                     },
                     {
                         "operatorName": "Vodafone",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -2219,7 +2243,7 @@
                     },
                     {
                         "operatorName": "Bite",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -2229,15 +2253,15 @@
                 "locationCode": "LT",
                 "operatorList": [
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Telia",
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "BIT\u0116",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telia",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -2307,6 +2331,10 @@
                     {
                         "operatorName": "Play",
                         "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Plus",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -2373,11 +2401,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "A1",
-                        "networkType": "4G"
+                        "operatorName": "Telemach",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telemach",
+                        "operatorName": "A1",
                         "networkType": "5G"
                     }
                 ]
@@ -2401,7 +2429,7 @@
                     },
                     {
                         "operatorName": "Yoigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -2460,10 +2488,6 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "EE",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "Vodafone",
                         "networkType": "5G"
                     },
@@ -2473,6 +2497,10 @@
                     },
                     {
                         "operatorName": "3",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "EE",
                         "networkType": "5G"
                     }
                 ]
@@ -2495,7 +2523,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Pronto GSM",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -2554,7 +2582,11 @@
                 "operatorList": [
                     {
                         "operatorName": "vip",
-                        "networkType": "4G"
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Telekom.mk",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -2677,11 +2709,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "PrimeTel",
-                        "networkType": "4G"
+                        "operatorName": "Epic",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Epic",
+                        "operatorName": "PrimeTel",
                         "networkType": "5G"
                     }
                 ]
@@ -2745,11 +2777,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Elisa",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Elisa",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -2833,7 +2865,7 @@
                     },
                     {
                         "operatorName": "Vodafone",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -2897,11 +2929,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Vivo",
-                        "networkType": "4G"
+                        "operatorName": "Claro",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Claro",
+                        "operatorName": "Vivo",
                         "networkType": "5G"
                     }
                 ]
@@ -2913,11 +2945,11 @@
                 "operatorList": [
                     {
                         "operatorName": "entel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -2942,8 +2974,12 @@
                 "locationCode": "CR",
                 "operatorList": [
                     {
+                        "operatorName": "Claro",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -2954,7 +2990,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -2965,19 +3001,19 @@
                 "operatorList": [
                     {
                         "operatorName": "Digicel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "movistar",
-                        "networkType": "3G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3002,12 +3038,12 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "movistar",
-                        "networkType": "3G"
+                        "operatorName": "Tigo",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "operatorName": "movistar",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3018,7 +3054,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3029,7 +3065,7 @@
                 "operatorList": [
                     {
                         "operatorName": "movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3039,12 +3075,8 @@
                 "locationCode": "PA",
                 "operatorList": [
                     {
-                        "operatorName": "Digicel",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3055,11 +3087,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3069,11 +3101,15 @@
                 "locationCode": "PE",
                 "operatorList": [
                     {
-                        "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "operatorName": "Entel",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Entel",
+                        "operatorName": "Movistar",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Claro",
                         "networkType": "5G"
                     }
                 ]
@@ -3095,12 +3131,16 @@
                 "locationCode": "UY",
                 "operatorList": [
                     {
+                        "operatorName": "Antel",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -3164,11 +3204,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Vivo",
-                        "networkType": "4G"
+                        "operatorName": "Claro",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Claro",
+                        "operatorName": "Vivo",
                         "networkType": "5G"
                     }
                 ]
@@ -3180,11 +3220,11 @@
                 "operatorList": [
                     {
                         "operatorName": "entel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3209,8 +3249,12 @@
                 "locationCode": "CR",
                 "operatorList": [
                     {
+                        "operatorName": "Claro",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3221,7 +3265,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3232,19 +3276,19 @@
                 "operatorList": [
                     {
                         "operatorName": "Digicel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "movistar",
-                        "networkType": "3G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3269,12 +3313,12 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "movistar",
-                        "networkType": "3G"
+                        "operatorName": "Tigo",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "operatorName": "movistar",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3285,7 +3329,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3296,7 +3340,7 @@
                 "operatorList": [
                     {
                         "operatorName": "movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3306,12 +3350,8 @@
                 "locationCode": "PA",
                 "operatorList": [
                     {
-                        "operatorName": "Digicel",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3322,11 +3362,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3336,11 +3376,15 @@
                 "locationCode": "PE",
                 "operatorList": [
                     {
-                        "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "operatorName": "Entel",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Entel",
+                        "operatorName": "Movistar",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Claro",
                         "networkType": "5G"
                     }
                 ]
@@ -3362,12 +3406,16 @@
                 "locationCode": "UY",
                 "operatorList": [
                     {
+                        "operatorName": "Antel",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -3431,11 +3479,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Vivo",
-                        "networkType": "4G"
+                        "operatorName": "Claro",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Claro",
+                        "operatorName": "Vivo",
                         "networkType": "5G"
                     }
                 ]
@@ -3447,11 +3495,11 @@
                 "operatorList": [
                     {
                         "operatorName": "entel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3476,8 +3524,12 @@
                 "locationCode": "CR",
                 "operatorList": [
                     {
+                        "operatorName": "Claro",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3488,7 +3540,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3499,19 +3551,19 @@
                 "operatorList": [
                     {
                         "operatorName": "Digicel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "movistar",
-                        "networkType": "3G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3536,12 +3588,12 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "movistar",
-                        "networkType": "3G"
+                        "operatorName": "Tigo",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "operatorName": "movistar",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3552,7 +3604,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3563,7 +3615,7 @@
                 "operatorList": [
                     {
                         "operatorName": "movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3573,12 +3625,8 @@
                 "locationCode": "PA",
                 "operatorList": [
                     {
-                        "operatorName": "Digicel",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3589,11 +3637,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3603,11 +3651,15 @@
                 "locationCode": "PE",
                 "operatorList": [
                     {
-                        "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "operatorName": "Entel",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Entel",
+                        "operatorName": "Movistar",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Claro",
                         "networkType": "5G"
                     }
                 ]
@@ -3629,12 +3681,16 @@
                 "locationCode": "UY",
                 "operatorList": [
                     {
+                        "operatorName": "Antel",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -3698,11 +3754,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Vivo",
-                        "networkType": "4G"
+                        "operatorName": "Claro",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Claro",
+                        "operatorName": "Vivo",
                         "networkType": "5G"
                     }
                 ]
@@ -3714,11 +3770,11 @@
                 "operatorList": [
                     {
                         "operatorName": "entel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3743,8 +3799,12 @@
                 "locationCode": "CR",
                 "operatorList": [
                     {
+                        "operatorName": "Claro",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3755,7 +3815,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3766,19 +3826,19 @@
                 "operatorList": [
                     {
                         "operatorName": "Digicel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "movistar",
-                        "networkType": "3G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3803,12 +3863,12 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "movistar",
-                        "networkType": "3G"
+                        "operatorName": "Tigo",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "operatorName": "movistar",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3819,7 +3879,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3830,7 +3890,7 @@
                 "operatorList": [
                     {
                         "operatorName": "movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3840,12 +3900,8 @@
                 "locationCode": "PA",
                 "operatorList": [
                     {
-                        "operatorName": "Digicel",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3856,11 +3912,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3870,11 +3926,15 @@
                 "locationCode": "PE",
                 "operatorList": [
                     {
-                        "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "operatorName": "Entel",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Entel",
+                        "operatorName": "Movistar",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Claro",
                         "networkType": "5G"
                     }
                 ]
@@ -3896,12 +3956,16 @@
                 "locationCode": "UY",
                 "operatorList": [
                     {
+                        "operatorName": "Antel",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -3955,7 +4019,7 @@
                     },
                     {
                         "operatorName": "Videotron",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -3966,11 +4030,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telcel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -4024,7 +4088,7 @@
                     },
                     {
                         "operatorName": "Videotron",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4035,11 +4099,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telcel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -4093,7 +4157,7 @@
                     },
                     {
                         "operatorName": "Videotron",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4104,11 +4168,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telcel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -4154,7 +4218,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Orange",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4165,7 +4229,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Airtel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4202,7 +4266,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Orange",
-                        "networkType": "3G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4250,7 +4314,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Orange",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4261,7 +4325,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Orange",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4272,7 +4336,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Airtel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4324,11 +4388,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Lonestar Cell MTN",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Orange",
-                        "networkType": "3G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4339,7 +4403,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Orange",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4368,12 +4432,12 @@
                 "locationCode": "NE",
                 "operatorList": [
                     {
-                        "operatorName": "Airtel",
-                        "networkType": "3G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "3G"
+                        "operatorName": "Airtel",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4383,11 +4447,11 @@
                 "locationCode": "NG",
                 "operatorList": [
                     {
-                        "operatorName": "Airtel",
-                        "networkType": "4G"
+                        "operatorName": "MTN",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "MTN",
+                        "operatorName": "Airtel",
                         "networkType": "5G"
                     }
                 ]
@@ -4399,7 +4463,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Orange",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4410,7 +4474,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Airtel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4446,12 +4510,12 @@
                 "locationCode": "SZ",
                 "operatorList": [
                     {
-                        "operatorName": "Swazi MTN",
-                        "networkType": "4G"
+                        "operatorName": "Swazi Mobile",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Swazi Mobile",
-                        "networkType": "3G"
+                        "operatorName": "Swazi MTN",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4503,11 +4567,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Airtel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "MTN",
-                        "networkType": "3G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -4553,7 +4617,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Orange",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4564,7 +4628,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Airtel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4601,7 +4665,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Orange",
-                        "networkType": "3G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4649,7 +4713,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Orange",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4660,7 +4724,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Orange",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4671,7 +4735,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Airtel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4723,11 +4787,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Lonestar Cell MTN",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Orange",
-                        "networkType": "3G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4738,7 +4802,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Orange",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4767,12 +4831,12 @@
                 "locationCode": "NE",
                 "operatorList": [
                     {
-                        "operatorName": "Airtel",
-                        "networkType": "3G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "3G"
+                        "operatorName": "Airtel",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4782,11 +4846,11 @@
                 "locationCode": "NG",
                 "operatorList": [
                     {
-                        "operatorName": "Airtel",
-                        "networkType": "4G"
+                        "operatorName": "MTN",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "MTN",
+                        "operatorName": "Airtel",
                         "networkType": "5G"
                     }
                 ]
@@ -4798,7 +4862,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Orange",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4809,7 +4873,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Airtel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4845,12 +4909,12 @@
                 "locationCode": "SZ",
                 "operatorList": [
                     {
-                        "operatorName": "Swazi MTN",
-                        "networkType": "4G"
+                        "operatorName": "Swazi Mobile",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Swazi Mobile",
-                        "networkType": "3G"
+                        "operatorName": "Swazi MTN",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -4902,11 +4966,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Airtel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "MTN",
-                        "networkType": "3G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -5224,7 +5288,7 @@
                     },
                     {
                         "operatorName": "Bite",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -5234,15 +5298,15 @@
                 "locationCode": "LT",
                 "operatorList": [
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Telia",
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "BIT\u0116",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telia",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -5312,6 +5376,10 @@
                     {
                         "operatorName": "Play",
                         "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Plus",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -5378,11 +5446,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "A1",
-                        "networkType": "4G"
+                        "operatorName": "Telemach",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telemach",
+                        "operatorName": "A1",
                         "networkType": "5G"
                     }
                 ]
@@ -5406,7 +5474,7 @@
                     },
                     {
                         "operatorName": "Yoigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -5465,10 +5533,6 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "EE",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "Vodafone",
                         "networkType": "5G"
                     },
@@ -5478,6 +5542,10 @@
                     },
                     {
                         "operatorName": "3",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "EE",
                         "networkType": "5G"
                     }
                 ]
@@ -5500,7 +5568,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Pronto GSM",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -5559,7 +5627,11 @@
                 "operatorList": [
                     {
                         "operatorName": "vip",
-                        "networkType": "4G"
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Telekom.mk",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -5682,11 +5754,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "PrimeTel",
-                        "networkType": "4G"
+                        "operatorName": "Epic",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Epic",
+                        "operatorName": "PrimeTel",
                         "networkType": "5G"
                     }
                 ]
@@ -5750,11 +5822,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Elisa",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Elisa",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -5838,7 +5910,7 @@
                     },
                     {
                         "operatorName": "Vodafone",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -5892,7 +5964,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Mobily",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Zain",
@@ -5941,11 +6013,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Zain",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Umniah",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -6081,7 +6153,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Mobily",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Zain",
@@ -6130,11 +6202,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Zain",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Umniah",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -7244,7 +7316,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Mobily",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -7512,7 +7584,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Mobily",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -7780,7 +7852,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Mobily",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -8048,7 +8120,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Mobily",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -8316,7 +8388,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Mobily",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -8584,7 +8656,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Mobily",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -8852,7 +8924,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Mobily",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -8986,11 +9058,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Vivo",
-                        "networkType": "4G"
+                        "operatorName": "Claro",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Claro",
+                        "operatorName": "Vivo",
                         "networkType": "5G"
                     }
                 ]
@@ -9002,11 +9074,11 @@
                 "operatorList": [
                     {
                         "operatorName": "entel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9031,8 +9103,12 @@
                 "locationCode": "CR",
                 "operatorList": [
                     {
+                        "operatorName": "Claro",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9043,7 +9119,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9054,19 +9130,19 @@
                 "operatorList": [
                     {
                         "operatorName": "Digicel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "movistar",
-                        "networkType": "3G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9091,12 +9167,12 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "movistar",
-                        "networkType": "3G"
+                        "operatorName": "Tigo",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "operatorName": "movistar",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9107,7 +9183,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9118,7 +9194,7 @@
                 "operatorList": [
                     {
                         "operatorName": "movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9128,12 +9204,8 @@
                 "locationCode": "PA",
                 "operatorList": [
                     {
-                        "operatorName": "Digicel",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9144,11 +9216,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Tigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9158,11 +9230,15 @@
                 "locationCode": "PE",
                 "operatorList": [
                     {
-                        "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "operatorName": "Entel",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Entel",
+                        "operatorName": "Movistar",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Claro",
                         "networkType": "5G"
                     }
                 ]
@@ -9184,12 +9260,16 @@
                 "locationCode": "UY",
                 "operatorList": [
                     {
+                        "operatorName": "Antel",
+                        "networkType": "5G"
+                    },
+                    {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Claro",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -9243,7 +9323,7 @@
                     },
                     {
                         "operatorName": "Videotron",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9254,11 +9334,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telcel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -9304,7 +9384,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Orange",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9315,7 +9395,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Airtel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9352,7 +9432,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Orange",
-                        "networkType": "3G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9400,7 +9480,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Orange",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9411,7 +9491,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Orange",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9422,7 +9502,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Airtel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9474,11 +9554,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Lonestar Cell MTN",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Orange",
-                        "networkType": "3G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9489,7 +9569,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Orange",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9518,12 +9598,12 @@
                 "locationCode": "NE",
                 "operatorList": [
                     {
-                        "operatorName": "Airtel",
-                        "networkType": "3G"
+                        "operatorName": "Orange",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Orange",
-                        "networkType": "3G"
+                        "operatorName": "Airtel",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9533,11 +9613,11 @@
                 "locationCode": "NG",
                 "operatorList": [
                     {
-                        "operatorName": "Airtel",
-                        "networkType": "4G"
+                        "operatorName": "MTN",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "MTN",
+                        "operatorName": "Airtel",
                         "networkType": "5G"
                     }
                 ]
@@ -9549,7 +9629,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Orange",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9560,7 +9640,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Airtel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9596,12 +9676,12 @@
                 "locationCode": "SZ",
                 "operatorList": [
                     {
-                        "operatorName": "Swazi MTN",
-                        "networkType": "4G"
+                        "operatorName": "Swazi Mobile",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Swazi Mobile",
-                        "networkType": "3G"
+                        "operatorName": "Swazi MTN",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9653,11 +9733,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Airtel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "MTN",
-                        "networkType": "3G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -9753,7 +9833,7 @@
                     },
                     {
                         "operatorName": "Bite",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9763,15 +9843,15 @@
                 "locationCode": "LT",
                 "operatorList": [
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Telia",
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "BIT\u0116",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telia",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -9841,6 +9921,10 @@
                     {
                         "operatorName": "Play",
                         "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Plus",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9907,11 +9991,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "A1",
-                        "networkType": "4G"
+                        "operatorName": "Telemach",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telemach",
+                        "operatorName": "A1",
                         "networkType": "5G"
                     }
                 ]
@@ -9935,7 +10019,7 @@
                     },
                     {
                         "operatorName": "Yoigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -9994,10 +10078,6 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "EE",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "Vodafone",
                         "networkType": "5G"
                     },
@@ -10007,6 +10087,10 @@
                     },
                     {
                         "operatorName": "3",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "EE",
                         "networkType": "5G"
                     }
                 ]
@@ -10029,7 +10113,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Pronto GSM",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -10088,7 +10172,11 @@
                 "operatorList": [
                     {
                         "operatorName": "vip",
-                        "networkType": "4G"
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Telekom.mk",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -10211,11 +10299,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "PrimeTel",
-                        "networkType": "4G"
+                        "operatorName": "Epic",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Epic",
+                        "operatorName": "PrimeTel",
                         "networkType": "5G"
                     }
                 ]
@@ -10279,11 +10367,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Elisa",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Elisa",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -10367,7 +10455,7 @@
                     },
                     {
                         "operatorName": "Vodafone",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -10463,7 +10551,7 @@
                     },
                     {
                         "operatorName": "Bite",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -10473,15 +10561,15 @@
                 "locationCode": "LT",
                 "operatorList": [
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Telia",
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "BIT\u0116",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telia",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -10551,6 +10639,10 @@
                     {
                         "operatorName": "Play",
                         "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Plus",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -10617,11 +10709,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "A1",
-                        "networkType": "4G"
+                        "operatorName": "Telemach",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telemach",
+                        "operatorName": "A1",
                         "networkType": "5G"
                     }
                 ]
@@ -10645,7 +10737,7 @@
                     },
                     {
                         "operatorName": "Yoigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -10704,10 +10796,6 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "EE",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "Vodafone",
                         "networkType": "5G"
                     },
@@ -10717,6 +10805,10 @@
                     },
                     {
                         "operatorName": "3",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "EE",
                         "networkType": "5G"
                     }
                 ]
@@ -10739,7 +10831,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Pronto GSM",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -10798,7 +10890,11 @@
                 "operatorList": [
                     {
                         "operatorName": "vip",
-                        "networkType": "4G"
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Telekom.mk",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -10921,11 +11017,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "PrimeTel",
-                        "networkType": "4G"
+                        "operatorName": "Epic",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Epic",
+                        "operatorName": "PrimeTel",
                         "networkType": "5G"
                     }
                 ]
@@ -10989,11 +11085,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Elisa",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Elisa",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -11077,7 +11173,7 @@
                     },
                     {
                         "operatorName": "Vodafone",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -11131,7 +11227,7 @@
                     },
                     {
                         "operatorName": "Videotron",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -11142,11 +11238,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telcel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -11200,7 +11296,7 @@
                     },
                     {
                         "operatorName": "Videotron",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -11211,11 +11307,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telcel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -11269,7 +11365,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Mobily",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Zain",
@@ -11318,11 +11414,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Zain",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Umniah",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -11705,7 +11801,7 @@
                     },
                     {
                         "operatorName": "Videotron",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -11716,11 +11812,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telcel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -11774,7 +11870,7 @@
                     },
                     {
                         "operatorName": "Videotron",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -11785,11 +11881,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telcel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -11843,7 +11939,7 @@
                     },
                     {
                         "operatorName": "Videotron",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -11854,11 +11950,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telcel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -12870,7 +12966,7 @@
                     },
                     {
                         "operatorName": "Bite",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -12880,15 +12976,15 @@
                 "locationCode": "LT",
                 "operatorList": [
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Telia",
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "BIT\u0116",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telia",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -12958,6 +13054,10 @@
                     {
                         "operatorName": "Play",
                         "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Plus",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -13024,11 +13124,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "A1",
-                        "networkType": "4G"
+                        "operatorName": "Telemach",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telemach",
+                        "operatorName": "A1",
                         "networkType": "5G"
                     }
                 ]
@@ -13052,7 +13152,7 @@
                     },
                     {
                         "operatorName": "Yoigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -13111,10 +13211,6 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "EE",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "Vodafone",
                         "networkType": "5G"
                     },
@@ -13124,6 +13220,10 @@
                     },
                     {
                         "operatorName": "3",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "EE",
                         "networkType": "5G"
                     }
                 ]
@@ -13232,11 +13332,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "PrimeTel",
-                        "networkType": "4G"
+                        "operatorName": "Epic",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Epic",
+                        "operatorName": "PrimeTel",
                         "networkType": "5G"
                     }
                 ]
@@ -13300,11 +13400,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Elisa",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Elisa",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -13388,7 +13488,7 @@
                     },
                     {
                         "operatorName": "Vodafone",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -13484,7 +13584,7 @@
                     },
                     {
                         "operatorName": "Bite",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -13494,15 +13594,15 @@
                 "locationCode": "LT",
                 "operatorList": [
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Telia",
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "BIT\u0116",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telia",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -13572,6 +13672,10 @@
                     {
                         "operatorName": "Play",
                         "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Plus",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -13638,11 +13742,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "A1",
-                        "networkType": "4G"
+                        "operatorName": "Telemach",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telemach",
+                        "operatorName": "A1",
                         "networkType": "5G"
                     }
                 ]
@@ -13666,7 +13770,7 @@
                     },
                     {
                         "operatorName": "Yoigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -13725,10 +13829,6 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "EE",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "Vodafone",
                         "networkType": "5G"
                     },
@@ -13738,6 +13838,10 @@
                     },
                     {
                         "operatorName": "3",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "EE",
                         "networkType": "5G"
                     }
                 ]
@@ -13846,11 +13950,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "PrimeTel",
-                        "networkType": "4G"
+                        "operatorName": "Epic",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Epic",
+                        "operatorName": "PrimeTel",
                         "networkType": "5G"
                     }
                 ]
@@ -13914,11 +14018,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Elisa",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Elisa",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -14002,7 +14106,7 @@
                     },
                     {
                         "operatorName": "Vodafone",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -14098,7 +14202,7 @@
                     },
                     {
                         "operatorName": "Bite",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -14108,15 +14212,15 @@
                 "locationCode": "LT",
                 "operatorList": [
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Telia",
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "BIT\u0116",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telia",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -14186,6 +14290,10 @@
                     {
                         "operatorName": "Play",
                         "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Plus",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -14252,11 +14360,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "A1",
-                        "networkType": "4G"
+                        "operatorName": "Telemach",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telemach",
+                        "operatorName": "A1",
                         "networkType": "5G"
                     }
                 ]
@@ -14280,7 +14388,7 @@
                     },
                     {
                         "operatorName": "Yoigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -14339,10 +14447,6 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "EE",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "Vodafone",
                         "networkType": "5G"
                     },
@@ -14352,6 +14456,10 @@
                     },
                     {
                         "operatorName": "3",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "EE",
                         "networkType": "5G"
                     }
                 ]
@@ -14460,11 +14568,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "PrimeTel",
-                        "networkType": "4G"
+                        "operatorName": "Epic",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Epic",
+                        "operatorName": "PrimeTel",
                         "networkType": "5G"
                     }
                 ]
@@ -14528,11 +14636,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Elisa",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Elisa",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -14616,7 +14724,7 @@
                     },
                     {
                         "operatorName": "Vodafone",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -14712,7 +14820,7 @@
                     },
                     {
                         "operatorName": "Bite",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -14722,15 +14830,15 @@
                 "locationCode": "LT",
                 "operatorList": [
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Telia",
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "BIT\u0116",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telia",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -14800,6 +14908,10 @@
                     {
                         "operatorName": "Play",
                         "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Plus",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -14866,11 +14978,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "A1",
-                        "networkType": "4G"
+                        "operatorName": "Telemach",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telemach",
+                        "operatorName": "A1",
                         "networkType": "5G"
                     }
                 ]
@@ -14894,7 +15006,7 @@
                     },
                     {
                         "operatorName": "Yoigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -14953,10 +15065,6 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "EE",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "Vodafone",
                         "networkType": "5G"
                     },
@@ -14966,6 +15074,10 @@
                     },
                     {
                         "operatorName": "3",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "EE",
                         "networkType": "5G"
                     }
                 ]
@@ -15074,11 +15186,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "PrimeTel",
-                        "networkType": "4G"
+                        "operatorName": "Epic",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Epic",
+                        "operatorName": "PrimeTel",
                         "networkType": "5G"
                     }
                 ]
@@ -15142,11 +15254,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Elisa",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Elisa",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -15230,7 +15342,7 @@
                     },
                     {
                         "operatorName": "Vodafone",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -15326,7 +15438,7 @@
                     },
                     {
                         "operatorName": "Bite",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -15336,15 +15448,15 @@
                 "locationCode": "LT",
                 "operatorList": [
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Telia",
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "BIT\u0116",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telia",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -15414,6 +15526,10 @@
                     {
                         "operatorName": "Play",
                         "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Plus",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -15480,11 +15596,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "A1",
-                        "networkType": "4G"
+                        "operatorName": "Telemach",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telemach",
+                        "operatorName": "A1",
                         "networkType": "5G"
                     }
                 ]
@@ -15508,7 +15624,7 @@
                     },
                     {
                         "operatorName": "Yoigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -15567,10 +15683,6 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "EE",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "Vodafone",
                         "networkType": "5G"
                     },
@@ -15580,6 +15692,10 @@
                     },
                     {
                         "operatorName": "3",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "EE",
                         "networkType": "5G"
                     }
                 ]
@@ -15688,11 +15804,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "PrimeTel",
-                        "networkType": "4G"
+                        "operatorName": "Epic",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Epic",
+                        "operatorName": "PrimeTel",
                         "networkType": "5G"
                     }
                 ]
@@ -15756,11 +15872,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Elisa",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Elisa",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -15844,7 +15960,7 @@
                     },
                     {
                         "operatorName": "Vodafone",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -15940,7 +16056,7 @@
                     },
                     {
                         "operatorName": "Bite",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -15950,15 +16066,15 @@
                 "locationCode": "LT",
                 "operatorList": [
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Telia",
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "BIT\u0116",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telia",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -16028,6 +16144,10 @@
                     {
                         "operatorName": "Play",
                         "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Plus",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -16094,11 +16214,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "A1",
-                        "networkType": "4G"
+                        "operatorName": "Telemach",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telemach",
+                        "operatorName": "A1",
                         "networkType": "5G"
                     }
                 ]
@@ -16122,7 +16242,7 @@
                     },
                     {
                         "operatorName": "Yoigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -16181,10 +16301,6 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "EE",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "Vodafone",
                         "networkType": "5G"
                     },
@@ -16194,6 +16310,10 @@
                     },
                     {
                         "operatorName": "3",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "EE",
                         "networkType": "5G"
                     }
                 ]
@@ -16302,11 +16422,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "PrimeTel",
-                        "networkType": "4G"
+                        "operatorName": "Epic",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Epic",
+                        "operatorName": "PrimeTel",
                         "networkType": "5G"
                     }
                 ]
@@ -16370,11 +16490,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Elisa",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Elisa",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -16458,7 +16578,7 @@
                     },
                     {
                         "operatorName": "Vodafone",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -16554,7 +16674,7 @@
                     },
                     {
                         "operatorName": "Bite",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -16564,15 +16684,15 @@
                 "locationCode": "LT",
                 "operatorList": [
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Telia",
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "BIT\u0116",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telia",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -16642,6 +16762,10 @@
                     {
                         "operatorName": "Play",
                         "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Plus",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -16708,11 +16832,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "A1",
-                        "networkType": "4G"
+                        "operatorName": "Telemach",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telemach",
+                        "operatorName": "A1",
                         "networkType": "5G"
                     }
                 ]
@@ -16736,7 +16860,7 @@
                     },
                     {
                         "operatorName": "Yoigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -16795,10 +16919,6 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "EE",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "Vodafone",
                         "networkType": "5G"
                     },
@@ -16808,6 +16928,10 @@
                     },
                     {
                         "operatorName": "3",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "EE",
                         "networkType": "5G"
                     }
                 ]
@@ -16916,11 +17040,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "PrimeTel",
-                        "networkType": "4G"
+                        "operatorName": "Epic",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Epic",
+                        "operatorName": "PrimeTel",
                         "networkType": "5G"
                     }
                 ]
@@ -16984,11 +17108,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Elisa",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Elisa",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -17072,7 +17196,7 @@
                     },
                     {
                         "operatorName": "Vodafone",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -17168,7 +17292,7 @@
                     },
                     {
                         "operatorName": "Bite",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -17178,15 +17302,15 @@
                 "locationCode": "LT",
                 "operatorList": [
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Telia",
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "BIT\u0116",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telia",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -17256,6 +17380,10 @@
                     {
                         "operatorName": "Play",
                         "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Plus",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -17322,11 +17450,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "A1",
-                        "networkType": "4G"
+                        "operatorName": "Telemach",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telemach",
+                        "operatorName": "A1",
                         "networkType": "5G"
                     }
                 ]
@@ -17350,7 +17478,7 @@
                     },
                     {
                         "operatorName": "Yoigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -17409,10 +17537,6 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "EE",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "Vodafone",
                         "networkType": "5G"
                     },
@@ -17422,6 +17546,10 @@
                     },
                     {
                         "operatorName": "3",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "EE",
                         "networkType": "5G"
                     }
                 ]
@@ -17530,11 +17658,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "PrimeTel",
-                        "networkType": "4G"
+                        "operatorName": "Epic",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Epic",
+                        "operatorName": "PrimeTel",
                         "networkType": "5G"
                     }
                 ]
@@ -17598,11 +17726,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Elisa",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Elisa",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -17686,7 +17814,7 @@
                     },
                     {
                         "operatorName": "Vodafone",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -17782,7 +17910,7 @@
                     },
                     {
                         "operatorName": "Bite",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -17792,15 +17920,15 @@
                 "locationCode": "LT",
                 "operatorList": [
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Telia",
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "BIT\u0116",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telia",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -17870,6 +17998,10 @@
                     {
                         "operatorName": "Play",
                         "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Plus",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -17936,11 +18068,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "A1",
-                        "networkType": "4G"
+                        "operatorName": "Telemach",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telemach",
+                        "operatorName": "A1",
                         "networkType": "5G"
                     }
                 ]
@@ -17964,7 +18096,7 @@
                     },
                     {
                         "operatorName": "Yoigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -18023,10 +18155,6 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "EE",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "Vodafone",
                         "networkType": "5G"
                     },
@@ -18036,6 +18164,10 @@
                     },
                     {
                         "operatorName": "3",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "EE",
                         "networkType": "5G"
                     }
                 ]
@@ -18144,11 +18276,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "PrimeTel",
-                        "networkType": "4G"
+                        "operatorName": "Epic",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Epic",
+                        "operatorName": "PrimeTel",
                         "networkType": "5G"
                     }
                 ]
@@ -18212,11 +18344,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Elisa",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Elisa",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -18300,7 +18432,7 @@
                     },
                     {
                         "operatorName": "Vodafone",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -18396,7 +18528,7 @@
                     },
                     {
                         "operatorName": "Bite",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -18406,15 +18538,15 @@
                 "locationCode": "LT",
                 "operatorList": [
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Telia",
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "BIT\u0116",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telia",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -18484,6 +18616,10 @@
                     {
                         "operatorName": "Play",
                         "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Plus",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -18550,11 +18686,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "A1",
-                        "networkType": "4G"
+                        "operatorName": "Telemach",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telemach",
+                        "operatorName": "A1",
                         "networkType": "5G"
                     }
                 ]
@@ -18578,7 +18714,7 @@
                     },
                     {
                         "operatorName": "Yoigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -18637,10 +18773,6 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "EE",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "Vodafone",
                         "networkType": "5G"
                     },
@@ -18650,6 +18782,10 @@
                     },
                     {
                         "operatorName": "3",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "EE",
                         "networkType": "5G"
                     }
                 ]
@@ -18758,11 +18894,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "PrimeTel",
-                        "networkType": "4G"
+                        "operatorName": "Epic",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Epic",
+                        "operatorName": "PrimeTel",
                         "networkType": "5G"
                     }
                 ]
@@ -18826,11 +18962,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Elisa",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Elisa",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -18914,7 +19050,7 @@
                     },
                     {
                         "operatorName": "Vodafone",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -19010,7 +19146,7 @@
                     },
                     {
                         "operatorName": "Bite",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -19020,15 +19156,15 @@
                 "locationCode": "LT",
                 "operatorList": [
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Telia",
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "BIT\u0116",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telia",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -19098,6 +19234,10 @@
                     {
                         "operatorName": "Play",
                         "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Plus",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -19164,11 +19304,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "A1",
-                        "networkType": "4G"
+                        "operatorName": "Telemach",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telemach",
+                        "operatorName": "A1",
                         "networkType": "5G"
                     }
                 ]
@@ -19192,7 +19332,7 @@
                     },
                     {
                         "operatorName": "Yoigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -19251,10 +19391,6 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "EE",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "Vodafone",
                         "networkType": "5G"
                     },
@@ -19264,6 +19400,10 @@
                     },
                     {
                         "operatorName": "3",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "EE",
                         "networkType": "5G"
                     }
                 ]
@@ -19372,11 +19512,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "PrimeTel",
-                        "networkType": "4G"
+                        "operatorName": "Epic",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Epic",
+                        "operatorName": "PrimeTel",
                         "networkType": "5G"
                     }
                 ]
@@ -19440,11 +19580,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Elisa",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Elisa",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -19528,7 +19668,7 @@
                     },
                     {
                         "operatorName": "Vodafone",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -19624,7 +19764,7 @@
                     },
                     {
                         "operatorName": "Bite",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -19634,15 +19774,15 @@
                 "locationCode": "LT",
                 "operatorList": [
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Telia",
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "BIT\u0116",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telia",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -19712,6 +19852,10 @@
                     {
                         "operatorName": "Play",
                         "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Plus",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -19778,11 +19922,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "A1",
-                        "networkType": "4G"
+                        "operatorName": "Telemach",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telemach",
+                        "operatorName": "A1",
                         "networkType": "5G"
                     }
                 ]
@@ -19806,7 +19950,7 @@
                     },
                     {
                         "operatorName": "Yoigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -19865,10 +20009,6 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "EE",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "Vodafone",
                         "networkType": "5G"
                     },
@@ -19878,6 +20018,10 @@
                     },
                     {
                         "operatorName": "3",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "EE",
                         "networkType": "5G"
                     }
                 ]
@@ -19986,11 +20130,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "PrimeTel",
-                        "networkType": "4G"
+                        "operatorName": "Epic",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Epic",
+                        "operatorName": "PrimeTel",
                         "networkType": "5G"
                     }
                 ]
@@ -20054,11 +20198,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Elisa",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Elisa",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -20142,7 +20286,7 @@
                     },
                     {
                         "operatorName": "Vodafone",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -21138,7 +21282,7 @@
                     },
                     {
                         "operatorName": "Bite",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -21148,15 +21292,15 @@
                 "locationCode": "LT",
                 "operatorList": [
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Telia",
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "BIT\u0116",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telia",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -21226,6 +21370,10 @@
                     {
                         "operatorName": "Play",
                         "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Plus",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -21292,11 +21440,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "A1",
-                        "networkType": "4G"
+                        "operatorName": "Telemach",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telemach",
+                        "operatorName": "A1",
                         "networkType": "5G"
                     }
                 ]
@@ -21320,7 +21468,7 @@
                     },
                     {
                         "operatorName": "Yoigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -21379,10 +21527,6 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "EE",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "Vodafone",
                         "networkType": "5G"
                     },
@@ -21392,6 +21536,10 @@
                     },
                     {
                         "operatorName": "3",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "EE",
                         "networkType": "5G"
                     }
                 ]
@@ -21500,11 +21648,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "PrimeTel",
-                        "networkType": "4G"
+                        "operatorName": "Epic",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Epic",
+                        "operatorName": "PrimeTel",
                         "networkType": "5G"
                     }
                 ]
@@ -21568,11 +21716,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Elisa",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Elisa",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -21656,7 +21804,7 @@
                     },
                     {
                         "operatorName": "Vodafone",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -21752,7 +21900,7 @@
                     },
                     {
                         "operatorName": "Bite",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -21762,15 +21910,15 @@
                 "locationCode": "LT",
                 "operatorList": [
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Telia",
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "BIT\u0116",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telia",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -21840,6 +21988,10 @@
                     {
                         "operatorName": "Play",
                         "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Plus",
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -21906,11 +22058,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "A1",
-                        "networkType": "4G"
+                        "operatorName": "Telemach",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Telemach",
+                        "operatorName": "A1",
                         "networkType": "5G"
                     }
                 ]
@@ -21934,7 +22086,7 @@
                     },
                     {
                         "operatorName": "Yoigo",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -21993,10 +22145,6 @@
                 "locationCode": "GB",
                 "operatorList": [
                     {
-                        "operatorName": "EE",
-                        "networkType": "4G"
-                    },
-                    {
                         "operatorName": "Vodafone",
                         "networkType": "5G"
                     },
@@ -22006,6 +22154,10 @@
                     },
                     {
                         "operatorName": "3",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "EE",
                         "networkType": "5G"
                     }
                 ]
@@ -22114,11 +22266,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "PrimeTel",
-                        "networkType": "4G"
+                        "operatorName": "Epic",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Epic",
+                        "operatorName": "PrimeTel",
                         "networkType": "5G"
                     }
                 ]
@@ -22182,11 +22334,11 @@
                         "networkType": "5G"
                     },
                     {
-                        "operatorName": "Tele2",
-                        "networkType": "4G"
+                        "operatorName": "Elisa",
+                        "networkType": "5G"
                     },
                     {
-                        "operatorName": "Elisa",
+                        "operatorName": "Tele2",
                         "networkType": "5G"
                     }
                 ]
@@ -22270,7 +22422,7 @@
                     },
                     {
                         "operatorName": "Vodafone",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -22405,7 +22557,7 @@
                     },
                     {
                         "operatorName": "Videotron",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -22416,11 +22568,11 @@
                 "operatorList": [
                     {
                         "operatorName": "Movistar",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     },
                     {
                         "operatorName": "Telcel",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             }
@@ -22782,7 +22934,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Mobily",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -22872,7 +23024,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Mobily",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -22962,7 +23114,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Mobily",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -23052,7 +23204,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Mobily",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -24537,7 +24689,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Mobily",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -24627,7 +24779,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Mobily",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -24717,7 +24869,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Mobily",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -24807,7 +24959,7 @@
                 "operatorList": [
                     {
                         "operatorName": "Mobily",
-                        "networkType": "4G"
+                        "networkType": "5G"
                     }
                 ]
             },
@@ -26086,7 +26238,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 34000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -26195,7 +26347,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 18000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -26304,7 +26456,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 60000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -26413,7 +26565,7 @@
         "activeType": 2,
         "favorite": false,
         "retailPrice": 120000,
-        "speed": "3G/4G",
+        "speed": "3G/4G/5G",
         "ipExport": "HK",
         "supportTopUpType": 1,
         "fupPolicy": "",
@@ -27653,6 +27805,651 @@
                     {
                         "operatorName": "CTM",
                         "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Thailand",
+                "locationLogo": "/img/flags/th.png",
+                "locationCode": "TH",
+                "operatorList": [
+                    {
+                        "operatorName": "AIS",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Malaysia",
+                "locationLogo": "/img/flags/my.png",
+                "locationCode": "MY",
+                "operatorList": [
+                    {
+                        "operatorName": "DiGi",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Maxis",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Singapore",
+                "locationLogo": "/img/flags/sg.png",
+                "locationCode": "SG",
+                "operatorList": [
+                    {
+                        "operatorName": "SingTel",
+                        "networkType": "4G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PTPN61LUV",
+        "slug": "AS-20_3_30",
+        "name": "Asia-20 3GB 30Days",
+        "price": 92000,
+        "currencyCode": "USD",
+        "volume": 3221225472,
+        "smsStatus": 2,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 30,
+        "durationUnit": "DAY",
+        "location": "MO,HK,IL,IN,JP,KR,CN,NZ,MY,KW,SA,AU,TH,SG,VN,PH,ID,PK,KH,LK",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 138000.0,
+        "speed": "3G/4G/5G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Australia",
+                "locationLogo": "/img/flags/au.png",
+                "locationCode": "AU",
+                "operatorList": [
+                    {
+                        "operatorName": "Optus",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "New Zealand",
+                "locationLogo": "/img/flags/nz.png",
+                "locationCode": "NZ",
+                "operatorList": [
+                    {
+                        "operatorName": "Spark",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "China mainland",
+                "locationLogo": "/img/flags/cn.png",
+                "locationCode": "CN",
+                "operatorList": [
+                    {
+                        "operatorName": "China Unicom",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Hong Kong (China)",
+                "locationLogo": "/img/flags/hk.png",
+                "locationCode": "HK",
+                "operatorList": [
+                    {
+                        "operatorName": "csl",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Macao (China)",
+                "locationLogo": "/img/flags/mo.png",
+                "locationCode": "MO",
+                "operatorList": [
+                    {
+                        "operatorName": "CTM",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Thailand",
+                "locationLogo": "/img/flags/th.png",
+                "locationCode": "TH",
+                "operatorList": [
+                    {
+                        "operatorName": "AIS",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Malaysia",
+                "locationLogo": "/img/flags/my.png",
+                "locationCode": "MY",
+                "operatorList": [
+                    {
+                        "operatorName": "DiGi",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Maxis",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Singapore",
+                "locationLogo": "/img/flags/sg.png",
+                "locationCode": "SG",
+                "operatorList": [
+                    {
+                        "operatorName": "SingTel",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Vietnam",
+                "locationLogo": "/img/flags/vn.png",
+                "locationCode": "VN",
+                "operatorList": [
+                    {
+                        "operatorName": "MobiFone",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Vietnamobile",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Indonesia",
+                "locationLogo": "/img/flags/id.png",
+                "locationCode": "ID",
+                "operatorList": [
+                    {
+                        "operatorName": "Telkomsel",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Philippines",
+                "locationLogo": "/img/flags/ph.png",
+                "locationCode": "PH",
+                "operatorList": [
+                    {
+                        "operatorName": "Globe",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "South Korea",
+                "locationLogo": "/img/flags/kr.png",
+                "locationCode": "KR",
+                "operatorList": [
+                    {
+                        "operatorName": "SKTelecom",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "India",
+                "locationLogo": "/img/flags/in.png",
+                "locationCode": "IN",
+                "operatorList": [
+                    {
+                        "operatorName": "Jio",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Vodafone",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "AirTel",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "IDEA",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Saudi Arabia",
+                "locationLogo": "/img/flags/sa.png",
+                "locationCode": "SA",
+                "operatorList": [
+                    {
+                        "operatorName": "Mobily",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Cambodia",
+                "locationLogo": "/img/flags/kh.png",
+                "locationCode": "KH",
+                "operatorList": [
+                    {
+                        "operatorName": "Latelz",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Pakistan",
+                "locationLogo": "/img/flags/pk.png",
+                "locationCode": "PK",
+                "operatorList": [
+                    {
+                        "operatorName": "Telenor",
+                        "networkType": "3G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Israel",
+                "locationLogo": "/img/flags/il.png",
+                "locationCode": "IL",
+                "operatorList": [
+                    {
+                        "operatorName": "Pelephone",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Sri Lanka",
+                "locationLogo": "/img/flags/lk.png",
+                "locationCode": "LK",
+                "operatorList": [
+                    {
+                        "operatorName": "3",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Japan",
+                "locationLogo": "/img/flags/jp.png",
+                "locationCode": "JP",
+                "operatorList": [
+                    {
+                        "operatorName": "KDDI",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "SoftBank",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Kuwait",
+                "locationLogo": "/img/flags/kw.png",
+                "locationCode": "KW",
+                "operatorList": [
+                    {
+                        "operatorName": "STC",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "PALTQIBLC",
+        "slug": "AS-20_20_30",
+        "name": "Asia-20 20GB 30Days",
+        "price": 400000,
+        "currencyCode": "USD",
+        "volume": 21474836480,
+        "smsStatus": 2,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 30,
+        "durationUnit": "DAY",
+        "location": "MO,HK,IL,IN,JP,KR,CN,NZ,MY,KW,SA,AU,TH,SG,VN,PH,ID,PK,KH,LK",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 600000.0,
+        "speed": "3G/4G/5G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Australia",
+                "locationLogo": "/img/flags/au.png",
+                "locationCode": "AU",
+                "operatorList": [
+                    {
+                        "operatorName": "Optus",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "New Zealand",
+                "locationLogo": "/img/flags/nz.png",
+                "locationCode": "NZ",
+                "operatorList": [
+                    {
+                        "operatorName": "Spark",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "China mainland",
+                "locationLogo": "/img/flags/cn.png",
+                "locationCode": "CN",
+                "operatorList": [
+                    {
+                        "operatorName": "China Unicom",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Hong Kong (China)",
+                "locationLogo": "/img/flags/hk.png",
+                "locationCode": "HK",
+                "operatorList": [
+                    {
+                        "operatorName": "csl",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Macao (China)",
+                "locationLogo": "/img/flags/mo.png",
+                "locationCode": "MO",
+                "operatorList": [
+                    {
+                        "operatorName": "CTM",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Thailand",
+                "locationLogo": "/img/flags/th.png",
+                "locationCode": "TH",
+                "operatorList": [
+                    {
+                        "operatorName": "AIS",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Malaysia",
+                "locationLogo": "/img/flags/my.png",
+                "locationCode": "MY",
+                "operatorList": [
+                    {
+                        "operatorName": "DiGi",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "Maxis",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Singapore",
+                "locationLogo": "/img/flags/sg.png",
+                "locationCode": "SG",
+                "operatorList": [
+                    {
+                        "operatorName": "SingTel",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Vietnam",
+                "locationLogo": "/img/flags/vn.png",
+                "locationCode": "VN",
+                "operatorList": [
+                    {
+                        "operatorName": "MobiFone",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Vietnamobile",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Indonesia",
+                "locationLogo": "/img/flags/id.png",
+                "locationCode": "ID",
+                "operatorList": [
+                    {
+                        "operatorName": "Telkomsel",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Philippines",
+                "locationLogo": "/img/flags/ph.png",
+                "locationCode": "PH",
+                "operatorList": [
+                    {
+                        "operatorName": "Globe",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "South Korea",
+                "locationLogo": "/img/flags/kr.png",
+                "locationCode": "KR",
+                "operatorList": [
+                    {
+                        "operatorName": "SKTelecom",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "India",
+                "locationLogo": "/img/flags/in.png",
+                "locationCode": "IN",
+                "operatorList": [
+                    {
+                        "operatorName": "Jio",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Vodafone",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "AirTel",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "IDEA",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Saudi Arabia",
+                "locationLogo": "/img/flags/sa.png",
+                "locationCode": "SA",
+                "operatorList": [
+                    {
+                        "operatorName": "Mobily",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Cambodia",
+                "locationLogo": "/img/flags/kh.png",
+                "locationCode": "KH",
+                "operatorList": [
+                    {
+                        "operatorName": "Latelz",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Pakistan",
+                "locationLogo": "/img/flags/pk.png",
+                "locationCode": "PK",
+                "operatorList": [
+                    {
+                        "operatorName": "Telenor",
+                        "networkType": "3G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Israel",
+                "locationLogo": "/img/flags/il.png",
+                "locationCode": "IL",
+                "operatorList": [
+                    {
+                        "operatorName": "Pelephone",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Sri Lanka",
+                "locationLogo": "/img/flags/lk.png",
+                "locationCode": "LK",
+                "operatorList": [
+                    {
+                        "operatorName": "3",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Japan",
+                "locationLogo": "/img/flags/jp.png",
+                "locationCode": "JP",
+                "operatorList": [
+                    {
+                        "operatorName": "KDDI",
+                        "networkType": "5G"
+                    },
+                    {
+                        "operatorName": "SoftBank",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Kuwait",
+                "locationLogo": "/img/flags/kw.png",
+                "locationCode": "KW",
+                "operatorList": [
+                    {
+                        "operatorName": "STC",
+                        "networkType": "5G"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "packageCode": "P0523NZM8",
+        "slug": "AS-7_3_30",
+        "name": "Asia (7 areas)  3GB 30Days",
+        "price": 48000,
+        "currencyCode": "USD",
+        "volume": 3221225472,
+        "smsStatus": 2,
+        "dataType": 1,
+        "unusedValidTime": 180,
+        "duration": 30,
+        "durationUnit": "DAY",
+        "location": "TH,SG,VN,PH,ID,MY,KH",
+        "description": "",
+        "activeType": 2,
+        "favorite": false,
+        "retailPrice": 72000.0,
+        "speed": "3G/4G/5G",
+        "ipExport": "HK",
+        "supportTopUpType": 2,
+        "fupPolicy": "",
+        "locationNetworkList": [
+            {
+                "locationName": "Vietnam",
+                "locationLogo": "/img/flags/vn.png",
+                "locationCode": "VN",
+                "operatorList": [
+                    {
+                        "operatorName": "MobiFone",
+                        "networkType": "4G"
+                    },
+                    {
+                        "operatorName": "Vietnamobile",
+                        "networkType": "4G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Indonesia",
+                "locationLogo": "/img/flags/id.png",
+                "locationCode": "ID",
+                "operatorList": [
+                    {
+                        "operatorName": "Telkomsel",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Philippines",
+                "locationLogo": "/img/flags/ph.png",
+                "locationCode": "PH",
+                "operatorList": [
+                    {
+                        "operatorName": "Globe",
+                        "networkType": "5G"
+                    }
+                ]
+            },
+            {
+                "locationName": "Cambodia",
+                "locationLogo": "/img/flags/kh.png",
+                "locationCode": "KH",
+                "operatorList": [
+                    {
+                        "operatorName": "Latelz",
+                        "networkType": "4G"
                     }
                 ]
             },

@@ -12,7 +12,6 @@ import logging
 import asyncio
 import os
 import json
-from datetime import datetime
 from typing import Optional
 
 from telegram import (
@@ -343,11 +342,11 @@ async def handle_message(update: Update, context: CallbackContext) -> None:
             reply_markup=keyboard
         )
     elif text == "❓ FAQ":
-        faq_button = InlineKeyboardButton("Open FAQ", url=WEBAPP_FAQ_URL)
+        faq_button = InlineKeyboardButton("Open FAQ", web_app=WebAppInfo(url=WEBAPP_FAQ_URL))
         keyboard = InlineKeyboardMarkup([[faq_button]])
         await update.message.reply_text("Click here to open FAQ:", reply_markup=keyboard)
     elif text == "📌 Guides":
-        guides_button = InlineKeyboardButton("Open Guides", url=WEBAPP_GUIDES_URL)
+        guides_button = InlineKeyboardButton("Open Guides", web_app=WebAppInfo(url=WEBAPP_GUIDES_URL))
         keyboard = InlineKeyboardMarkup([[guides_button]])
         await update.message.reply_text("Click here to open Guides:", reply_markup=keyboard)
     elif text == "🛒 Buy eSIM":
